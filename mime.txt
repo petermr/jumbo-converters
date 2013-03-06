@@ -1,0 +1,58 @@
+application/pdf |pdf |Adobe PDF format 
+chemical/x-alchemy |alc |Alchemy format 
+chemical/x-cache-csf |csf |?
+chemical/x-cactvs-binary |cbin |CACTVS binary format 
+chemical/x-cactvs-binary |cascii |CACTVS ascii format 
+chemical/x-cactvs-binary |ctab |CACTVS table format 
+chemical/x-cdx |cdx |ChemDraw eXchange file 
+chemical/x-cerius |cer |MSI Cerius II format 
+chemical/x-chemdraw |chm |ChemDraw file 
+chemical/x-cif |cif |Crystallographic Interchange Format 
+http://ndbserver.rutgers.edu/NDB/mmcif/examples/index.html
+chemical/x-mmcif |mcif |MacroMolecular CIF 
+http://ndbserver.rutgers.edu/NDB/mmcif/examples/index.html
+chemical/x-chem3d |c3d |Chem3D Format 
+chemical/x-cmdf |cmdf |CrystalMaker Data format 
+chemical/x-compass |cpa |Compass program of the Takahashi 
+chemical/x-crossfire |bsd |Crossfire file 
+chemical/x-cml |cml |Chemical Markup Language 
+chemical/x-csml |csml, csm |Chemical Style Markup Language 
+chemical/x-ctx |ctx |Gasteiger group CTX file format 
+chemical/x-cxf |cxf |  ?
+chemical/x-daylight-smiles |smi |Smiles Format 
+chemical/x-embl-dl-nucleotide |emb |EMBL nucleotide format 
+chemical/x-galactic-spc |spc |SPC format for spectral and chromatographic data. 
+Data/spcvue.htm
+chemical/x-gamess-input |inp, gam |GAMESS Input format 
+chemical/x-gaussian-input |gau |Gaussian Input format 
+chemical/x-gaussian-checkpoint |fch,fchk |Gaussian Checkpoint format 
+chemical/x-gaussian-cube |cub |Gaussian Cube (Wavefunction) format 
+chemical/x-gcg8-sequence |gcg |  ?
+chemical/x-genbank |gen |ToGenBank format 
+chemical/x-isostar |istr, ist |IsoStar Library of intermolecular interactions 
+chemical/x-jcamp-dx |jdx, dx |JCAMP Spectroscopic Data Exchange Format 
+chemical/x-kinemage |kin |Kinetic (Protein Structure) Images 
+MageSoftware.html
+chemical/x-macmolecule |mcm |MacMolecule File Format 
+chemical/x-macromodel-input |mmd, mmod |MacroModel Molecular Mechanics 
+mmod/mmod.html
+chemical/x-mdl-molfile |mol |MDL Molfile 
+chemical/x-mdl-rdfile |rd |Reaction-data file 
+chemical/x-mdl-rxnfile |rxn |MDL Reaction format 
+chemical/x-mdl-sdfile |sd |MDL Structure-data file 
+chemical/x-mdl-tgf |tgf |MDL Transportable Graphics Format 
+chemical/x-mif |mif |  ?
+chemical/x-mol2 |mol2 |Portable representation of a SYBYL molecule 
+chemical/x-molconn-Z |b |Molconn-Z format 
+chemical/x-mopac-input |mop |MOPAC Input format 
+chemical/x-mopac-graph |gpt |MOPAC Graph format 
+chemical/x-ncbi-asn1 |asn (old form) |  ?
+chemical/x-ncbi-asn1-binary |val |  
+chemical/x-pdb |pdb |Protein DataBank 
+chemical/x-swissprot |sw |SWISS-PROT protein sequence database 
+chemical/x-vamas-iso14976 |vms |Versailles Agreement on Materials and Standards 
+chemical/x-vmd |vmd |Visual Molecular Dynamics 
+chemical/x-xtel |xtel |Xtelplot file format 
+chemical/x-xyz |xyz |Co-ordinate Animation format 
+
+ 

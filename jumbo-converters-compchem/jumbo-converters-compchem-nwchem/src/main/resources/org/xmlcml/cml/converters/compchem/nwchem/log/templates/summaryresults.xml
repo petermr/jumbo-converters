@@ -1,0 +1,134 @@
+<template repeat="*"  id="summaryresults" name="Summary of Results" 
+  pattern="\s*\=+\s+[Ss]ummary [Oo]f [Rr]esults\s+\=+\s*$\s*" 
+  newline="$" endPattern="\s*$\s*"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  >
+  
+  <comment class="example.input" id="summaryresults">
+          =============  Summary Of Results  =================
+
+ number of electrons: spin up=   16.00000  down=   16.00000 (real space)
+
+ total     energy    :  -0.4670736126E+02 (   -0.58384E+01/ion)
+ total orbital energy:   0.2046628579E+01 (    0.12791E+00/electron)
+ hartree   energy    :   0.9902993817E+01 (    0.61894E+00/electron)
+ exc-corr  energy    :  -0.1329222221E+02 (   -0.83076E+00/electron)
+ ion-ion   energy    :  -0.4294681362E+02 (   -0.53684E+01/ion)
+
+ K.S. kinetic energy :   0.2846763128E+02 (    0.17792E+01/electron)
+ K.S. V_l  energy    :  -0.2934397297E+02 (   -0.18340E+01/electron)
+ K.S. V_nl energy    :   0.5050224332E+00 (    0.31564E-01/electron)
+ K.S. V_Hart energy  :   0.1980598763E+02 (    0.12379E+01/electron)
+ K.S. V_xc energy    :  -0.1738803980E+02 (   -0.10868E+01/electron)
+ K.S. V_so energy    :   0.0000000000E+00 (    0.00000E+00/electron)
+ Virial Coefficient  :  -0.9281068186E+00
+
+
+</comment>
+<comment>
+ kinetic (planewave) :   0.2846763780E+02 (    0.17792E+01/electron)
+ V_local (planewave) :  -0.2934398068E+02 (   -0.18340E+01/electron)
+ V_nl    (planewave) :   0.5050216234E+00 (    0.31564E-01/electron)
+ V_Coul  (planewave) :   0.1980599286E+02 (    0.12379E+01/electron)
+ V_xc.   (planewave) :  -0.1738804054E+02 (   -0.10868E+01/electron)
+ Virial Coefficient  :  -0.9281067477E+00
+
+
+</comment>
+  <record repeat="2" id="x"/>
+  <record id="electrons">\snumber of electrons: spin up=\s*{F,n:elecup}\s*down=\s*{F,n:elecdown}\s*{X,n:space}</record>
+  <record id="x"/>
+  <record id="energy1" repeat="*">\s{X,n:type}\s*:\s*{E,n:ener}\s*\(\s*{E,n:ener1}\s*/{A,n:species}\)</record>
+  <record id="x"/>
+  <record id="energy2" repeat="*">\s{X,n:type}\s*:\s*{E,n:ener}\s*\(\s*{E,n:ener1}\s*/{A,n:species}\)</record>
+  <record id="vircoeff">\s*Virial Coefficient\s+\:{E,n:ener}</record>
+  <templateList>
+      <xi:include href="orbitalener.xml"/>
+      <xi:include href="totalbandener.xml"/>
+      <xi:include href="brillouinzp.xml"/>
+  </templateList>
+  
+  <transform process="pullupSingleton" xpath="./cml:list"/>
+  
+  <comment class="example.output" id="summaryresults">
+<module cmlx:templateRef="summaryresults" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <list cmlx:templateRef="electrons">
+    <scalar dataType="xsd:double" dictRef="n:elecup">16.0</scalar>
+    <scalar dataType="xsd:double" dictRef="n:elecdown">16.0</scalar>
+    <scalar dataType="xsd:string" dictRef="n:space">(real space)</scalar>
+  </list>
+  <list cmlx:templateRef="energy1">
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">total energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">-46.70736126</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">-5.8384</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">ion</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">total orbital energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">2.046628579</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">0.12791</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">hartree energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">9.902993817</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">0.61894</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">exc-corr energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">-13.29222221</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">-0.83076</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">ion-ion energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">-42.94681362</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">-5.3684</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">ion</scalar>
+    </list>
+  </list>
+  <list cmlx:templateRef="energy2">
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">K.S. kinetic energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">28.46763128</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">1.7792</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">K.S. V_l energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">-29.34397297</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">-1.834</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">K.S. V_nl energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">0.5050224332</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">0.031564</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">K.S. V_Hart energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">19.80598763</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">1.2379</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">K.S. V_xc energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">-17.3880398</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">-1.0868</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="n:type">K.S. V_so energy</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener">0.0</scalar>
+      <scalar dataType="xsd:double" dictRef="n:ener1">0.0</scalar>
+      <scalar dataType="xsd:string" dictRef="n:species">electron</scalar>
+    </list>
+  </list>
+  <scalar dataType="xsd:double" dictRef="n:ener" cmlx:templateRef="vircoeff">-0.9281068186</scalar>
+</module>
+    </comment>
+
+</template>

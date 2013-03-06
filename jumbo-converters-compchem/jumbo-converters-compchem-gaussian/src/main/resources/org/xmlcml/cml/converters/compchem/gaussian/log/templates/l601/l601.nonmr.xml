@@ -1,0 +1,17 @@
+<template id="l601.nonmr" name="l601" repeat="*"
+    pattern="\s*No NMR shielding tensors so no spin-rotation constants\.\s*" 
+    endPattern=".*" endOffset="1"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    
+  <comment class="example.input" id="l601.nonmr">
+ No NMR shielding tensors so no spin-rotation constants.
+  </comment>
+  
+  <record id="l601.nonmr" />
+  
+  <comment class="example.output" id="l601.nonmr">
+    <module cmlx:templateRef="l601.nonmr" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"/>
+  </comment>
+</template>
+ 

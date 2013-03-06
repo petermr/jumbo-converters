@@ -1,0 +1,95 @@
+<template repeat="*"  id="pspw.elems1" name="PSPW elements with spaces" 
+  pattern="\s*elements involved in the cluster.*" 
+  newline="$" endPattern="\s*cutoff.*$\s*$\s*" endOffset="1"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  >
+  <comment>This variant has spaces after each atom block. Run BEFORE elems.xml</comment>
+  <comment class="example.input" id="pspw.elems1">
+ elements involved in the cluster:
+      1: Ga    core charge:  3.0000  lmax=  2
+             comment    : Hamann pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             cutoff =   1.128   1.506   2.118
+
+      2: N     core charge:  5.0000  lmax=  2
+             comment    : Hamann pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             cutoff =   0.700   0.700   0.700
+
+</comment>
+  <record id="x">{X,x:xelem}</record>
+  <templateList>
+    <xi:include href="nwpw.elems.atom.xml"/>
+  </templateList>
+  
+  <transform process="pullupSingleton" xpath="./cml:list"/>
+  
+  <comment class="example.output" id="pspw.elems1">
+    <module cmlx:templateRef="pspw.elems1" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <scalar dataType="xsd:string" dictRef="x:xelem" cmlx:templateRef="x">elements involved in the cluster:</scalar>
+      <module cmlx:lineCount="7" cmlx:templateRef="atom">
+        <list cmlx:templateRef="atom1">
+          <list>
+            <scalar dataType="xsd:integer" dictRef="x:serial">1</scalar>
+            <scalar dataType="xsd:string" dictRef="cmlx:elementType">Ga</scalar>
+            <scalar dataType="xsd:double" dictRef="n:corecharge">3.0</scalar>
+            <scalar dataType="xsd:integer" dictRef="n:lmax">2</scalar>
+          </list>
+        </list>
+        <list cmlx:templateRef="comment">
+          <scalar dataType="xsd:string" dictRef="x:comment">Hamann pseudopotential</scalar>
+        </list>
+        <list cmlx:templateRef="pspot">
+          <scalar dataType="xsd:integer" dictRef="n:pspottype">0</scalar>
+        </list>
+        <list cmlx:templateRef="hangle">
+          <scalar dataType="xsd:integer" dictRef="n:hangularcomp">2</scalar>
+        </list>
+        <list cmlx:templateRef="local">
+          <scalar dataType="xsd:integer" dictRef="n:localpot">2</scalar>
+        </list>
+        <list cmlx:templateRef="nonlocal">
+          <scalar dataType="xsd:integer" dictRef="n:nonlocal">4</scalar>
+        </list>
+        <list cmlx:templateRef="cutoff">
+          <array dataType="xsd:double" size="3" dictRef="n:cutoff">1.128 1.506 2.118</array>
+        </list>
+      </module>
+      <module cmlx:lineCount="7" cmlx:templateRef="atom">
+        <list cmlx:templateRef="atom1">
+          <list>
+            <scalar dataType="xsd:integer" dictRef="x:serial">2</scalar>
+            <scalar dataType="xsd:string" dictRef="cmlx:elementType">N</scalar>
+            <scalar dataType="xsd:double" dictRef="n:corecharge">5.0</scalar>
+            <scalar dataType="xsd:integer" dictRef="n:lmax">2</scalar>
+          </list>
+        </list>
+        <list cmlx:templateRef="comment">
+          <scalar dataType="xsd:string" dictRef="x:comment">Hamann pseudopotential</scalar>
+        </list>
+        <list cmlx:templateRef="pspot">
+          <scalar dataType="xsd:integer" dictRef="n:pspottype">0</scalar>
+        </list>
+        <list cmlx:templateRef="hangle">
+          <scalar dataType="xsd:integer" dictRef="n:hangularcomp">2</scalar>
+        </list>
+        <list cmlx:templateRef="local">
+          <scalar dataType="xsd:integer" dictRef="n:localpot">2</scalar>
+        </list>
+        <list cmlx:templateRef="nonlocal">
+          <scalar dataType="xsd:integer" dictRef="n:nonlocal">4</scalar>
+        </list>
+        <list cmlx:templateRef="cutoff">
+          <array dataType="xsd:double" size="3" dictRef="n:cutoff">0.7 0.7 0.7</array>
+        </list>
+      </module>
+    </module>
+  </comment>
+
+</template>

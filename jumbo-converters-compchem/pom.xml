@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cml</groupId>
+        <artifactId>jumbo-converters</artifactId>
+        <version>0.3-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jumbo-converters-compchem</artifactId>
+    <packaging>pom</packaging>
+    <name>jumbo-converters-compchem</name>
+
+    <modules>
+        <module>jumbo-converters-compchem-all</module>
+        <module>jumbo-converters-compchem-amber</module>
+        <module>jumbo-converters-compchem-castep</module>
+        <module>jumbo-converters-compchem-common</module>
+        <module>jumbo-converters-compchem-dalton</module>
+        <module>jumbo-converters-compchem-dlpoly</module>
+        <module>jumbo-converters-compchem-dummy</module>
+        <module>jumbo-converters-compchem-gamessuk</module>
+        <module>jumbo-converters-compchem-gamessus</module>
+        <module>jumbo-converters-compchem-gaussian</module>
+        <module>jumbo-converters-compchem-jaguar</module>
+        <module>jumbo-converters-compchem-molcas</module>
+        <module>jumbo-converters-compchem-mopac</module>
+        <module>jumbo-converters-compchem-nwchem</module>
+        <module>jumbo-converters-compchem-qchem</module>
+        <module>jumbo-converters-compchem-qespresso</module>
+        <module>jumbo-converters-compchem-testutils</module>
+        <module>jumbo-converters-compchem-turbomole</module>
+    </modules>
+
+
+</project>
+
+

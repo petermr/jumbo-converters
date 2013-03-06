@@ -1,0 +1,13 @@
+<template repeat="*"  id="gama" name="GA uses MA" 
+  pattern="\s*GA uses MA.*" newline="$" endPattern="\s*">
+  
+  <comment class="example.input" id="gama">
+ GA uses MA = T    GA memory limited = F
+  </comment>
+  <record/>
+  
+  <comment class="example.output" id="gama">
+    <module cmlx:templateRef="gama" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"/>
+  </comment>
+
+</template>

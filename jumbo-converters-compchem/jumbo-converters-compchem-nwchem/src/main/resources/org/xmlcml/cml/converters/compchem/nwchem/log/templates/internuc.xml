@@ -1,0 +1,65 @@
+<template repeat="*"  id="internuc" name="internuclear distances" newline="$"
+  pattern="\s*\=+$\s*internuclear distances\s*"  endPattern="\s*\=+\s*"
+  endOffset="1">
+
+  <comment class="example.input" id="internuc">
+ ==============================================================================
+                                internuclear distances
+ ------------------------------------------------------------------------------
+       center one      |      center two      | atomic units |       a.u.
+ ------------------------------------------------------------------------------
+    2 c                |   1 fe               |     3.41436  |     3.41436
+    3 c                |   1 fe               |     3.41436  |     3.41436
+    4 o                |   2 c                |     2.17697  |     2.17697
+    5 o                |   3 c                |     2.17697  |     2.17697
+    6 c                |   1 fe               |     3.45310  |     3.45310
+    7 c                |   1 fe               |     3.45310  |     3.45310
+    8 c                |   1 fe               |     3.45310  |     3.45310
+    9 o                |   6 c                |     2.17696  |     2.17696
+   10 o                |   7 c                |     2.17696  |     2.17696
+   11 o                |   8 c                |     2.17696  |     2.17696
+ ------------------------------------------------------------------------------
+                         number of included internuclear distances:         10
+ ==============================================================================
+  </comment>    
+  <comment>
+ ==============================================================================
+                                internuclear distances
+ ------------------------------------------------------------------------------
+       center one      |      center two      | atomic units |       a.u.
+ ------------------------------------------------------------------------------
+    5 N                |   1 Ga               |     3.63918  |     3.63918
+    6 N                |   1 Ga               |     3.61866  |     3.61866
+    6 N                |   2 Ga               |     3.63918  |     3.63918
+    6 N                |   4 Ga               |     3.61837  |     3.61837
+    7 N                |   1 Ga               |     3.61837  |     3.61837
+    7 N                |   3 Ga               |     3.63918  |     3.63918
+    8 N                |   4 Ga               |     3.63918  |     3.63918
+ ------------------------------------------------------------------------------
+                         number of included internuclear distances:          7
+ ==============================================================================
+  </comment>
+  <record repeat="5"/>
+  <record id="dist" formatType="REGEX" makeArray="true" repeat="*"
+  >{I,n:ser1}{A,n:elem1}\s*\|\s*{I,n:ser2}{A,n:elem2}\|{F,n:dist1}\|{F,n:dist1}</record>
+  <record/>
+  <record id="rlx" >\s*number of included internuclear distances:\s*{I,n:count}</record>
+  <record/>
+
+  <comment class="example.output" id="internuc">
+    <module cmlx:templateRef="internuc" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <list cmlx:lineCount="10" cmlx:templateRef="dist">
+        <array dataType="xsd:integer" dictRef="n:ser1" size="10">2 3 4 5 6 7 8 9 10 11</array>
+        <array dataType="xsd:string" dictRef="n:elem1" size="10">c c o o c c c o o o</array>
+        <array dataType="xsd:integer" dictRef="n:ser2" size="10">1 1 2 3 1 1 1 6 7 8</array>
+        <array dataType="xsd:string" dictRef="n:elem2" size="10">fe fe c c fe fe fe c c c</array>
+        <array dataType="xsd:double" dictRef="n:dist1" size="10">3.41436 3.41436 2.17697 2.17697 3.4531 3.4531 3.4531 2.17696 2.17696 2.17696</array>
+        <array dataType="xsd:double" dictRef="n:dist1" size="10">3.41436 3.41436 2.17697 2.17697 3.4531 3.4531 3.4531 2.17696 2.17696 2.17696</array>
+      </list>
+      <list cmlx:templateRef="rlx">
+        <scalar dataType="xsd:integer" dictRef="n:count">10</scalar>
+      </list>
+    </module>
+  </comment>
+
+</template>

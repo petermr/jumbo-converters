@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cml</groupId>
+        <artifactId>jumbo-converters</artifactId>
+        <version>0.3-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jumbo-converters-molecule</artifactId>
+    <packaging>pom</packaging>
+    <name>jumbo-converters-molecule</name>
+
+    <modules>
+        <module>jumbo-converters-molecule-all</module>
+        <module>jumbo-converters-molecule-cml</module>
+        <module>jumbo-converters-molecule-mdl</module>
+        <module>jumbo-converters-molecule-pubchem</module>
+        <module>jumbo-converters-molecule-xyz</module>
+    </modules>
+
+
+</project>
+
+

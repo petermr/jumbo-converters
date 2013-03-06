@@ -1,0 +1,10 @@
+<template repeat="*"  id="herint" name="Output from HERINT input processing" 
+  pattern="\s*\*+\s*$\s*\*+\s*Output from HERINT\s*\*+\s*" newline="$"
+  endPattern="\s*\*+\s*" endOffset="1">
+  <comment>
+ *************************************************************************
+ ****************** Output from HERMIT input processing ******************
+ *************************************************************************
+  </comment>
+  <record repeat="*"/>
+</template>

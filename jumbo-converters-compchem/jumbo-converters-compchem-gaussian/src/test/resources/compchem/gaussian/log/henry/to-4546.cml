@@ -1,0 +1,2407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module convention="convention:compchem" xmlns="http://www.xml-cml.org/schema" xmlns:convention="http://www.xml-cml.org/convention/" xmlns:cc="http://www.xml-cml.org/dictionary/compchem/" xmlns:compchem="http://www.xml-cml.org/dictionary/compchem/" xmlns:g="http://www.xml-cml.org/dictionary/compchem/gaussian" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:nonsi="http://www.xml-cml.org/unit/nonSi/" xmlns:cml="http://www.xml-cml.org/dictionary/cml/">
+  <module id="jobList1" dictRef="cc:jobList">
+    <module id="job1" dictRef="cc:job">
+      <module id="environment" dictRef="cc:environment">
+        <parameterList>
+          <parameter dictRef="cc:hostname">
+            <scalar dataType="xsd:string">GINC-CX1-7-36-1</scalar>
+          </parameter>
+          <parameter dictRef="cc:jobname">
+            <scalar dataType="xsd:string">SCAN-USER-1</scalar>
+          </parameter>
+          <parameter dictRef="cc:date">
+            <scalar dataType="xsd:date">2010-03-15T00:00:00Z</scalar>
+          </parameter>
+          <parameter dictRef="cc:title">
+            <scalar dataType="xsd:string">BrF3 Optimisation</scalar>
+          </parameter>
+          <parameter dictRef="cc:version">
+            <scalar dataType="xsd:string">EM64L-G09RevA.02</scalar>
+          </parameter>
+          <parameter dictRef="cc:run.date">
+            <scalar dataType="xsd:string">15-Mar-2010</scalar>
+          </parameter>
+          <parameter dictRef="cc:program">
+            <scalar dataType="xsd:string">Gaussian 09</scalar>
+          </parameter>
+          <parameter dictRef="cc:program.date">
+            <scalar dataType="xsd:string">11-Jun-2009</scalar>
+          </parameter>
+          <parameter dictRef="cc:version">
+            <scalar dataType="xsd:string">EM64L-G09RevA.02</scalar>
+          </parameter>
+        </parameterList>
+      </module>
+      <module id="initialization" dictRef="cc:initialization">
+        <parameterList>
+          <parameter dictRef="cc:betae">
+            <scalar dataType="xsd:integer">17</scalar>
+          </parameter>
+          <parameter dictRef="cc:alphae">
+            <scalar dataType="xsd:integer">17</scalar>
+          </parameter>
+          <parameter dictRef="cc:basiscount">
+            <scalar dataType="xsd:integer">35</scalar>
+          </parameter>
+          <parameter dictRef="cc:diffuse">
+            <scalar dataType="xsd:string">(5D, 7F)</scalar>
+          </parameter>
+          <parameter dictRef="cc:basis">
+            <scalar dataType="xsd:string">LANL2DZ</scalar>
+          </parameter>
+          <parameter dictRef="cc:degfreedom">
+            <scalar dataType="xsd:integer">4</scalar>
+          </parameter>
+          <parameter dictRef="cc:formula">
+            <scalar dataType="xsd:string">BrF3</scalar>
+          </parameter>
+          <parameter dictRef="cc:frameworkgroup">
+            <scalar dataType="xsd:string">CS[SG(BrF),X(F2)]</scalar>
+          </parameter>
+          <parameter dictRef="cc:pointgroup">
+            <scalar dataType="xsd:string">CS</scalar>
+          </parameter>
+          <parameter dictRef="cc:method">
+            <scalar dataType="xsd:string">RB3LYP</scalar>
+          </parameter>
+          <parameter dictRef="cc:basis">
+            <scalar dataType="xsd:string">LANL2DZ</scalar>
+          </parameter>
+        </parameterList>
+        <molecule id="mol.l202.orient">
+          <atomArray>
+            <atom id="a1" elementType="Br" x3="0.477032" y3="0.541769" z3="-1.509269">
+              <property dictRef="cc:serial">
+                <scalar dataType="xsd:integer">1</scalar>
+              </property>
+              <property dictRef="g:atomicType">
+                <scalar dataType="xsd:integer">0</scalar>
+              </property>
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">35</scalar>
+              </property>
+            </atom>
+            <atom id="a2" elementType="F" x3="-0.382968" y3="2.031333" z3="-1.509269">
+              <property dictRef="cc:serial">
+                <scalar dataType="xsd:integer">2</scalar>
+              </property>
+              <property dictRef="g:atomicType">
+                <scalar dataType="xsd:integer">0</scalar>
+              </property>
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">9</scalar>
+              </property>
+            </atom>
+            <atom id="a3" elementType="F" x3="0.477032" y3="0.840444" z3="0.184601">
+              <property dictRef="cc:serial">
+                <scalar dataType="xsd:integer">3</scalar>
+              </property>
+              <property dictRef="g:atomicType">
+                <scalar dataType="xsd:integer">0</scalar>
+              </property>
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">9</scalar>
+              </property>
+            </atom>
+            <atom id="a4" elementType="F" x3="0.477032" y3="0.840444" z3="-3.203138">
+              <property dictRef="cc:serial">
+                <scalar dataType="xsd:integer">4</scalar>
+              </property>
+              <property dictRef="g:atomicType">
+                <scalar dataType="xsd:integer">0</scalar>
+              </property>
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">9</scalar>
+              </property>
+            </atom>
+          </atomArray>
+          <formula formalCharge="0" concise="Br 1 F 3"/>
+          <bondArray>
+            <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+            <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+            <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+          </bondArray>
+          <property dictRef="cml:molmass">
+            <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+          </property>
+        </molecule>
+        <module id="otherComponents" dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.49509" y3="0.541288" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.418666" y3="2.087084" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.485957" y3="0.812651" z3="0.286409">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.485957" y3="0.812651" z3="-3.304946">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+          <module dictRef="cc:userDefinedModule">
+            <scalar dataType="xsd:string" dictRef="g:l1.legal">Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009, Gaussian, Inc.</scalar>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <list>
+              <scalar dataType="xsd:string" dictRef="g:l1.citation">Cite this work as:</scalar>
+            </list>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <list>
+              <scalar dataType="xsd:string" dictRef="g:control">1/14=-1,18=20,19=15,26=3,38=1,57=2/1,3</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">2/9=110,12=2,17=6,18=5,40=1/2</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">3/5=6,6=3,11=2,16=1,25=1,30=1,71=1,74=-5/1,2,3</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">4//1</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">5/5=2,38=5/2</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">6/7=2,8=2,9=2,10=2,28=1/1</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">7//1,2,3,16</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">1/14=-1,18=20,19=15/3(2)</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">2/9=110/2</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">99//99</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">2/9=110/2</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">3/5=6,6=3,11=2,16=1,25=1,30=1,71=1,74=-5/1,2,3</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">4/5=5,16=3/1</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">5/5=2,38=5/2</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">7//1,2,3,16</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">1/14=-1,18=20,19=15/3(-5)</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">2/9=110/2</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">6/7=2,8=2,9=2,10=2,19=2,28=1/1</scalar>
+              <scalar dataType="xsd:string" dictRef="g:control">99/9=1/99</scalar>
+            </list>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <scalar dataType="xsd:string" dictRef="cc:title">BrF3 Optimisation</scalar>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <list>
+              <scalar dataType="xsd:string" dictRef="x:l101"/>
+            </list>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <list>
+              <scalar dataType="xsd:string" dictRef="g:optimization">Initialization pass.</scalar>
+            </list>
+            <module>
+              <list>
+                <array dataType="xsd:string" dictRef="g:symbol" size="3">R1 R2 R3</array>
+                <array dataType="xsd:integer" dictRef="g:atom1" size="3">1 1 1</array>
+                <array dataType="xsd:integer" dictRef="g:atom2" size="3">2 3 4</array>
+                <array dataType="xsd:double" dictRef="cc:distance" size="3">1.72 1.72 1.72</array>
+                <array delimiter="|" dataType="xsd:string" dictRef="g:deriv" size="3">|estimate D2E/DX2|estimate D2E/DX2|estimate D2E/DX2|</array>
+              </list>
+              <list>
+                <array dataType="xsd:string" dictRef="g:symbol" size="3">A1 A2 A3</array>
+                <array dataType="xsd:integer" dictRef="g:atom1" size="3">2 2 3</array>
+                <array dataType="xsd:integer" dictRef="g:atom2" size="3">1 1 1</array>
+                <array dataType="xsd:integer" dictRef="g:atom3" size="3">3 4 4</array>
+                <array dataType="xsd:double" dictRef="cc:angle" size="3">81.3508 81.3508 160.0</array>
+                <array delimiter="|" dataType="xsd:string" dictRef="g:deriv" size="3">|estimate D2E/DX2|estimate D2E/DX2|estimate D2E/DX2|</array>
+              </list>
+            </module>
+            <module>
+              <scalar dataType="xsd:double" dictRef="g:trustrad">0.3</scalar>
+              <scalar dataType="xsd:double" dictRef="g:fncerr">1.0E-7</scalar>
+              <scalar dataType="xsd:double" dictRef="g:grderr">1.0E-6</scalar>
+              <scalar dataType="xsd:integer" dictRef="g:nstep">20</scalar>
+              <scalar dataType="xsd:integer" dictRef="g:allowedstep">100</scalar>
+            </module>
+          </module>
+          <module dictRef="cc:userDefinedModule"/>
+          <module dictRef="cc:userDefinedModule"/>
+          <module dictRef="cc:userDefinedModule"/>
+          <module dictRef="cc:userDefinedModule">
+            <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+            <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+            <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+            <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+            <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <array dataType="xsd:double" dictRef="cc:rotconst" size="3">10.9711407 4.6099204 3.2715656</array>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <list>
+              <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+              <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+            </list>
+            <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+            <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <list>
+              <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+            </list>
+          </module>
+        </module>
+      </module>
+      <module id="calculation" dictRef="cc:calculation">
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.124839" y3="-0.302939" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.735161" y3="1.186625" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.124839" y3="-0.004264" z3="1.693869">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.124839" y3="-0.004264" z3="-1.693869">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Internal Forces: Max 0.132108302 RMS 0.081953030</scalar>
+          </list>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.25033 3.25033 3.25033 1.41984 1.41984 2.79253 0.53025</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">0.10417 0.13211 0.13211 0.01285 0.01233 0.03012 -0.00577</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">0.0 0.0 0.0 0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">0.143 0.18135 0.18135 0.01944 0.01864 0.04893 -0.02556</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">0.143 0.18158 0.18158 0.01939 0.01939 0.04893 -0.02526</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.39333 3.43191 3.43191 1.43923 1.43923 2.84145 0.505</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-0.05125266</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.12502" y3="-0.307552" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.736226" y3="1.268105" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.12502" y3="-0.036035" z3="1.795677">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.12502" y3="-0.036035" z3="-1.795677">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">10.0733916 4.1094341 2.9343656</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.39333 3.43191 3.43191 1.43923 1.43923 2.84145 0.505</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">0.0457 0.05991 0.05991 0.00722 0.00688 0.01679 -0.00464</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">0.21342 0.271 0.271 0.02894 0.02894 0.07302 -0.03769</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">-0.0144 -0.00257 -0.00257 -0.00622 -0.00631 0.05624 -0.43128</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">0.19902 0.26846 0.26846 0.03836 0.03836 0.11361 -0.46907</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.59234 3.70037 3.70037 1.47759 1.47759 2.95507 0.03593</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-0.004778603</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.568487" y3="0.587066" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.469092" y3="2.179919" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.474483" y3="0.743328" z3="0.440371">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.474483" y3="0.743328" z3="-3.458909">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.009869" y3="-0.328716" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.058118" y3="1.571054" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.009869" y3="-0.146358" z3="1.94964">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.009869" y3="-0.146358" z3="-1.94964">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">8.9783187 3.4991108 2.5178656</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.59234 3.70037 3.70037 1.47759 1.47759 2.95507 0.03593</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">-0.00561 -0.00293 -0.00293 6.7E-4 6.7E-4 0.00134 -1.3E-4</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">-0.01421 -0.01916 -0.01916 -0.00274 -0.00274 -0.00811 0.03349</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">-0.00767 0.0032 0.0032 0.00446 0.00436 0.00854 0.04372</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">-0.02188 -0.01594 -0.01594 0.00107 0.00107 0.00107 0.07724</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.57047 3.68443 3.68443 1.47866 1.47866 2.95614 0.11316</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-4.481043E-5</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.558242" y3="0.585595" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.465969" y3="2.173317" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.478057" y3="0.747344" z3="0.432071">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.478057" y3="0.747344" z3="-3.450609">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.03084" y3="-0.324943" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.181611" y3="1.552485" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.03084" y3="-0.144409" z3="1.94134">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.03084" y3="-0.144409" z3="-1.94134">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.0841191 3.5288497 2.5418334</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.57047 3.68443 3.68443 1.47866 1.47866 2.95614 0.11316</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">-0.00175 -1.9E-4 -1.9E-4 7.2E-4 7.1E-4 0.00145 -4.7E-4</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">-0.01916 -0.01396 -0.01396 9.3E-4 9.3E-4 9.4E-4 0.06765</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">2.2E-4 0.00443 0.00443 0.00431 0.0043 0.00705 0.0771</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">-0.01894 -0.00953 -0.00953 0.00598 0.00598 0.00727 0.14472</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.55152 3.6749 3.6749 1.48464 1.48464 2.96341 0.25788</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-1.443983E-4</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.540056" y3="0.584227" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.466729" y3="2.171196" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.487531" y3="0.749088" z3="0.427694">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.487531" y3="0.749088" z3="-3.446231">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.069318" y3="-0.314094" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.408205" y3="1.503613" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.069318" y3="-0.141068" z3="1.936962">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.069318" y3="-0.141068" z3="-1.936962">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.1549794 3.5438039 2.5561882</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.55152 3.6749 3.6749 1.48464 1.48464 2.96341 0.25788</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">0.00176 0.00167 0.00167 7.5E-4 7.2E-4 0.00157 -0.00107</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">0.0 0.0 0.0 0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">0.05 0.04739 0.04739 0.02123 0.02054 0.0446 -0.03037</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">0.05 0.04762 0.04762 0.02111 0.02111 0.04465 -0.03007</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.60152 3.72252 3.72252 1.50575 1.50575 3.00805 0.22781</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-0.001009329</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.541721" y3="0.600532" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.488057" y3="2.204215" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.497456" y3="0.724283" z3="0.456215">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.497456" y3="0.724283" z3="-3.474752">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.062348" y3="-0.307695" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.36716" y3="1.549121" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.062348" y3="-0.176265" z3="1.965483">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.062348" y3="-0.176265" z3="-1.965483">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">8.82892 3.4424077 2.4772949</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.60152 3.72252 3.72252 1.50575 1.50575 3.00805 0.22781</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">-0.00813 -0.00606 -0.00606 -7.3E-4 -7.4E-4 -0.00149 -6.2E-4</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">0.0 0.0 0.0 0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">-0.05 -0.03727 -0.03727 -0.00449 -0.00455 -0.00916 -0.00379</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">-0.05 -0.03725 -0.03725 -0.00451 -0.00451 -0.00914 -0.00376</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.55152 3.68527 3.68527 1.50123 1.50123 2.99891 0.22404</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-1.381228E-4</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.539377" y3="0.602435" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.475077" y3="2.184513" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.492146" y3="0.733171" z3="0.435932">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.492146" y3="0.733171" z3="-3.45447">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.060466" y3="-0.306385" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.356075" y3="1.526258" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.060466" y3="-0.167379" z3="1.945201">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.060466" y3="-0.167379" z3="-1.945201">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.0982422 3.5145088 2.5358444</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="cc:variable" size="7">R1 R2 R3 A1 A2 A3 D1</array>
+              <array dataType="xsd:double" dictRef="g:lastval" size="7">3.55152 3.68527 3.68527 1.50123 1.50123 2.99891 0.22404</array>
+              <array dataType="xsd:double" dictRef="cc:deriv" size="7">0.00113 1.1E-4 1.1E-4 -4.7E-4 -4.8E-4 -9.4E-4 -6.8E-4</array>
+              <array dataType="xsd:double" dictRef="cc:delta.linear" size="7">0.013 -5.8E-4 -5.8E-4 -0.01549 -0.01549 -0.02935 -0.07608</array>
+              <array dataType="xsd:double" dictRef="cc:delta.quad" size="7">0.0 0.0 0.0 0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:delta.total" size="7">0.013 -5.8E-4 -5.8E-4 -0.01551 -0.01551 -0.02933 -0.07608</array>
+              <array dataType="xsd:double" dictRef="cc:newval" size="7">3.56452 3.68469 3.68469 1.48572 1.48572 2.96958 0.14796</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-1.064809E-5</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.551861" y3="0.590478" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.469031" y3="2.176596" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.482881" y3="0.743108" z3="0.43338">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.482881" y3="0.743108" z3="-3.451918">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.04022" y3="-0.31947" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.23685" y3="1.546334" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.04022" y3="-0.151976" z3="1.942649">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.04022" y3="-0.151976" z3="-1.942649">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.0902647 3.5239705 2.5399126</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">NO NO NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-3.468112E-5</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.562742" y3="0.597597" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.466809" y3="2.175523" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.476326" y3="0.740091" z3="0.432719">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.476326" y3="0.740091" z3="-3.451256">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.009013" y3="-0.321732" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.053074" y3="1.561343" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.009013" y3="-0.155082" z3="1.941987">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.009013" y3="-0.155082" z3="-1.941987">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.1156806 3.5267517 2.5429445</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">YES YES NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-3.633509E-6</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.562899" y3="0.601618" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.468222" y3="2.178068" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.476953" y3="0.736809" z3="0.433973">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.476953" y3="0.736809" z3="-3.452511">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.003542" y3="-0.319929" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.020858" y3="1.563634" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.003542" y3="-0.159732" z3="1.943242">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.003542" y3="-0.159732" z3="-1.943242">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.1079126 3.5222158 2.539964</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">YES YES NO NO</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-2.661352E-7</scalar>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.564111" y3="0.602085" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.468004" y3="2.177951" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.476238" y3="0.736635" z3="0.433833">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.476238" y3="0.736635" z3="-3.452371">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="3.56E-4" y3="-0.320107" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.002098" y3="1.563668" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="3.56E-4" y3="-0.159404" z3="1.943102">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="3.56E-4" y3="-0.159404" z3="-1.943102">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.1083367 3.5227256 2.5402591</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:basis">LANL2DZ</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:diffuse">(5D, 7F)</scalar>
+          <list>
+            <array dataType="xsd:integer" dictRef="cc:adapted" size="2">22 13</array>
+            <array dataType="xsd:string" dictRef="cc:symm" size="2">A' A"</array>
+          </list>
+          <scalar dataType="xsd:integer" dictRef="cc:basiscount">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="g:primbasis">87</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:cartesianbasis">35</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:alphae">17</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:betae">17</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:onee">One-electron integrals</scalar>
+          </list>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <list>
+            <scalar dataType="xsd:string" dictRef="g:optimization">Using GEDIIS/GDIIS optimizer.</scalar>
+          </list>
+          <module/>
+          <module/>
+          <module>
+            <list>
+              <array dataType="xsd:string" dictRef="g:item"/>
+              <array dataType="xsd:double" dictRef="g:value" size="4">4.5E-4 3.0E-4 0.0018 0.0012</array>
+              <array dataType="xsd:double" dictRef="g:threshold" size="4">0.0 0.0 0.0 0.0</array>
+              <array dataType="xsd:string" dictRef="g:converged" size="4">YES YES YES YES</array>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:double" dictRef="g:predchange">-2.085889E-9</scalar>
+            </list>
+          </module>
+          <module>
+            <list>
+              <scalar dataType="xsd:string" dictRef="g:optimization">Optimization completed.</scalar>
+              <scalar dataType="xsd:string" dictRef="g:optimization">-- Stationary point found.</scalar>
+            </list>
+            <list>
+              <array dataType="xsd:string" dictRef="g:symbol" size="3">R1 R2 R3</array>
+              <array dataType="xsd:integer" dictRef="g:atom1" size="3">1 1 1</array>
+              <array dataType="xsd:integer" dictRef="g:atom2" size="3">2 3 4</array>
+              <array dataType="xsd:double" dictRef="cc:distance" size="3">1.8838 1.9497 1.9497</array>
+              <array delimiter="|" dataType="xsd:string" dictRef="g:deriv" size="3">|-DE/DX = 0.0|-DE/DX = 0.0|-DE/DX = 0.0|</array>
+            </list>
+            <list>
+              <array dataType="xsd:string" dictRef="g:symbol" size="3">A1 A2 A3</array>
+              <array dataType="xsd:integer" dictRef="g:atom1" size="3">2 2 3</array>
+              <array dataType="xsd:integer" dictRef="g:atom2" size="3">1 1 1</array>
+              <array dataType="xsd:integer" dictRef="g:atom3" size="3">3 4 4</array>
+              <array dataType="xsd:double" dictRef="cc:angle" size="3">85.2722 85.2722 170.5443</array>
+              <array delimiter="|" dataType="xsd:string" dictRef="g:deriv" size="3">|-DE/DX = 0.0|-DE/DX = 0.0|-DE/DX = 0.0|</array>
+            </list>
+          </module>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="0.564111" y3="0.602085" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.468004" y3="2.177951" z3="-1.509269">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="0.476238" y3="0.736635" z3="0.433833">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="0.476238" y3="0.736635" z3="-3.452371">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule"/>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dataType="xsd:string" dictRef="cc:formula">BrF3</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:frameworkgroup">CS[SG(BrF),X(F2)]</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:degfreedom">4</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:largestconciseabelian">CS</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:operatorcount">2</scalar>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <molecule id="a4">
+            <atomArray>
+              <atom id="a1" elementType="Br" x3="3.56E-4" y3="-0.320107" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">1</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">35</scalar>
+                </property>
+              </atom>
+              <atom id="a2" elementType="F" x3="-0.002098" y3="1.563668" z3="0.0">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">2</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a3" elementType="F" x3="3.56E-4" y3="-0.159404" z3="1.943102">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">3</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+              <atom id="a4" elementType="F" x3="3.56E-4" y3="-0.159404" z3="-1.943102">
+                <property dictRef="cc:serial">
+                  <scalar dataType="xsd:integer">4</scalar>
+                </property>
+                <property dictRef="g:atomicType">
+                  <scalar dataType="xsd:integer">0</scalar>
+                </property>
+                <property dictRef="compchem:atomicNumber">
+                  <scalar dataType="xsd:integer">9</scalar>
+                </property>
+              </atom>
+            </atomArray>
+            <formula formalCharge="0" concise="Br 1 F 3"/>
+            <bondArray>
+              <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+              <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+              <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+            </bondArray>
+            <property dictRef="cml:molmass">
+              <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+            </property>
+          </molecule>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <array dataType="xsd:double" dictRef="cc:rotconst" size="3">9.1083367 3.5227256 2.5402591</array>
+        </module>
+        <module dictRef="cc:userDefinedModule">
+          <scalar dictRef="cc:jobtime" dataType="xsd:string">PT54.100S</scalar>
+          <scalar dataType="xsd:date" dictRef="cc:jobdatetime.end">2010-03-15T14:09:31Z</scalar>
+          <scalar dataType="xsd:string" dictRef="cc:program">Gaussian 09</scalar>
+        </module>
+      </module>
+      <module id="finalization" dictRef="cc:finalization">
+        <propertyList>
+          <property dictRef="cc:electronicstate">
+            <scalar dataType="xsd:string">1-A'</scalar>
+          </property>
+          <property dictRef="cc:hfenergy">
+            <scalar dataType="xsd:double" units="nonsi:hartree">-312.5200972</scalar>
+          </property>
+          <property dictRef="cc:rmsd">
+            <scalar dataType="xsd:double" units="nonsi:unknown">7.173E-9</scalar>
+          </property>
+          <property dictRef="cc:rmsf">
+            <scalar dataType="xsd:double" units="nonsi:unknown">8.858E-6</scalar>
+          </property>
+          <property dictRef="cc:dipole">
+            <array dataType="xsd:double" units="nonsi:debye" size="3">0.4889562 -0.7471285 0.0</array>
+          </property>
+        </propertyList>
+        <module id="otherComponents" dictRef="cc:userDefinedModule">
+          <module dictRef="cc:userDefinedModule">
+            <module>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:occorbs">(A') (A") (A') (A') (A') (A") (A') (A') (A") (A')</scalar>
+              </list>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:occorbs">(A") (A') (A') (A") (A") (A') (A')</scalar>
+              </list>
+            </module>
+            <module>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:virtorbs">(A') (A") (A') (A') (A") (A") (A") (A') (A') (A')</scalar>
+              </list>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:virtorbs">(A') (A') (A") (A") (A') (A') (A") (A')</scalar>
+              </list>
+            </module>
+            <module>
+              <scalar dataType="xsd:string" dictRef="g:l601.state">1-A'.</scalar>
+            </module>
+            <array dataType="xsd:double" dictRef="g:alphaocc" size="17">-24.77848 -24.71172 -24.71172 -1.2423 -1.16837 -1.16635 -0.88912 -0.5653 -0.5613 -0.5122 -0.46786 -0.44299 -0.41862 -0.41476 -0.4074 -0.39386 -0.36541</array>
+            <array dataType="xsd:double" dictRef="g:alphavirt" size="18">-0.22815 -0.15319 0.37515 0.41134 0.4222 0.64565 0.76878 0.77551 0.81113 0.86182 0.86447 0.92003 0.92329 1.02 1.32226 1.42106 1.77481 18.24637</array>
+            <module/>
+            <module>
+              <array dataType="xsd:double" dictRef="x:floatArr" cmlx:idx="1" size="4" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">5.786854 0.041729 0.012397 0.012397</array>
+              <array dataType="xsd:double" dictRef="x:floatArr" cmlx:idx="2" size="4" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">0.041729 9.293766 -0.01912 -0.01912</array>
+              <array dataType="xsd:double" dictRef="x:floatArr" cmlx:idx="3" size="4" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">0.012397 -0.01912 9.430441 9.66E-4</array>
+            </module>
+            <list>
+              <scalar dataType="xsd:string" dictRef="x:popanal">4 F 0.012397 -0.019120 0.000966 9.430441</scalar>
+            </list>
+            <module>
+              <module>
+                <scalar dataType="xsd:string" dictRef="g:title">Mulliken atomic charges:</scalar>
+                <scalar dataType="xsd:integer" dictRef="cc:serial">1</scalar>
+              </module>
+              <scalar dataType="xsd:double" dictRef="g:electextent2">398.4276</scalar>
+            </module>
+            <module>
+              <array dataType="xsd:double" dictRef="cc:dipole" size="3">0.0022 -2.2695 0.0</array>
+              <scalar dataType="xsd:double" dictRef="x:dipole">2.2695</scalar>
+              <array dataType="xsd:double" dictRef="cc:quadrupole" size="3">-28.6198 -28.8777 -40.6283</array>
+              <array dataType="xsd:double" dictRef="cc:quadrupole" size="3">8.0E-4 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:quadrupole" size="6">4.0888 3.8309 -7.9197 8.0E-4 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:octapole" size="10">0.0053 -11.3326 0.0 0.0097 -1.7036 0.0 -0.0017 -0.5133 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:hexadecapole" size="15">-26.4629 -105.1475 -304.5411 0.053 0.0 0.053 0.0 0.0 0.0 -21.9937 -47.4151 -60.321 0.0 0.0 0.0177</array>
+            </module>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <module>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:occorbs">(A') (A") (A') (A') (A") (A') (A') (A") (A') (A')</scalar>
+              </list>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:occorbs">(A") (A') (A") (A') (A") (A') (A')</scalar>
+              </list>
+            </module>
+            <module>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:virtorbs">(A') (A") (A') (A") (A') (A") (A") (A') (A') (A')</scalar>
+              </list>
+              <list>
+                <scalar dataType="xsd:string" dictRef="g:virtorbs">(A') (A') (A") (A") (A') (A') (A") (A')</scalar>
+              </list>
+            </module>
+            <module>
+              <scalar dataType="xsd:string" dictRef="g:l601.state">1-A'.</scalar>
+            </module>
+            <array dataType="xsd:double" dictRef="g:alphaocc" size="17">-24.75451 -24.70751 -24.70751 -1.31056 -1.22996 -1.20819 -0.85843 -0.59745 -0.58757 -0.55151 -0.49441 -0.45134 -0.44239 -0.4367 -0.41054 -0.39754 -0.33432</array>
+            <array dataType="xsd:double" dictRef="g:alphavirt" size="18">-0.1478 -0.04282 0.37275 0.38458 0.41034 0.67105 0.74786 0.7647 0.84017 0.87514 0.88751 0.89514 0.91863 1.07116 1.36412 1.57445 1.88956 18.16836</array>
+            <module/>
+            <module>
+              <array dataType="xsd:double" dictRef="x:floatArr" cmlx:idx="1" size="4" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">5.88836 0.005729 -0.094767 -0.094767</array>
+              <array dataType="xsd:double" dictRef="x:floatArr" cmlx:idx="2" size="4" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">0.005729 9.464236 -0.053468 -0.053468</array>
+              <array dataType="xsd:double" dictRef="x:floatArr" cmlx:idx="3" size="4" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">-0.094767 -0.053468 9.610091 0.004353</array>
+            </module>
+            <list>
+              <scalar dataType="xsd:string" dictRef="x:popanal">4 F -0.094767 -0.053468 0.004353 9.610091</scalar>
+            </list>
+            <module>
+              <module>
+                <scalar dataType="xsd:string" dictRef="g:title">Mulliken atomic charges:</scalar>
+                <scalar dataType="xsd:integer" dictRef="cc:serial">1</scalar>
+              </module>
+              <scalar dataType="xsd:double" dictRef="g:electextent2">322.0697</scalar>
+            </module>
+            <module>
+              <array dataType="xsd:double" dictRef="cc:dipole" size="3">0.7767 -2.5101 0.0</array>
+              <scalar dataType="xsd:double" dictRef="x:dipole">2.6275</scalar>
+              <array dataType="xsd:double" dictRef="cc:quadrupole" size="3">-28.7929 -28.6641 -38.4823</array>
+              <array dataType="xsd:double" dictRef="cc:quadrupole" size="3">0.5437 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:quadrupole" size="6">3.1868 3.3157 -6.5025 0.5437 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:octapole" size="10">2.4384 -9.3079 0.0 3.0891 -2.94 0.0 -0.4352 -2.6749 0.0 0.0</array>
+              <array dataType="xsd:double" dictRef="cc:hexadecapole" size="15">-44.2393 -73.2038 -235.9996 14.3751 0.0 14.4222 0.0 0.0 0.0 -19.8869 -40.6552 -44.9387 0.0 0.0 4.5067</array>
+            </module>
+          </module>
+          <module dictRef="cc:userDefinedModule">
+            <scalar dataType="xsd:string" dictRef="g:operation">FOpt</scalar>
+            <scalar dataType="xsd:string" dictRef="g:keyword">#</scalar>
+            <scalar dataType="xsd:string" dictRef="g:keyword">opt</scalar>
+            <scalar dataType="xsd:string" dictRef="g:keyword">b3lyp/lanl2dz</scalar>
+            <scalar dataType="xsd:string" dictRef="g:keyword">geom=connectivity</scalar>
+            <scalar dataType="xsd:string" dictRef="x:Quadrupole">2.9820749,2.9060205,-5.8880953,0.08801,0.,0.</scalar>
+            <scalar dataType="xsd:string" dictRef="cc:pointgroup">CS [SG(Br1F1),X(F2)]</scalar>
+            <scalar dataType="xsd:string" dictRef="g:archive">@</scalar>
+          </module>
+        </module>
+        <molecule id="mol9999">
+          <atomArray>
+            <atom id="a1" elementType="Br" x3="0.5641110712" y3="0.6020848416" z3="-1.5092687586">
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">35</scalar>
+              </property>
+            </atom>
+            <atom id="a2" elementType="F" x3="-0.4680041898" y3="2.1779508828" z3="-1.5092687582">
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">9</scalar>
+              </property>
+            </atom>
+            <atom id="a3" elementType="F" x3="0.4762377073" y3="0.7366347035" z3="0.4338334205">
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">9</scalar>
+              </property>
+            </atom>
+            <atom id="a4" elementType="F" x3="0.4762377063" y3="0.7366347039" z3="-3.4523709377">
+              <property dictRef="compchem:atomicNumber">
+                <scalar dataType="xsd:integer">9</scalar>
+              </property>
+            </atom>
+          </atomArray>
+          <formula formalCharge="0" concise="Br 1 F 3" dictRef="cc:formula.calc"/>
+          <bondArray>
+            <bond atomRefs2="a1 a2" id="a1_a2" order="S"/>
+            <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+            <bond atomRefs2="a1 a4" id="a1_a4" order="S"/>
+          </bondArray>
+          <property dictRef="cml:molmass">
+            <scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/">136.8992096</scalar>
+          </property>
+          <formula concise="Br 1 F 3" dictRef="cc:formula.user"/>
+        </molecule>
+      </module>
+    </module>
+  </module>
+</module>

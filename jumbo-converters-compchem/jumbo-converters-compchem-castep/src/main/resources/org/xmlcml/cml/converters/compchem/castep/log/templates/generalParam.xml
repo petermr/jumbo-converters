@@ -1,0 +1,55 @@
+<template repeat="*"  id="generalParameters" name="GeneralParameters" 
+  pattern="\s*\** General Parameters \**\s*$"
+  endPattern="\s*\*+.*$\s*">
+  <comment class="example.input" id="generalParameters">
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ write checkpoint data to                       : 12668e1eb11d879aa4d8b2533.check
+ type of calculation                            : geometry optimization
+ stress calculation                             : on
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ calculation limited to maximum                 :     172800   seconds
+ timing information                             : on
+ memory usage estimate                          : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write CML output to                            : 12668e1eb11d879aa4d8b2533-geomopt1.cml
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+  
+ wavefunctions paging                           : none
+ random number generator seed                   : randomised (215404025)
+ data distribution                              : k-point only
+ optimization strategy                          : maximize speed(+++)
+
+************
+  </comment>
+  <record repeat="1"/>
+  <record repeat="*" id="rec1">\s*{A,castep:name}\s*\:\s*{A,castep:val}\s*</record>
+  <record/>
+  <record repeat="*" id="rec2">\s*{A,castep:name}\s*\:\s*{A,castep:val}\s*</record>
+  <record/>
+  <record repeat="*" id="rec3">\s*{A,castep:name}\s*\:\s*{A,castep:val}\s*</record>
+  <record/>
+  
+  <comment class="example.output" id="generalParameters">
+<module cmlx:templateRef="generalParameters" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+</module>
+  </comment>
+</template>

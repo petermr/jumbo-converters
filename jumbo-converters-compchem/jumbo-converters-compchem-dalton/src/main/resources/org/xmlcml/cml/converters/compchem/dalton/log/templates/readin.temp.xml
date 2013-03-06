@@ -1,0 +1,10 @@
+<template repeat="*"  id="readin" name="Output from READIN input processing" 
+  pattern="\s*\*+\s*$\s*\*+\s*Output from READIN\s*\*+\s*" newline="$"
+  endPattern="\s*\*+\s*" endOffset="1">
+  <comment>
+ *************************************************************************
+ ****************** Output from READIN input processing ******************
+ *************************************************************************
+  </comment>
+  <record repeat="*"/>
+</template>

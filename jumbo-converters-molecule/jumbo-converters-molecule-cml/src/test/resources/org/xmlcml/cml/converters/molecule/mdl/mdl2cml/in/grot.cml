@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<list convention="cdk:model" id="Untitled 1" xmlns="http://www.xml-cml.org/schema">
+  <moleculeList convention="cdk:moleculeSet" id="molSet1">
+    <molecule id="m1" title="123591">
+      <atomArray>
+        <atom id="a1" elementType="C" x2="4.1075" y2="0.5786" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a2" elementType="C" x2="5.2575" y2="1.0941" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a3" elementType="C" x2="3.1797" y2="1.1054" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a4" elementType="C" x2="4.2407" y2="-0.6744" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a5" elementType="C" x2="6.1029" y2="0.1598" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a6" elementType="C" x2="5.4866" y2="2.1382" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a7" elementType="C" x2="2.3887" y2="0.3779" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a8" elementType="C" x2="3.4075" y2="2.1448" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a9" elementType="C" x2="3.4461" y2="-1.4064" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a10" elementType="C" x2="5.4738" y2="-0.9333" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a11" elementType="C" x2="7.1811" y2="0.2643" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a12" elementType="C" x2="6.5607" y2="2.2428" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a13" elementType="C" x2="4.5636" y2="2.6621" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a14" elementType="C" x2="2.5226" y2="-0.8812" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a15" elementType="C" x2="2.1267" y2="0.9673" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a16" elementType="C" x2="2.7565" y2="2.0593" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a17" elementType="C" x2="3.8884" y2="-2.3954" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a18" elementType="C" x2="5.9183" y2="-1.9275" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a19" elementType="C" x2="7.4091" y2="1.3029" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a20" elementType="C" x2="7.6222" y2="-0.726" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a21" elementType="C" x2="6.2992" y2="2.8317" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a22" elementType="C" x2="5.0653" y2="3.0909" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a23" elementType="C" x2="2.3941" y2="-1.5454" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a24" elementType="C" x2="2.0" y2="0.2997" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a25" elementType="C" x2="3.2616" y2="2.4888" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a26" elementType="C" x2="3.2384" y2="-2.4813" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a27" elementType="C" x2="5.1279" y2="-2.6564" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a28" elementType="C" x2="6.9894" y2="-1.8234" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a29" elementType="C" x2="7.9902" y2="0.9546" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a30" elementType="C" x2="8.1214" y2="-0.2989" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a31" elementType="C" x2="6.8843" y2="2.4822" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a32" elementType="C" x2="4.4131" y2="3.0032" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a33" elementType="C" x2="2.1329" y2="-0.9534" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a34" elementType="C" x2="2.5029" y2="0.7271" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a35" elementType="C" x2="3.1354" y2="1.8243" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a36" elementType="C" x2="3.8252" y2="-2.8297" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a37" elementType="C" x2="5.7102" y2="-3.0033" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a38" elementType="C" x2="6.8603" y2="-2.4884" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a39" elementType="C" x2="7.728" y2="1.5461" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a40" elementType="C" x2="7.9915" y2="-0.9671" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a41" elementType="C" x2="6.2359" y2="2.3947" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a42" elementType="C" x2="4.9972" y2="2.6559" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a43" elementType="C" x2="2.7184" y2="-1.3009" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a44" elementType="C" x2="2.9469" y2="-0.2619" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a45" elementType="C" x2="4.208" y2="1.9272" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a46" elementType="C" x2="5.0585" y2="-3.0909" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a47" elementType="C" x2="3.5659" y2="-2.2412" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a48" elementType="C" x2="7.3634" y2="-2.0592" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a49" elementType="C" x2="7.6001" y2="0.8804" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a50" elementType="C" x2="7.7326" y2="-0.3788" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a51" elementType="C" x2="6.6783" y2="1.405" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a52" elementType="C" x2="4.0236" y2="-0.1583" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a53" elementType="C" x2="4.6531" y2="0.9336" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a54" elementType="C" x2="5.5603" y2="-2.6638" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a55" elementType="C" x2="4.6383" y2="-2.1383" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a56" elementType="C" x2="6.7158" y2="-2.1466" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a57" elementType="C" x2="6.945" y2="-1.1073" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a58" elementType="C" x2="5.8856" y2="0.673" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a59" elementType="C" x2="4.8674" y2="-1.0945" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+        <atom id="a60" elementType="C" x2="6.0186" y2="-0.5805" formalCharge="0" hydrogenCount="0" isotopeNumber="12"/>
+      </atomArray>
+      <bondArray>
+        <bond id="b1" atomRefs2="a1 a2" order="D"/>
+        <bond id="b2" atomRefs2="a1 a3" order="S"/>
+        <bond id="b3" atomRefs2="a1 a4" order="S"/>
+        <bond id="b4" atomRefs2="a2 a5" order="S"/>
+        <bond id="b5" atomRefs2="a2 a6" order="S"/>
+        <bond id="b6" atomRefs2="a3 a7" order="D"/>
+        <bond id="b7" atomRefs2="a3 a8" order="S"/>
+        <bond id="b8" atomRefs2="a4 a9" order="D"/>
+        <bond id="b9" atomRefs2="a4 a10" order="S"/>
+        <bond id="b10" atomRefs2="a5 a10" order="S"/>
+        <bond id="b11" atomRefs2="a5 a11" order="D"/>
+        <bond id="b12" atomRefs2="a6 a12" order="D"/>
+        <bond id="b13" atomRefs2="a6 a13" order="S"/>
+        <bond id="b14" atomRefs2="a7 a14" order="S"/>
+        <bond id="b15" atomRefs2="a7 a15" order="S"/>
+        <bond id="b16" atomRefs2="a8 a13" order="S"/>
+        <bond id="b17" atomRefs2="a8 a16" order="D"/>
+        <bond id="b18" atomRefs2="a9 a14" order="S"/>
+        <bond id="b19" atomRefs2="a9 a17" order="S"/>
+        <bond id="b20" atomRefs2="a10 a18" order="D"/>
+        <bond id="b21" atomRefs2="a11 a19" order="S"/>
+        <bond id="b22" atomRefs2="a11 a20" order="S"/>
+        <bond id="b23" atomRefs2="a12 a19" order="S"/>
+        <bond id="b24" atomRefs2="a12 a21" order="S"/>
+        <bond id="b25" atomRefs2="a13 a22" order="D"/>
+        <bond id="b26" atomRefs2="a14 a23" order="D"/>
+        <bond id="b27" atomRefs2="a15 a16" order="S"/>
+        <bond id="b28" atomRefs2="a15 a24" order="D"/>
+        <bond id="b29" atomRefs2="a16 a25" order="S"/>
+        <bond id="b30" atomRefs2="a17 a26" order="D"/>
+        <bond id="b31" atomRefs2="a17 a27" order="S"/>
+        <bond id="b32" atomRefs2="a18 a27" order="S"/>
+        <bond id="b33" atomRefs2="a18 a28" order="S"/>
+        <bond id="b34" atomRefs2="a19 a29" order="D"/>
+        <bond id="b35" atomRefs2="a20 a28" order="S"/>
+        <bond id="b36" atomRefs2="a20 a30" order="D"/>
+        <bond id="b37" atomRefs2="a21 a22" order="S"/>
+        <bond id="b38" atomRefs2="a21 a31" order="D"/>
+        <bond id="b39" atomRefs2="a22 a32" order="S"/>
+        <bond id="b40" atomRefs2="a23 a26" order="S"/>
+        <bond id="b41" atomRefs2="a23 a33" order="S"/>
+        <bond id="b42" atomRefs2="a24 a33" order="S"/>
+        <bond id="b43" atomRefs2="a24 a34" order="S"/>
+        <bond id="b44" atomRefs2="a25 a32" order="D"/>
+        <bond id="b45" atomRefs2="a25 a35" order="S"/>
+        <bond id="b46" atomRefs2="a26 a36" order="S"/>
+        <bond id="b47" atomRefs2="a27 a37" order="D"/>
+        <bond id="b48" atomRefs2="a28 a38" order="D"/>
+        <bond id="b49" atomRefs2="a29 a30" order="S"/>
+        <bond id="b50" atomRefs2="a29 a39" order="S"/>
+        <bond id="b51" atomRefs2="a30 a40" order="S"/>
+        <bond id="b52" atomRefs2="a31 a39" order="S"/>
+        <bond id="b53" atomRefs2="a31 a41" order="S"/>
+        <bond id="b54" atomRefs2="a32 a42" order="S"/>
+        <bond id="b55" atomRefs2="a33 a43" order="D"/>
+        <bond id="b56" atomRefs2="a34 a35" order="D"/>
+        <bond id="b57" atomRefs2="a34 a44" order="S"/>
+        <bond id="b58" atomRefs2="a35 a45" order="S"/>
+        <bond id="b59" atomRefs2="a36 a46" order="D"/>
+        <bond id="b60" atomRefs2="a36 a47" order="S"/>
+        <bond id="b61" atomRefs2="a37 a38" order="S"/>
+        <bond id="b62" atomRefs2="a37 a46" order="S"/>
+        <bond id="b63" atomRefs2="a38 a48" order="S"/>
+        <bond id="b64" atomRefs2="a39 a49" order="D"/>
+        <bond id="b65" atomRefs2="a40 a48" order="D"/>
+        <bond id="b66" atomRefs2="a40 a50" order="S"/>
+        <bond id="b67" atomRefs2="a41 a42" order="D"/>
+        <bond id="b68" atomRefs2="a41 a51" order="S"/>
+        <bond id="b69" atomRefs2="a42 a45" order="S"/>
+        <bond id="b70" atomRefs2="a43 a44" order="S"/>
+        <bond id="b71" atomRefs2="a43 a47" order="S"/>
+        <bond id="b72" atomRefs2="a44 a52" order="D"/>
+        <bond id="b73" atomRefs2="a45 a53" order="D"/>
+        <bond id="b74" atomRefs2="a46 a54" order="S"/>
+        <bond id="b75" atomRefs2="a47 a55" order="D"/>
+        <bond id="b76" atomRefs2="a48 a56" order="S"/>
+        <bond id="b77" atomRefs2="a49 a50" order="S"/>
+        <bond id="b78" atomRefs2="a49 a51" order="S"/>
+        <bond id="b79" atomRefs2="a50 a57" order="D"/>
+        <bond id="b80" atomRefs2="a51 a58" order="D"/>
+        <bond id="b81" atomRefs2="a52 a53" order="S"/>
+        <bond id="b82" atomRefs2="a52 a59" order="S"/>
+        <bond id="b83" atomRefs2="a53 a58" order="S"/>
+        <bond id="b84" atomRefs2="a54 a55" order="S"/>
+        <bond id="b85" atomRefs2="a54 a56" order="D"/>
+        <bond id="b86" atomRefs2="a55 a59" order="S"/>
+        <bond id="b87" atomRefs2="a56 a57" order="S"/>
+        <bond id="b88" atomRefs2="a57 a60" order="S"/>
+        <bond id="b89" atomRefs2="a58 a60" order="S"/>
+        <bond id="b90" atomRefs2="a59 a60" order="D"/>
+      </bondArray>
+    </molecule>
+  </moleculeList>
+</list>

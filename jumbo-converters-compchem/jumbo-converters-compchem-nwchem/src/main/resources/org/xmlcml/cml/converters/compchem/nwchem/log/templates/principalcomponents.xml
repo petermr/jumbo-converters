@@ -1,0 +1,34 @@
+<template repeat="*"  id="principalcomponents" name="Principal Components and Axis System" 
+  pattern="\s*Principal Components and Axis System\s*"
+    endPattern="\s*3\s+.*" endOffset="1"
+    >
+
+  <comment class="example.input" id="principalcomponents">
+          Principal Components and Axis System
+                 1           2           3
+              187.8811     86.4350     86.4315
+
+      1         0.8660     -0.4984      0.0404
+      2        -0.3215     -0.4932      0.8083
+      3         0.3829      0.7130      0.5874
+
+
+  </comment>
+  <record id="skip" repeat="2"/>
+  <record id="comps">{3F,cc:principalcomp}</record>
+  
+  <record/>
+  <record id="rows" repeat="3">{I,x:serial}{3F,cc:principal.axes}</record>
+
+  <transform process="delete" xpath=".//cml:scalar[@dictRef='x:serial']"/>
+  <transform process="createMatrix33" xpath="." from=".//cml:array[@dictRef='cc:principal.axes']" dictRef="cc:principalaxes"/>
+  <transform process="pullup" repeat="2" xpath=".//cml:array | .//cml:matrix"/>
+    
+  <comment class="example.output" id="principalcomponents">
+    <module cmlx:templateRef="principalcomponents" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <array dataType="xsd:double" size="3" dictRef="cc:principalcomp">187.8811 86.435 86.4315</array>
+      <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:principalaxes">0.866 -0.4984 0.0404 -0.3215 -0.4932 0.8083 0.3829 0.713 0.5874</matrix>
+    </module>
+  </comment>
+
+</template>

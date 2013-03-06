@@ -1,0 +1,81 @@
+<template repeat="*"  id="mulliken" name="Mulliken"
+  pattern="\s*Ground\-State Mulliken Net Atomic Charges\s*$\s*"
+  endPattern="\s*Sum of atomic charges.*$\s*">
+  <comment class="example.input" id="mulliken">
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 C                    -0.347598
+      2 C                    -0.095507
+      3 C                    -0.095549
+      4 C                    -0.347564
+      5 S                     0.262408
+      6 H                     0.171882
+      7 H                     0.140029
+      8 H                     0.140015
+      9 H                     0.171885
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+  </comment>
+  <record id="junk" repeat="4"/>
+  <record repeat="*" id="atom">\s*{I,compchem:ser}\s*{A,qchem:element}\s*{F,qchem:charge}\s*</record>
+  <record id="junk1"/>
+  <record id="charge">\s*Sum of atomic charges =\s*{F,qchem:sumcharge}\s*</record>
+
+  <comment class="example.output" id="mulliken">
+<module xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx" cmlx:templateRef="mulliken">
+<list cmlx:templateRef="atom">
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">1</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">-0.347598</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">2</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">-0.095507</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">3</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">-0.095549</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">4</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">-0.347564</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">5</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">S</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">0.262408</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">6</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">0.171882</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">7</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">0.140029</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">8</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">0.140015</scalar>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">9</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<scalar dataType="xsd:double" dictRef="qchem:charge">0.171885</scalar>
+</list>
+</list>
+<list cmlx:templateRef="charge">
+<scalar dataType="xsd:double" dictRef="qchem:sumcharge">0.0</scalar>
+</list>
+</module>
+  </comment>
+</template>

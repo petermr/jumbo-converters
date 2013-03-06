@@ -1,0 +1,25 @@
+<template id="molbasis.shells" pattern="\stotal number of shells.*\s*" endPattern="\s*">
+  <comment>
+ total number of shells                  10
+ total number of basis functions         22
+ number of electrons                     16
+ charge of molecule                       0
+ state multiplicity                       1
+ number of occupied orbitals (alpha)      8
+ number of occupied orbitals (beta )      8
+ total number of atoms                    4
+
+  </comment>
+  <record id="shell">\stotal number of shells\s+{I,guk:a}\s*</record>
+  <record id="bf">\stotal number of basis functions\s+{I,guk:a}\s*</record>
+  <record id="nelec">\snumber of electrons\s+{I,guk:a}\s*</record>
+  <record id="chg">\scharge of molecule\s+{I,guk:a}\s*</record>
+  <record id="mult">\sstate multiplicity\s+{I,guk:a}\s*</record>
+  <record id="alpha">\snumber of occupied orbitals \(alpha\)\s+{I,guk:a}\s*</record>
+  <record id="beta">\snumber of occupied orbitals \(beta \)\s+{I,guk:a}\s*</record>
+  <record id="atom">\stotal number of atoms\s+{I,guk:a}\s*</record>
+  <record repeat="*" id="dbg">{X,x:sss}</record>
+  
+  <transform process="pullupSingleton" xpath="./cml:list"/>
+  
+</template>

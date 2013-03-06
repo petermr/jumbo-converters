@@ -1,0 +1,38 @@
+<template repeat="*"  name="Convergence message" id="converged"
+  pattern="\s*NWChem .* Module\s*$\s*\-+\s*" offset="0"
+  endPattern="\s*The .* is already converged\s*" endOffset="1"
+  xmlns:xi="http://www.w3.org/2001/XInclude" output="VERBOSE"
+  >
+  
+  <comment class="example.input" id="steplast">
+                                 NWChem DFT Module
+                                 -----------------
+ 
+ 
+                                       Title
+ 
+ 
+
+  The DFT is already converged 
+
+  </comment>
+  
+  <record id="skip" repeat="2"/>
+  <record id="blank" repeat="2"/>
+  <record id="title">\s+{X,n:title}\s*</record>
+  <record id="blank">\s*</record>
+  <record id="blank">\s*</record>
+  <record id="blank">\s*</record>
+  <record id="converged">\s*The\s*{X,cc:type}\s*is already converged\s*</record>
+  <record id="blank" repeat="*">\s*</record>
+
+  <transform process="pullup" xpath=".//cml:scalar" repeat="2"/>
+    
+  <comment class="example.output" id="steplast">
+    <module cmlx:templateRef="converged" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <scalar dataType="xsd:string" dictRef="n:title">Title</scalar>
+      <scalar dataType="xsd:string" dictRef="cc:type">DFT</scalar>
+    </module>
+  </comment>
+
+</template>

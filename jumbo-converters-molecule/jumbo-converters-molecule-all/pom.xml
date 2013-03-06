@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" 
+        xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cml</groupId>
+        <artifactId>jumbo-converters</artifactId>
+        <version>0.3-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>jumbo-converters-molecule-all</artifactId>
+    <name>jumbo-converters-molecule-all</name>
+    <packaging>pom</packaging>
+	
+    <dependencies>
+        <dependency>
+            <groupId>cml</groupId>
+            <artifactId>jumbo-converters-molecule-cml</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cml</groupId>
+            <artifactId>jumbo-converters-molecule-mdl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cml</groupId>
+            <artifactId>jumbo-converters-molecule-pubchem</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cml</groupId>
+            <artifactId>jumbo-converters-molecule-xyz</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
+
+

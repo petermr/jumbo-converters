@@ -1,0 +1,35 @@
+<template repeat="*" name="center of mass" id="centermass" 
+  pattern=".*center of mass.*$\s+\-+.*" newline="$" endPattern="\s*">
+  
+  <comment class="example.input" id="centermass">
+ center of mass
+ --------------
+ x =   0.00000000 y =   0.00000000 z =   0.00000000
+
+  </comment>
+  <record repeat="2" id="junk"/>
+  <record id="centermassx">\s*x =\s*{F,x:x}\s*y =\s*{F,x:y}\s*z =\s*{F,x:z}\s*</record>
+  <transform process="pullupSingleton" xpath="./cml:list[@cmlx:templateRef='centermass']"/> 
+  <!-- 
+  <transform process="debug" xpath="." />
+  -->
+  <transform process="createVector3" xpath="./cml:list[@cmlx:templateRef='centermass']" 
+      from="*[@dictRef='x:x' or @dictRef='x:y' or @dictRef='x:z']"
+       dictRef="compchem:centerofmass"/>
+<!-- 
+  <transform process="debug" xpath="." />
+ -->
+ 
+  <comment class="example.output" id="centermass">
+<module cmlx:templateRef="centermass" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="centermassx">
+    <list>
+      <scalar dataType="xsd:double" dictRef="x:x">0.0</scalar>
+      <scalar dataType="xsd:double" dictRef="x:y">0.0</scalar>
+      <scalar dataType="xsd:double" dictRef="x:z">0.0</scalar>
+    </list>
+  </list>
+</module>
+  </comment>
+ 
+</template>

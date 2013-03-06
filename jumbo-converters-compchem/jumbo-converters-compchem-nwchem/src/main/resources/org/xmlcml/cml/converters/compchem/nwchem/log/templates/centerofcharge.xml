@@ -1,0 +1,49 @@
+<template repeat="*"  id="centerofcharge" name="Center of Charge" 
+  pattern="\s*== Center of Charge ==\s*$\s*" 
+  endPattern="\s*$\s*">
+  
+  <comment class="example.input" id="centerofcharge">
+== Center of Charge ==
+
+spin up     (    0.0000,   -0.3785,    0.6527 )
+spin down   (    0.0000,   -0.3785,    0.6527 )
+     total  (    0.0000,   -0.3785,    0.6527 )
+ionic       (    1.4800,    0.8546,    1.6712 )
+crystal     (    0.0000,    0.0000,    0.1008 )
+
+
+</comment>
+  <record repeat="2"/>
+  <record repeat="*" id="centerofcharge">{X,x:name}\s*\(\s*{F,x:x}\,\s*{F,x:y}\,\s*{F,x:z}\)\s*</record>
+  <transform process="createVector3" xpath="./cml:list/cml:list" 
+      from="./cml:scalar[contains(@dictRef,':x') or contains(@dictRef,':y') or contains(@dictRef,':z')]"
+      dictRef="n:centerofcharge"/>
+  
+  <comment class="example.output" id="centerofcharge">
+    <module cmlx:templateRef="centerofcharge" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <list cmlx:templateRef="centerofcharge">
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">spin up</scalar>
+          <vector3 dictRef="n:centerofcharge">0.0 -0.3785 0.6527</vector3>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">spin down</scalar>
+          <vector3 dictRef="n:centerofcharge">0.0 -0.3785 0.6527</vector3>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">total</scalar>
+          <vector3 dictRef="n:centerofcharge">0.0 -0.3785 0.6527</vector3>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">ionic</scalar>
+          <vector3 dictRef="n:centerofcharge">1.48 0.8546 1.6712</vector3>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">crystal</scalar>
+          <vector3 dictRef="n:centerofcharge">0.0 0.0 0.1008</vector3>
+        </list>
+      </list>
+    </module>
+  </comment>
+  
+</template>

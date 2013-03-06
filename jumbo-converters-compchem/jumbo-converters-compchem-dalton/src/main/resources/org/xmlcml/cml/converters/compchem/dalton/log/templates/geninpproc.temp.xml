@@ -1,0 +1,8 @@
+<template repeat="*"  id="geninpproc" name="OUTPUT FROM GENERAL INPUT PROCESSING " 
+  pattern=".*OUTPUT FROM GENERAL INPUT PROCESSING .*" newline="$" 
+  endPattern=".*$\s*\-+\s*">
+  <comment>
+  OUTPUT FROM GENERAL INPUT PROCESSING >>>>>>>>>>
+  </comment>
+  <record repeat="*" id="line">{X,n:line}</record>
+</template>

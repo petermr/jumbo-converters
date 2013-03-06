@@ -1,0 +1,22 @@
+<template repeat="*"  id="rotconst" name="Rotational constants" 
+  pattern="\s*Rotational constants\s*" newline="$"
+  endPattern="\s*\S+\s*.*$\s*\-+\s*">
+  <comment>
+ Rotational constants
+ --------------------
+
+ The molecule is planar.
+
+               A                   B                   C
+
+         106024.9231          13491.4318          11968.4709 MHz
+            3.536611            0.450026            0.399225 cm-1
+
+
+  Nuclear repulsion energy :   68.899188090779
+
+
+  </comment>
+  <record repeat="3"/>
+  <record repeat="*" id="ang">{X,n:ang}</record>
+</template>

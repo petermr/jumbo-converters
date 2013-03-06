@@ -1,0 +1,10 @@
+<template repeat="*"  id="chunker" name="Chunker" newline="$"
+  pattern="\s*\+\-+\+\s*$\s*\|\s.*\s\|\s*$\s*\+\-+\+\s*.*$\s*" endPattern="\s*\+\-+\+\s*.*">
+  <comment>
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+              ...
+  </comment>
+  <record repeat="*">{X,t:xxx}</record>
+</template>

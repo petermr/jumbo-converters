@@ -1,0 +1,22 @@
+<template repeat="*"  id="nucdipole" name="Nuclear Dipole moment" 
+  pattern="\s*Nuclear Dipole moment.*$\s+\-+\s*" newline="$" endPattern="\s*">
+
+  <comment class="example.input" id="nucdipole">
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+     
+  </comment>
+  <record repeat="4"/>
+  <record id="nucdipole">{3F,cc:nucdipole}</record>
+  <transform process="pullup" xpath=".//cml:array"/> 
+
+  <comment class="example.output" id="nucdipole">
+    <module cmlx:templateRef="nucdipole" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <array dataType="xsd:double" size="3" dictRef="cc:nucdipole">0.0 0.0 0.0</array>
+    </module>
+  </comment>
+
+</template>

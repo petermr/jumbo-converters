@@ -1,0 +1,63 @@
+    <template pattern="\s+number of.*" id="scf.numbers" 
+    name="SCF Numbers" repeat="*" endPattern="\s+[^n].*">
+  <comment class="example.input" id="scf.numbers">
+ number of electrons..........         90
+ number of alpha electrons....         45
+ number of beta electrons.....         45
+ number of orbitals, total....        254
+ number of doubly-occ'd orbs..         45
+ number of open shell orbs....          0
+ number of occupied orbitals..         45
+ number of virtual orbitals...        209
+ number of hamiltonians.......          1
+ number of shells.............          1
+      </comment>
+      <record id="scf.numb" repeat="*">\s*{X,x:name}\.+\s+{I,x:value}</record>
+      
+  <comment class="example.output" id="scf.numbers">
+<module cmlx:templateRef="scf.numbers" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="scf.numb">
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of electrons.........</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">90</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of alpha electrons...</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">45</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of beta electrons....</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">45</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of orbitals, total...</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">254</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of doubly-occ'd orbs.</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">45</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of open shell orbs...</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">0</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of occupied orbitals.</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">45</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of virtual orbitals..</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">209</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of hamiltonians......</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">1</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">number of shells............</scalar>
+      <scalar dataType="xsd:integer" dictRef="x:value">1</scalar>
+    </list>
+  </list>
+</module>
+  </comment>
+</template>

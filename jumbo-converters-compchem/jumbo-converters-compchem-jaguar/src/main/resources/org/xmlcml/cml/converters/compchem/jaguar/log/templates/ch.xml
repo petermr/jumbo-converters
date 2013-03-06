@@ -1,0 +1,47 @@
+<template repeatCount="*"  id="ch" name="ch"
+  multiple="$"
+  pattern="\s*start of program ch\s*"
+  endPattern="\s*end of program ch\s*" endOffset="1"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  >
+  <comment class="example.input" id="ch">
+  start of program ch
+
+  Atomic Fukui indices:
+  
+  
+                         HOMO                             LUMO
+            -------------------------------  -------------------------------
+    Atom     f_NN    f_NS    f_SN    f_SS     f_NN    f_NS    f_SN    f_SS
+  --------  ------- ------- ------- -------  ------- ------- ------- -------
+  C1         0.2281  0.1099  0.0000  0.1183   0.0084 -0.1099  0.0000  0.1183
+  C2         0.0355 -0.0918  0.0000  0.1273   0.2191  0.0918  0.0000  0.1273
+  H27        0.0001 -0.0003  0.0000  0.0004   0.0008  0.0003  0.0000  0.0004
+  
+  end of program ch
+  </comment>
+    <record/>
+  <templateList>
+    <xi:include href="fukui.xml"/>
+  </templateList>
+    <record repeat="*"/>
+  
+  <transform process="pullup" xpath=".//cml:list"/>
+  
+  <comment class="example.output" id="ch">
+<module cmlx:templateRef="ch" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:lineCount="3" cmlx:templateRef="fukui">
+    <array dataType="xsd:string" dictRef="cc:elementType" size="3">C1 C2 H27</array>
+    <array dataType="xsd:double" dictRef="cc:fnnho" size="3">0.2281 0.0355 1.0E-4</array>
+    <array dataType="xsd:double" dictRef="cc:fnsho" size="3">0.1099 -0.0918 -3.0E-4</array>
+    <array dataType="xsd:double" dictRef="cc:fsnho" size="3">0.0 0.0 0.0</array>
+    <array dataType="xsd:double" dictRef="cc:fssho" size="3">0.1183 0.1273 4.0E-4</array>
+    <array dataType="xsd:double" dictRef="cc:fnnlu" size="3">0.0084 0.2191 8.0E-4</array>
+    <array dataType="xsd:double" dictRef="cc:fnslu" size="3">-0.1099 0.0918 3.0E-4</array>
+    <array dataType="xsd:double" dictRef="cc:fsnlu" size="3">0.0 0.0 0.0</array>
+    <array dataType="xsd:double" dictRef="cc:fsslu" size="3">0.1183 0.1273 4.0E-4</array>
+  </list>
+  <module cmlx:lineCount="10" cmlx:templateRef="fukui"/>
+</module>
+  </comment>
+</template>

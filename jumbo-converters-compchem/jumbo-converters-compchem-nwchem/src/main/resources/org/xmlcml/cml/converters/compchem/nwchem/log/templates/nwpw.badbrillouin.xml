@@ -1,0 +1,37 @@
+<template repeat="*"  id="nwpw.badbrillouin" name="NWPW  bad brillouin zone" 
+  pattern="\s*Brillioun Zone Points do not match\!\s*" 
+  newline="$" endPattern="\s*pseudopotential is not correctly formatted.*" endOffset="1">
+
+  <comment class="example.input" id="nwpw.badbrillouin">
+ Brillioun Zone Points do not match!
+ NB =                     1  not equal                     3
+
+ pseudopotential is not correctly formatted---bad brillioun zone:Ga.cpp              
+
+</comment>
+<comment class="note">
+Brillouin is misspelt
+</comment>
+  <record/>
+  <record id="npoint">\s*NB ={I,n:bzone}\s*not equal{I,n:bzone}\s*</record>
+  <record/>
+  <record id="kpoint">\s*pseudopotential is not correctly formatted\-\-\-bad brillioun zone:{A,cc:filename}\s*</record>
+
+<!--    
+  <transform process="pullupSingleton" xpath="./cml:list"/>
+  -->
+  <comment class="example.output" id="nwpw.badbrillouin">
+<module cmlx:templateRef="nwpw.badbrillouin" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="npoint">
+    <list>
+      <scalar dataType="xsd:integer" dictRef="n:bzone">1</scalar>
+      <scalar dataType="xsd:integer" dictRef="n:bzone">3</scalar>
+    </list>
+  </list>
+  <list cmlx:templateRef="kpoint">
+    <scalar dataType="xsd:string" dictRef="cc:filename">Ga.cpp</scalar>
+  </list>
+</module>
+        </comment>
+
+</template>

@@ -1,0 +1,81 @@
+<template repeat="*"  id="magneticatom" name="Shifts for atom" 
+  pattern="\s*Atom:\s*.*" endPattern="\s*$\s*" endOffset="2"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+  <comment class="example.input" id="magneticatom">
+      Atom:    1  C 
+        Diamagnetic
+    250.8006     -4.0952      4.8807
+     -4.0945    241.2836     -1.8116
+      4.8811     -1.8120    241.9238
+
+        Paramagnetic
+    -88.2836    -24.1524     28.7618
+    -24.1539   -144.3632    -10.6808
+     28.7610    -10.6799   -140.6136
+
+        Total Shielding Tensor
+    162.5170    -28.2477     33.6425
+    -28.2484     96.9204    -12.4924
+     33.6421    -12.4919    101.3102
+
+           isotropic =     120.2492
+          anisotropy =     101.4478
+
+          Principal Components and Axis System
+                 1           2           3
+              187.8811     86.4350     86.4315
+
+      1         0.8660     -0.4984      0.0404
+      2        -0.3215     -0.4932      0.8083
+      3         0.3829      0.7130      0.5874
+
+
+</comment>
+  <record id="atomid">\s*Atom:{I,cc:serial}{A,x:elementType}</record> 
+  <templateList>
+    <xi:include href="principalcomponents.xml"/>
+    <xi:include href="isotrop.xml"/>
+    <xi:include href="namedtensor.xml"/>
+   </templateList>
+   <record repeat="*" id="s">{X,x:xxx}</record>
+  
+  <comment class="example.output" id="magneticatom">
+    <module cmlx:templateRef="magneticatom" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <list cmlx:templateRef="atomid">
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">1</scalar>
+          <scalar dataType="xsd:string" dictRef="x:elementType">C</scalar>
+        </list>
+      </list>
+      <module cmlx:lineCount="4" cmlx:templateRef="namedtensor">
+        <scalar dataType="xsd:string" dictRef="cc:tensorname">Diamagnetic</scalar>
+        <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:tensor">250.8006 -4.0952 4.8807 -4.0945 241.2836 -1.8116 4.8811 -1.812 241.9238</matrix>
+      </module>
+      <module cmlx:lineCount="4" cmlx:templateRef="namedtensor">
+        <scalar dataType="xsd:string" dictRef="cc:tensorname">Paramagnetic</scalar>
+        <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:tensor">-88.2836 -24.1524 28.7618 -24.1539 -144.3632 -10.6808 28.761 -10.6799 -140.6136</matrix>
+      </module>
+      <module cmlx:lineCount="4" cmlx:templateRef="namedtensor">
+        <scalar dataType="xsd:string" dictRef="cc:tensorname">Total Shielding Tensor</scalar>
+        <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:tensor">162.517 -28.2477 33.6425 -28.2484 96.9204 -12.4924 33.6421 -12.4919 101.3102</matrix>
+      </module>
+      <list cmlx:templateRef="s">
+        <scalar dataType="xsd:string" dictRef="x:xxx"/>
+      </list>
+      <module cmlx:lineCount="2" cmlx:templateRef="isotrop">
+        <list cmlx:templateRef="isotrop">
+          <scalar dataType="xsd:double" dictRef="n:isotropic">120.2492</scalar>
+        </list>
+        <list cmlx:templateRef="anisotrop">
+          <scalar dataType="xsd:double" dictRef="n:anisotropy">101.4478</scalar>
+        </list>
+      </module>
+      <array dataType="xsd:double" size="3" dictRef="cc:principalcomp">187.8811 86.435 86.4315</array>
+      <module cmlx:lineCount="7" cmlx:templateRef="principalcomponents">
+        <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:principalaxes">0.866 -0.4984 0.0404 -0.3215 -0.4932 0.8083 0.3829 0.713 0.5874</matrix>
+      </module>
+    </module>
+  </comment>
+
+</template>

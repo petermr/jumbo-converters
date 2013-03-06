@@ -1,0 +1,60 @@
+<template repeat="*"  id="eigqrot" name="Eigen and qrot stuff" 
+  pattern="\s*ratio offdiag/diag.*" newline="$" endPattern="\s*dftinpanae: itol2e.*"
+  endOffset="1">
+  
+  <comment class="example.input" id="eigqrot">
+  ratio offdiag/diag   7.42379976040007938E-002
+  nuclear charge qrot: 
+
+              1        2        3      
+    1 1065.2532-316.3019 -25.1091
+    2 -316.30191328.7470  -8.7174
+    3  -25.1091  -8.71742322.2960
+ eig:    853.90641550293776        1539.5860731611485        2322.8036572675437     
+  qrot: 
+
+              1        2        3      
+    1    0.8320  -0.5545  -0.0193
+    2    0.5545   0.8322  -0.0026
+    3    0.0175  -0.0085   0.9998
+  me                     0   done genpts
+  me                     0   done uprt
+  me                     0  done mem
+  dftinpanae: itol2e                     8  iaoacc                    14  tol_rho   1.00000000000000004E-010
+  </comment>
+  <record id="offdiag">\s*ratio offdiag/diag{A,x:ratio}</record>
+  <record repeat="3" id="x:line"/>
+  <record repeat="3" id="row">{I}{3F,x:x}</record>
+  <record id="eig">\s*eig:\s*{3F,x:xx}</record>
+  <record repeat="3"/>
+  <record repeat="3" id="row1">{I}{3F,x:x}</record>
+  <record repeat="*" id="line">{1_10A,x:line}</record>
+  
+  <comment class="example.output" id="eigqrot">
+<module cmlx:templateRef="eigqrot" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="offdiag">
+    <scalar dataType="xsd:string" dictRef="x:ratio">7.42379976040007938E-002</scalar>
+  </list>
+  <list cmlx:templateRef="row">
+    <array dataType="xsd:double" size="3" dictRef="x:x">1065.2532 -316.3019 -25.1091</array>
+    <array dataType="xsd:double" size="3" dictRef="x:x">-316.30191328 0.747 -8.7174</array>
+    <array dataType="xsd:double" size="3" dictRef="x:x">-25.1091 -8.71742322 0.296</array>
+  </list>
+  <list cmlx:templateRef="eig">
+    <array dataType="xsd:double" size="3" dictRef="x:xx">853.9064155029378 1539.5860731611485 2322.8036572675437</array>
+  </list>
+  <list cmlx:templateRef="row1">
+    <array dataType="xsd:double" size="3" dictRef="x:x">0.832 -0.5545 -0.0193</array>
+    <array dataType="xsd:double" size="3" dictRef="x:x">0.5545 0.8322 -0.0026</array>
+    <array dataType="xsd:double" size="3" dictRef="x:x">0.0175 -0.0085 0.9998</array>
+  </list>
+  <list cmlx:templateRef="line">
+    <array dataType="xsd:string" size="4" dictRef="x:line">me 0 done genpts</array>
+    <array dataType="xsd:string" size="4" dictRef="x:line">me 0 done uprt</array>
+    <array dataType="xsd:string" size="4" dictRef="x:line">me 0 done mem</array>
+    <array dataType="xsd:string" size="7" dictRef="x:line">dftinpanae: itol2e 8 iaoacc 14 tol_rho 1.00000000000000004E-010</array>
+  </list>
+</module>
+    </comment>
+
+ </template>

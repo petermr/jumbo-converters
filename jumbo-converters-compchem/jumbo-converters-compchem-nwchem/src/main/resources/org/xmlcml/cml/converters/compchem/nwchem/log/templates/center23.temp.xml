@@ -1,0 +1,37 @@
+<template repeat="*"  id="threecenter2" name="3 Center 2 Electron Integral Information" 
+  pattern="\s*3 Center 2 Electron Integral Information\s*$\s+\-+.*" newline="$" 
+     endPattern="\s*Stack .*" endOffset="1">
+     
+  <comment class="example.input" id="threecenter2">
+  NEEDS WORK
+      3 Center 2 Electron Integral Information
+      ----------------------------------------
+          Maximum number of 3-center 2e- integrals is:        12235520.
+            This is reduced with Schwarz screening to:         5362125.
+            Incore requires a per proc buffer size of:         1799667.
+                  The minimum integral buffer size is:          113760
+          Minimum dble words available (all nodes) is:        26199921
+                   This is reduced (for later use) to:        25816300
+                             Suggested buffer size is:         1799667
+
+           1.800 MW buffer allocated for incore 3-center 
+          2e- integral storage on stack. 
+          The percent of 3c 2e- integrals held in-core is: 100.00
+
+   Time prior to 1st pass:      1.5
+
+   </comment>
+  <record repeat="*"/>
+  <templateList>
+    <template id="conv" pattern="\s*convergence.*" endPattern="\sTotal iterative.*">
+      <record repeat="2"/>
+      <record repeat="*" id="conv">\s*d\=\s*{I,n:d}\,ls={F,n:ls}\,diis\s*{I,n:iter}\s*{F,n:ener}\s*{E,n:deltae}\s*{E,n:rms}\s*{E,n:diserr}\s*{F,n:time}</record>
+     </template>
+  </templateList>
+  <record repeat="*" id="namevalue">\s*{X,n:name}\s*\:\s*{X,n:value}\.?\s*</record>
+  
+  <comment class="example.output" id="threecenter2">
+    <module cmlx:templateRef="threecenter2" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"/>
+  </comment>
+
+</template>

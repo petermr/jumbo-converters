@@ -1,0 +1,64 @@
+This is probably the simplest way to add a new converter (e.g. QChem). Later we shuld add a codeGenerator
+
+1. copy the jumbo-converters-compchem-dummy directory tree to jumbo-converters-compchem-qchem as a separate
+      project (but ideally a sibling of jumbo-converters-compchem-dummy and child of jumbo-converters-compchem
+
+2. edit jumbo-converters-compchem/pom.xml to add         
+    <module>jumbo-converters-compchem-qchem</module> in <modules>...</modules>
+
+3. edit jumbo-converters-compchem-all/pom.xml to contain
+        <dependency>
+            <groupId>cml</groupId>
+            <artifactId>jumbo-converters-compchem-qchem</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+... all other edits are now in jumbo-converters-compchem-qchem. Make sure not to corrupt other modules. If you
+use an IDE such as Eclipse it's probably a good idea to close everything except jumbo-converters-compchem-qchem.
+Essentially all strings "dummy, Dummy" are to be changed to "qchem, QChem". It might be dangerous to use a 
+global editor 
+
+4. Change all package names in jumbo-converters-compchem-qchem/src/main/java to jumbo-converters-compchem-qchem
+
+4a. Change all package names in jumbo-converters-compchem-qchem/src/test/java to jumbo-converters-compchem-qchem
+
+5. Change any "dummy" directory in the tree to "qchem"
+
+6. Change any Java file (DummyModule, DummyLog2XMLConverter, etc.) to QChemModule, etc. USE THE IDE to make sure 
+    references are changed
+    
+7. Change all imports with "dummy" to "qchem"
+
+8. Dummy has two brances (log and mol). You might need one or both or something else. We'll delete the mol branch.
+
+9. Make sure jumbo-converters-compchem-qchem/src/main/resources/META-INF/jumbo-converters contains the single line
+    org.xmlcml.cml.converters.compchem.qchem.QChemConverters
+    
+    This is used to alert the classLoader to the existence of QChem
+    
+Most of the rest will depend on the complexity of the converter.
+
+Resources:
+Dictionary:
+	jumbo-converters-compchem-qchem/src/main/resources/org/xmlcml/converters/qchem/log may often contain
+
+        ./qchemDict.xml
+    it may also contain
+        ./templates (for template parsing)
+        
+Testing:
+Generally there will be something like
+    jumbo-converters-compchem-qchem/src/test/resources/compchem/qchem/log with:
+        ./in
+        ./out
+        ./ref
+with test files (in this case *.log and transformed *.xml)
+
+There is also normally 
+    jumbo-converters-compchem-qchem/src/test/java/org/xmlcml/cml/converters/compchem/qchem/log
+        ./RegressionTest.java
+        (./TemplateTest.java) // for template parsers only
+        
+
+
+

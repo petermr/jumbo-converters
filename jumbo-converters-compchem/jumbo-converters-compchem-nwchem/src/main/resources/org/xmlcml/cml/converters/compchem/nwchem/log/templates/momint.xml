@@ -1,0 +1,29 @@
+<template repeat="*"  id="momint" name="moments of inertia" 
+  pattern="\s+moments of inertia.*$\s+\-+.*" newline="$" endPattern="\s*">
+
+  <comment class="example.input" id="momint">
+ moments of inertia (a.u.)
+ ------------------
+        2255.012792094188           0.000000000000           0.000000000000
+           0.000000000000        2255.012792094188           0.000000000000
+           0.000000000000           0.000000000000        1950.260605202691
+
+  </comment>    
+  
+  <record repeat="2"/>
+  <record id="mat" formatType="REGEX" repeat="3">\s*{3F,n:mxyz}</record>
+  
+  <transform process="createMatrix33" xpath=".//*[@cmlx:templateRef='mat']" 
+      from=".//cml:array" dictRef="cc:m"/>
+  <transform process="pullupSingleton" xpath="./*/cml:list"/> 
+
+  <comment class="example.output" id="momint">
+    <module cmlx:templateRef="momint" xmlns="http://www.xml-cml.org/schema" 
+       xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <list cmlx:templateRef="mat">
+        <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:m">2255.012792094188 0.0 0.0 0.0 2255.012792094188 0.0 0.0 0.0 1950.260605202691</matrix>
+      </list>
+    </module>
+  </comment>
+
+</template>

@@ -1,0 +1,31 @@
+<template repeat="*"  name="DISCLAIMER" id="disclaim" pattern="\s*DISCLAIMER\s*$\s*\-+\s*"
+  newline="$" endPattern="\s*$\s*">
+
+  <comment class="example.input" id="disclaim">
+                                    DISCLAIMER
+                                    ----------
+
+            This material was prepared as an account of work sponsored
+            by an agency of the United States Government.  Neither the
+            United States Government nor the United States Department
+            of Energy, nor Battelle, nor any of their employees, MAKES
+            ANY WARRANTY, EXPRESS OR IMPLIED, OR ASSUMES ANY LEGAL
+            LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS,
+            OR USEFULNESS OF ANY INFORMATION, APPARATUS, PRODUCT,
+            SOFTWARE, OR PROCESS DISCLOSED, OR REPRESENTS THAT ITS USE
+            WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS.
+
+
+  </comment>
+  <record id="disclaimer">{X,cc:citation}</record>
+  <record repeat="*"/>
+  
+  <comment class="example.output" id="disclaim">
+<module cmlx:templateRef="disclaim" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="disclaimer">
+    <scalar dataType="xsd:string" dictRef="cc:citation">DISCLAIMER</scalar>
+  </list>
+</module>
+    </comment>
+
+</template>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>cml</groupId>
+		<artifactId>jumbo-converters</artifactId>
+		<version>0.3-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>jumbo-converters-molecule-mdl</artifactId>
+	<name>jumbo-converters-molecule-mdl</name>
+	
+	<!-- uncomment this plugin to enable building of one humongous jar file with dependencies included ...
+-->
+<build>
+<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>org.xmlcml.cml.converters.molecule.mdl.MDL2CMLConverter</mainClass>
+						</manifest>
+					</archive>
+					<excludes>
+						<exclude>.hgsub</exclude>
+						<exclude>**/.hg/</exclude>
+						<exclude>**/.project</exclude>
+						<exclude>**/external/</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+</plugins>
+</build>
+<!--   -->
+	
+
+
+	<dependencies>
+		<dependency>
+			<groupId>cml</groupId>
+			<artifactId>jumbo-converters-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cml</groupId>
+			<artifactId>jumbo-converters-molecule-cml</artifactId>
+            <version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>cml</groupId>
+			<artifactId>jumbo-converters-testutils</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>

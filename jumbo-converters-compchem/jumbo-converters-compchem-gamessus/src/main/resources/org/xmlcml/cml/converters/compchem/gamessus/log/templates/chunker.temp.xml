@@ -1,0 +1,13 @@
+<template id="chunker" repeat="*" name="Underline Chunker" pattern=".*[A-Z]+.*$\s*\-+\s*" 
+  newline="$" endPattern=".*[A-Z]+.*$\s*\-+\s*">
+  <comment>
+     BASIS OPTIONS
+     -------------
+     GBASIS=CCD          IGAUSS=       0      POLAR=NONE    
+     NDFUNC=       0     NFFUNC=       0     DIFFSP=       F
+     NPFUNC=       0      DIFFS=       F
+
+  </comment>
+  <record  id="dbg">{X,n:dbg}</record>
+  <record repeat="*" id="dbg1">{X,n:dbg}</record>
+</template>

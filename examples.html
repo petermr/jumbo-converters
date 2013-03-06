@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Creating and Adding a JUMBOConverter</title>
+<style>
+code {
+    font-family:monospace;
+    font-weight: bold;
+    font-size:125%;
+}
+</style>
+</head>
+
+<h1>Examples of JUMBOConverters</h1>
+
+<div>
+<h2>Introduction</h2>
+<p>
+This introduces a series of examples in order of increasing complexity or constraints
+</p>
+</div>
+
+<div>
+<h2>Example 1 - conversion of XYZ to and from CML</h2>
+<div>
+  <h3>Types</h3>
+  <ul>
+    <li>XYZ</li>
+    <li>CML (convention="null"</li>
+  </ul>
+  <h3>Directions</h3>
+  <ul>
+    <li>XYZ2CML</li>
+    <li>CML2XYZ</li>
+  </ul>
+  <h3>Validation</h3>
+
+</div>
+
+<div>
+<h2>Example 2 - Addition of convention</h2>
+<div>
+  <h3>Types</h3>
+  <ul>
+    <li>CML raw</li>
+    <li>CML (convention="CMLLite"</li>
+  </ul>
+  <h3>Directions</h3>
+  <ul>
+    <li>CML2CMLLite</li>
+  </ul>
+  <h3>Validation</h3>
+</div>
+
+<div>
+<h2>Example 3 - Enhancement of CML</h2>
+<div>
+  <h3>Types</h3>
+  <ul>
+    <li>CML raw</li>
+    <li>CML raw</li>
+  </ul>
+  <h3>Directions</h3>
+  <ul>
+    <li>CML2CML (CMLEditor)</li>
+  </ul>
+  <h3>Validation</h3>
+</div>
+
+<div>
+<h2>Example 4 CIF - compound semantic document</h2>
+<div>
+<p>features: converting syntax, multistep
+  <h3>Types</h3>
+  <ul>
+    <li>CIF</li>
+    <li>CIFXML</li>
+    <li>CML raw</li>
+    <li>CML conventionised</li>
+  </ul>
+  <h3>Directions</h3>
+  <ul>
+    <li>CIF2CML</li>
+  </ul>
+  <h3>Validation</h3>
+</div>
+
+<div>
+<h2>Example 5 - Bruker 2 CML</h2>
+<div>
+<p>features: subclassing, 3rd party library, file-specific dictionary
+  <h3>Types</h3>
+  <ul>
+    <li>JDX raw</li>
+    <li>CML raw</li>
+  </ul>
+  <h3>Directions</h3>
+  <ul>
+    <li>JDX(Bruker)2CML</li>
+  </ul>
+  <h3>Validation</h3>
+</div>
+
+<div>
+<h2>Example 6 - Compchem</h2>
+<div>
+<p>features: subclassing, 3rd party library, file-specific dictionary, template parser
+  <h3>Types</h3>
+  <ul>
+    <li>NWChem logfile</li>
+    <li>CML raw</li>
+    <li>CML convention=compchem</li>
+    <li>NWChem input</li>
+  </ul>
+  <h3>Directions</h3>
+  <ul>
+    <li>NWChem2CML</li>
+    <li>CML2NWChem</li>
+  </ul>
+  <h3>Validation</h3>
+</div>
+
+<p>
+
+</p>
+</div>
+
+</html>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id='gamess-uk.log' output="VERBOSE"
+  xmlns:c="http://www.xml-cml.org/dictionary"
+  xmlns:compchem="http://www.xml-cml.org/dictionary/compchem/"
+  xmlns:guk="http://www.xml-cml.org/dictionary/gamess-uk/"
+>
+  <templateList id='main' xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="templates/header.xml"/>
+    <xi:include href="templates/coords.xml"/>
+    <xi:include href="templates/molsym.xml"/>
+    <xi:include href="templates/molbasis.xml"/>
+    <xi:include href="templates/failchunker.xml"/>
+  </templateList>
+
+</template>

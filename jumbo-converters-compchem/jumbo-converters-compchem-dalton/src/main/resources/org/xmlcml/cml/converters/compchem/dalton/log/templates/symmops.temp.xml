@@ -1,0 +1,15 @@
+<template repeat="*"  id="symmops" name="Symmetry Operations" 
+  pattern="\s*Symmetry Operations\s*$\s*\-+\s*" newline="$"
+  endPattern="\s*\S+\s*.*$\s*\-+\s*">
+  <comment>
+  Symmetry Operations
+  -------------------
+
+  Symmetry operations: 2
+
+
+
+  </comment>
+  <record repeat="3"/>
+  <record id="sym">\s*Symmetry operations\:\s*{I,n:nsym}</record>
+</template>

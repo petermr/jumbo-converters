@@ -1,0 +1,68 @@
+<template repeat="*"  id="segmented" name="segmented parallel titan ccsd" 
+pattern="\s*\*+\s*$\s*segmented parallel titan ccsd program:.*$\s*$\s*$\s*$\s*" 
+  newline="$" endPattern="\s*">
+
+  <comment class="example.input" id="segmented">
+ ****************************************************************************
+              the segmented parallel titan ccsd program: 32 nodes
+ ****************************************************************************
+
+
+
+
+ level of theory    ccsd(t)
+ number of core         0
+ number of occupied     9
+ number of virtual    122
+ number of deleted      0
+ total functions      131
+ number of shells      35
+ basis label          566
+
+
+
+  </comment>
+
+  <record repeat="7" id="rl1"/>
+  <record id="r1" repeat="*">\s*{X,x:name}\s\s\s{X,x:value}\s*</record>
+
+  <comment class="example.output" id="segmented">
+    <module cmlx:templateRef="segmented" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <list cmlx:templateRef="r1">
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">level of theory</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">ccsd(t)</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">number of core</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">0</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">number of occupied</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">9</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">number of virtual</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">122</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">number of deleted</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">0</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">total functions</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">131</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">number of shells</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">35</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:string" dictRef="x:name">basis label</scalar>
+          <scalar dataType="xsd:string" dictRef="x:value">566</scalar>
+        </list>
+      </list>
+    </module>
+  </comment>
+
+</template>

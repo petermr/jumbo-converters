@@ -1,0 +1,35 @@
+<template repeat="*"  id="xyz" name="XYZ format geometry" 
+  pattern="\s*XYZ format geometry$\s+\-+.*" newline="$" endPattern="\s*">
+
+  <comment class="example.input" id="xyz">
+            XYZ format geometry
+            -------------------
+    11
+ geometry
+ fe                    0.00000000     0.00000000     0.00000000
+ c                     0.00000000     0.00000000     1.80680057
+ o                     0.77109980    -2.87778364     0.00000000
+
+  </comment>
+  <record repeat="2">{X}\s*</record>
+  <record id="atoms">\s*{I,compchem:natoms}\s*</record>
+  <record id="geo">\s*{A,n:geomtype}\s*</record>
+  <record makeArray="true" repeat="*" 
+      id="mol">\s*{A,compchem:atomtype}\s*{F,compchem:x3}\s*{F,compchem:y3}\s*{F,compchem:z3}\s*</record>
+      
+  <transform process="pullupSingleton" xpath="./cml:list"/>
+  
+  <comment class="example.output" id="xyz">
+    <module cmlx:templateRef="xyz" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <scalar dataType="xsd:integer" dictRef="compchem:natoms" cmlx:templateRef="atoms">11</scalar>
+      <scalar dataType="xsd:string" dictRef="n:geomtype" cmlx:templateRef="geo">geometry</scalar>
+      <list cmlx:lineCount="3" cmlx:templateRef="mol">
+        <array dataType="xsd:string" dictRef="compchem:atomtype" size="3">fe c o</array>
+        <array dataType="xsd:double" dictRef="compchem:x3" size="3">0.0 0.0 0.7710998</array>
+        <array dataType="xsd:double" dictRef="compchem:y3" size="3">0.0 0.0 -2.87778364</array>
+        <array dataType="xsd:double" dictRef="compchem:z3" size="3">0.0 1.80680057 0.0</array>
+      </list>
+    </module>
+    </comment>
+
+</template>

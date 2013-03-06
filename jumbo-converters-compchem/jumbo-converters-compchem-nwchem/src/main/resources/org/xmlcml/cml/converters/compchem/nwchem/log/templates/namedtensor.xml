@@ -1,0 +1,26 @@
+<template repeat="*"  id="namedtensor" name="Tensor preceded by name" 
+  pattern="\s*\S+.*\s*$\s*\S.*$\s*\S.*$\s*\S.*" newline="$" 
+    endPattern="\s*"
+    >
+
+  <comment class="example.input" id="namedtensor">
+        Diamagnetic
+    250.8006     -4.0952      4.8807
+     -4.0945    241.2836     -1.8116
+      4.8811     -1.8120    241.9238
+
+</comment>
+  <record id="name">\s*{X,cc:tensorname}\s*</record> 
+  <record repeat="3" id="row">{3F,x:x}</record>
+
+  <transform process="createMatrix33" xpath="." from=".//cml:array"  dictRef="cc:tensor" />
+  <transform process="pullup" xpath=".//cml:list/*"/>
+  
+  <comment class="example.output" id="namedtensor">
+    <module cmlx:templateRef="namedtensor" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <scalar dataType="xsd:string" dictRef="cc:tensorname">Diamagnetic</scalar>
+      <matrix rows="3" columns="3" dataType="xsd:double" dictRef="cc:tensor">250.8006 -4.0952 4.8807 -4.0945 241.2836 -1.8116 4.8811 -1.812 241.9238</matrix>
+    </module>
+  </comment>
+
+</template>

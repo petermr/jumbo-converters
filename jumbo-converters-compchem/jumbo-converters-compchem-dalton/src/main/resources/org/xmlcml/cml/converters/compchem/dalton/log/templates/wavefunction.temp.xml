@@ -1,0 +1,10 @@
+<template repeat="*"  id="wavefunction" name="Wave Function Section" 
+  pattern=".*Starting in Wave Function Section.*" endPattern=".*End of Wave Function Section.*" endOffset="1">
+  <comment>
+Starting in Wave Function Section -
+...
+- End of Wave Function Section
+  </comment>
+  <record id="startingwave">{X,x:unparsed}</record>
+  <record repeat="*"/>
+</template>

@@ -1,0 +1,15 @@
+<template repeat="*"  id="title" name="Title Cards" 
+  pattern="\s*Title Cards\s*$\s*\-+\s*" newline="$"
+  endPattern="\s*\S+\s*.*$\s*\-+\s*">
+  <comment>
+  Title Cards
+  -----------
+
+  Geometry optimization, calculation of magnetizabilities                 
+  and nuclear shieldings at the optimized geometry                        
+
+
+  </comment>
+  <record repeat="3"/>
+  <record id="titles" repeat="*" id="unparsed">{X,x:unparsed}</record>
+</template>

@@ -1,0 +1,227 @@
+<template repeat="*"  id="zmatautoz" name="Z-Matrix autoz" 
+  pattern=".*Z\-matrix \(autoz\).*$\s+\-+.*" 
+  endPattern="\s*((Stretch)|(Bend)|(Torsion)).*$\s*" endOffset="1"
+  output="VERBOSE"
+   >
+
+  <comment class="example.input" id="zmatautoz">
+                                Z-matrix (autoz)
+                                -------- 
+
+ Units are Angstrom for bonds and degrees for angles
+
+      Type          Name      I     J     K     L     M      Value
+      ----------- --------  ----- ----- ----- ----- ----- ----------
+    1 Stretch                  1     2                       1.80680
+   10 Stretch                  8    11                       1.15200
+   11 Bend                     2     1     6                90.00000
+   37 Bend                    11     1     7               120.00000
+   38 Torsion                  1     2     6     9         180.00000
+   55 Torsion                  1     8     7    10         180.00000
+    
+  </comment>
+  
+  <comment class="example.input" id="zmatautoz1">
+                                Z-matrix (autoz)
+                                -------- 
+
+ Units are Angstrom for bonds and degrees for angles
+
+      Type          Name      I     J     K     L     M      Value
+      ----------- --------  ----- ----- ----- ----- ----- ----------
+    1 Stretch                  1     2                       1.80680
+   10 Stretch                  8    11                       1.15200
+    
+  </comment>
+  
+  <!-- fails on constrained values -->
+  <comment class="example.input" idx="zmatautoz2">
+                                Z-matrix (autoz)
+                                -------- 
+
+ Units are Angstrom for bonds and degrees for angles
+
+  Constants are marked with an asterisk (*).
+
+  Constrained variables are marked with a plus sign (+).
+
+
+      Type          Name      I     J     K     L     M      Value     Gradient
+      ----------- --------  ----- ----- ----- ----- ----- ---------- ----------
+    1 Stretch                  1     2                       1.35468    0.01148
+    2 Stretch                  1     3                       1.54014    0.03447
+    3 Stretch                  1    14                       1.06984    0.00038
+    4 Stretch                  2     4                       1.54014    0.03447
+    5 Stretch                  2    13                       1.06984    0.00038
+    6*Stretch      r           3     6                       2.20000    0.07669
+    7 Stretch                  3     5                       1.58908    0.02455
+    8 Stretch                  3     9                       1.07776    0.00175
+    9*Stretch      r           4     7                       2.20000    0.07669
+   10 Stretch                  4     5                       1.58908    0.02455
+   11 Stretch                  4     8                       1.07776    0.00175
+   12 Stretch                  5    10                       1.08360    0.00182
+  
+  </comment>
+  
+  <record id="typez" >\s*Z\-matrix\s*\({X,n:typezz}\)\s*</record>
+  <record repeat="1" id="xx"/>
+  <record repeat="*">\s*</record>
+  <templateList>
+    <template repeat="*" id="units" pattern="\s*Units.*" endPattern=".*">
+      <record id="units" repeat="*">\s*Units are {A,n:ll} for bonds and {A,n:aa} for angles.*</record>
+    </template>
+    <template repeat="*" id="constants" pattern="\s*Constants.*" endPattern=".*">
+      <record id="constants" repeat="*">\s*Constants are marked with {X,n:aa}.*</record>
+    </template>
+    <template repeat="*" id="constraints" pattern="\s*Constrained.*" endPattern=".*">
+      <record id="constraints" repeat="*">\s*Constrained variables are marked with {X,n:aa}.*</record>
+    </template>
+    
+    <template repeat="*" id="typegrad" 
+    pattern="\s*Type\s+Name\s+I\s+J\s+K\s+L\s+M\s+Value\s+Gradient\s*" endPattern="\s*">
+      <record id="typegrad" repeat="2"/>
+      <templateList>
+        <template id="l" repeat="*" pattern=".*\sStretch.*" endPattern=".*" endOffset="1">
+          <record id="length" repeat="*">\s*{I,cc:serial}\sStretch{I,cc:atom}\s{I,cc:atom}\s{F,cc:length}\s{F,cc:gradient}\s*</record>
+        </template>
+        <template id="b" repeat="*" pattern=".*Bend.*" endPattern=".*" endOffset="1">
+          <record id="bend" repeat="*">\s*{I,cc:serial}\sBend\s{I,cc:atom}\s{I,cc:atom}\s{I,cc:atom}\s{F,cc:ang}\s{F,cc:gradient}\s*</record>
+        </template>
+        <template id="t" repeat="*" pattern=".*Torsion.*" endPattern=".*" endOffset="1">
+          <record id="torsion" repeat="*">\s*{I,cc:serial}\sTorsion{I,cc:atom}\s{I,cc:atom}\s{I,cc:atom}\s{I,cc:atom}\s{F,cc:torsion}\s{F,cc:gradient}\s*</record>
+        </template>
+      </templateList>
+    </template>
+    <template repeat="*" id="typex" 
+      pattern="\s*Type\s+Name\s+I\s+J\s+K\s+L\s+M\s+Value\s*" endPattern="\s*">
+      <record id="typexx" repeat="2"/>
+      <templateList>
+        <template id="l" repeat="*" pattern=".*\sStretch.*" endPattern=".*" endOffset="1">
+          <record id="length" repeat="*">\s*{I,cc:serial}\sStretch{I,cc:atom}\s{I,cc:atom}\s{F,cc:length}\s*</record>
+        </template>
+        <template id="b" repeat="*" pattern=".*Bend.*" endPattern=".*" endOffset="1">
+          <record id="bend" repeat="*">\s*{I,cc:serial}\sBend\s{I,cc:atom}\s{I,cc:atom}\s{I,cc:atom}\s{F,cc:ang}\s*</record>
+        </template>
+        <template id="t" repeat="*" pattern=".*Torsion.*" endPattern=".*" endOffset="1">
+          <record id="torsion" repeat="*">\s*{I,cc:serial}\sTorsion{I,cc:atom}\s{I,cc:atom}\s{I,cc:atom}\s{I,cc:atom}\s{F,cc:torsion}\s*</record>
+        </template>
+      </templateList>
+    </template>
+  </templateList>  
+
+  <comment class="example.output" id="zmatautoz">
+<module cmlx:templateRef="zmatautoz" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="typez">
+    <scalar dataType="xsd:string" dictRef="n:typezz">autoz</scalar>
+  </list>
+  <module cmlx:lineCount="1" cmlx:templateRef="units">
+    <list cmlx:templateRef="units">
+      <list>
+        <scalar dataType="xsd:string" dictRef="n:ll">Angstrom</scalar>
+        <scalar dataType="xsd:string" dictRef="n:aa">degrees</scalar>
+      </list>
+    </list>
+  </module>
+  <module cmlx:lineCount="8" cmlx:templateRef="typex">
+    <module cmlx:lineCount="2" cmlx:templateRef="l">
+      <list cmlx:templateRef="length">
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">2</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:length">1.8068</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">10</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">8</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">11</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:length">1.152</scalar>
+        </list>
+      </list>
+    </module>
+    <module cmlx:lineCount="2" cmlx:templateRef="b">
+      <list cmlx:templateRef="bend">
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">11</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">2</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">6</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:ang">90.0</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">37</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">11</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">7</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:ang">120.0</scalar>
+        </list>
+      </list>
+    </module>
+    <module cmlx:lineCount="2" cmlx:templateRef="t">
+      <list cmlx:templateRef="torsion">
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">38</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">2</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">6</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">9</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:torsion">180.0</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">55</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">8</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">7</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">10</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:torsion">180.0</scalar>
+        </list>
+      </list>
+    </module>
+  </module>
+</module>
+  </comment>
+  
+  <comment class="example.output" id="zmatautoz1">
+<module cmlx:templateRef="zmatautoz" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="typez">
+    <scalar dataType="xsd:string" dictRef="n:typezz">autoz</scalar>
+  </list>
+  <module cmlx:lineCount="1" cmlx:templateRef="units">
+    <list cmlx:templateRef="units">
+      <list>
+        <scalar dataType="xsd:string" dictRef="n:ll">Angstrom</scalar>
+        <scalar dataType="xsd:string" dictRef="n:aa">degrees</scalar>
+      </list>
+    </list>
+  </module>
+  <module cmlx:lineCount="4" cmlx:templateRef="typex">
+    <module cmlx:lineCount="2" cmlx:templateRef="l">
+      <list cmlx:templateRef="length">
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">1</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">2</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:length">1.8068</scalar>
+        </list>
+        <list>
+          <scalar dataType="xsd:integer" dictRef="cc:serial">10</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">8</scalar>
+          <scalar dataType="xsd:integer" dictRef="cc:atom">11</scalar>
+          <scalar dataType="xsd:double" dictRef="cc:length">1.152</scalar>
+        </list>
+      </list>
+    </module>
+  </module>
+</module>
+  </comment>
+  
+  <comment class="example.output" id="zmatautoz2">
+<module cmlx:templateRef="zmatautoz" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="type">
+    <scalar dataType="xsd:string" dictRef="n:type">autoz</scalar>
+  </list> Units are Angstrom for bonds and degrees for angles Type Name I J K L M Value ----------- -------- ----- ----- ----- ----- ----- ---------- 1 Stretch 1 2 1.80680.. 10 Stretch 8 11 1.15200 11 Bend 2 1 6 90.00000.. 37 Bend 11 1 7 120.00000 38 Torsion 1 2 6 9 180.00000.. 55 Torsion 1 8 7 10 180.00000
+</module>
+  </comment>
+  
+  
+</template>

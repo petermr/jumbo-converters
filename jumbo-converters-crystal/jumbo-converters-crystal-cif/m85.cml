@@ -1,0 +1,2746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema" xmlns:convention="http://www.xml-cml.org/convention/" xmlns:iucr="http://www.xml-cml.org/dictionary/cif/" xmlns:nonSi="http://www.xml-cml.org/unit/nonSi/" xmlns:si="http://www.xml-cml.org/unit/si" xmlns:unitType="http://www.xml-cml.org/unit/unitType/" xmlns:cmlDict="http://www.xml-cml.org/dictionary/cml/">
+  <module convention="convention:crystallographyExperiment">
+    <property dictRef="iucr:journal_date_recd_electronic">
+      <scalar dataType="xsd:string">2012-12-03</scalar>
+    </property>
+    <property dictRef="iucr:journal_date_accepted">
+      <scalar dataType="xsd:string">2012-12-13</scalar>
+    </property>
+    <property dictRef="iucr:journal_name_full">
+      <scalar dataType="xsd:string">Acta Crystallographica, Section E</scalar>
+    </property>
+    <property dictRef="iucr:journal_year">
+      <scalar dataType="xsd:string">2013</scalar>
+    </property>
+    <property dictRef="iucr:journal_volume">
+      <scalar dataType="xsd:string">69</scalar>
+    </property>
+    <property dictRef="iucr:journal_issue">
+      <scalar dataType="xsd:string">2</scalar>
+    </property>
+    <property dictRef="iucr:journal_page_first">
+      <scalar dataType="xsd:string">m85</scalar>
+    </property>
+    <property dictRef="iucr:journal_page_last">
+      <scalar dataType="xsd:string">m85</scalar>
+    </property>
+    <property dictRef="iucr:journal_paper_category">
+      <scalar dataType="xsd:string">QM</scalar>
+    </property>
+    <property dictRef="iucr:journal_paper_doi">
+      <scalar dataType="xsd:string">10.1107/S1600536812050672</scalar>
+    </property>
+    <property dictRef="iucr:journal_coeditor_code">
+      <scalar dataType="xsd:string">ZQ2192</scalar>
+    </property>
+    <property dictRef="iucr:publ_contact_author_name">
+      <scalar dataType="xsd:string">Zhe Song</scalar>
+    </property>
+    <property dictRef="iucr:publ_contact_author_address">
+      <scalar dataType="xsd:string"> Department of Chemistry, Changchun Normal University, Changchun 130032, People's Republic of China </scalar>
+    </property>
+    <property dictRef="iucr:publ_contact_author_email">
+      <scalar dataType="xsd:string">songzhe@cncnc.edu.cn</scalar>
+    </property>
+    <property dictRef="iucr:publ_section_title">
+      <scalar dataType="xsd:string"> Poly[bis(\m~2~-5-{4-[(1&lt;i&gt;H&lt;/i&gt;-imidazol-1-yl)methyl]phenyl}tetrazolato)zinc] </scalar>
+    </property>
+    <table>
+      <arrayList>
+        <array dataType="xsd:string" dictRef="iucr:publ_author_name" delimiter="|">|Song, Zhe|</array>
+        <array dataType="xsd:string" dictRef="iucr:publ_author_footnote" delimiter="|">||</array>
+        <array dataType="xsd:string" dictRef="iucr:publ_author_address" delimiter="|">|Department of Chemistry Changchun Normal University Changchun 130032 People's Republic of China|</array>
+      </arrayList>
+    </table>
+    <property dictRef="iucr:audit_creation_method">
+      <scalar dataType="xsd:string">SHELXL-97</scalar>
+    </property>
+    <property dictRef="iucr:symmetry_cell_setting">
+      <scalar dataType="xsd:string">orthorhombic</scalar>
+    </property>
+    <property dictRef="iucr:symmetry_space_group_name_hall">
+      <scalar dataType="xsd:string">-P 2n 2ab</scalar>
+    </property>
+    <property dictRef="iucr:cell_measurement_reflns_used">
+      <scalar dataType="xsd:double">2105.0</scalar>
+    </property>
+    <property dictRef="iucr:cell_measurement_theta_min">
+      <scalar units="nonSi:degree" dataType="xsd:double">2.51</scalar>
+    </property>
+    <property dictRef="iucr:cell_measurement_theta_max">
+      <scalar units="nonSi:degree" dataType="xsd:double">25.7</scalar>
+    </property>
+    <property dictRef="iucr:cell_measurement_temperature">
+      <scalar units="si:k" dataType="xsd:double" errorValue="2.0">273.0</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_description">
+      <scalar dataType="xsd:string">block</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_colour">
+      <scalar dataType="xsd:string">colourless</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_size_max">
+      <scalar units="nonSi:millimeters" dataType="xsd:double">0.28</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_size_mid">
+      <scalar units="nonSi:millimeters" dataType="xsd:double">0.26</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_size_min">
+      <scalar units="nonSi:millimeters" dataType="xsd:double">0.24</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_density_diffrn">
+      <scalar units="nonSi:megagrams_per_cubic_metre" dataType="xsd:double">1.549</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_density_method">
+      <scalar dataType="xsd:string">not measured</scalar>
+    </property>
+    <property dictRef="iucr:exptl_crystal_f_000">
+      <scalar dataType="xsd:double">1056.0</scalar>
+    </property>
+    <property dictRef="iucr:exptl_absorpt_coefficient_mu">
+      <scalar units="nonSi:reciprocal_millimeters" dataType="xsd:double">1.15</scalar>
+    </property>
+    <property dictRef="iucr:exptl_absorpt_correction_type">
+      <scalar dataType="xsd:string">multi-scan</scalar>
+    </property>
+    <property dictRef="iucr:exptl_absorpt_process_details">
+      <scalar dataType="xsd:string">(SADABS; Bruker, 2001)</scalar>
+    </property>
+    <property dictRef="iucr:exptl_absorpt_correction_t_min">
+      <scalar dataType="xsd:double">0.736</scalar>
+    </property>
+    <property dictRef="iucr:exptl_absorpt_correction_t_max">
+      <scalar dataType="xsd:double">0.752</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_ambient_temperature">
+      <scalar units="si:k" dataType="xsd:double" errorValue="2.0">273.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_radiation_type">
+      <scalar dataType="xsd:string">MoK\a</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_radiation_wavelength">
+      <scalar units="nonSi:angstrom" dataType="xsd:double">0.71073</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_radiation_source">
+      <scalar dataType="xsd:string">fine-focus sealed tube</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_radiation_monochromator">
+      <scalar dataType="xsd:string">graphite</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_measurement_device_type">
+      <scalar dataType="xsd:string">Bruker APEXII CCD area-detector</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_measurement_method">
+      <scalar dataType="xsd:string">phi and omega scans</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_number">
+      <scalar dataType="xsd:double">11210.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_av_r_equivalents">
+      <scalar dataType="xsd:double">0.0196</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_av_sigmai_neti">
+      <scalar dataType="xsd:double">0.0141</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_theta_min">
+      <scalar units="nonSi:degree" dataType="xsd:double">2.51</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_theta_max">
+      <scalar units="nonSi:degree" dataType="xsd:double">25.7</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_theta_full">
+      <scalar units="nonSi:degree" dataType="xsd:double">25.7</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_measured_fraction_theta_max">
+      <scalar dataType="xsd:double">1.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_measured_fraction_theta_full">
+      <scalar dataType="xsd:double">1.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_limit_h_min">
+      <scalar dataType="xsd:double">-13.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_limit_h_max">
+      <scalar dataType="xsd:double">19.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_limit_k_min">
+      <scalar dataType="xsd:double">-11.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_limit_k_max">
+      <scalar dataType="xsd:double">11.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_limit_l_min">
+      <scalar dataType="xsd:double">-17.0</scalar>
+    </property>
+    <property dictRef="iucr:diffrn_reflns_limit_l_max">
+      <scalar dataType="xsd:double">15.0</scalar>
+    </property>
+    <property dictRef="iucr:refine_special_details">
+      <scalar dataType="xsd:string"> Refinement of &lt;i&gt;F&lt;/i&gt;^2^ against ALL reflections. The weighted &lt;i&gt;R&lt;/i&gt;-factor &lt;i&gt;wR&lt;/i&gt; and goodness of fit &lt;i&gt;S&lt;/i&gt; are based on &lt;i&gt;F&lt;/i&gt;^2^, conventional &lt;i&gt;R&lt;/i&gt;-factors &lt;i&gt;R&lt;/i&gt; are based on &lt;i&gt;F&lt;/i&gt;, with &lt;i&gt;F&lt;/i&gt; set to zero for negative &lt;i&gt;F&lt;/i&gt;^2^. The threshold expression of &lt;i&gt;F&lt;/i&gt;^2^ &gt; \s(&lt;i&gt;F&lt;/i&gt;^2^) is used only for calculating &lt;i&gt;R&lt;/i&gt;-factors(gt) &lt;i&gt;etc&lt;/i&gt;. and is not relevant to the choice of reflections for refinement. &lt;i&gt;R&lt;/i&gt;-factors based on &lt;i&gt;F&lt;/i&gt;^2^ are statistically about twice as large as those based on &lt;i&gt;F&lt;/i&gt;, and &lt;i&gt;R&lt;/i&gt;- factors based on ALL data will be even larger. </scalar>
+    </property>
+    <property dictRef="iucr:reflns_number_total">
+      <scalar dataType="xsd:double">2105.0</scalar>
+    </property>
+    <property dictRef="iucr:reflns_number_gt">
+      <scalar dataType="xsd:double">1874.0</scalar>
+    </property>
+    <property dictRef="iucr:reflns_threshold_expression">
+      <scalar dataType="xsd:string">I&gt;2sigma(I)</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_structure_factor_coef">
+      <scalar dataType="xsd:string">Fsqd</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_matrix_type">
+      <scalar dataType="xsd:string">full</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_r_factor_all">
+      <scalar dataType="xsd:double">0.0323</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_r_factor_gt">
+      <scalar dataType="xsd:double">0.0285</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_wr_factor_gt">
+      <scalar dataType="xsd:double">0.0786</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_wr_factor_ref">
+      <scalar dataType="xsd:double">0.0813</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_goodness_of_fit_ref">
+      <scalar dataType="xsd:double">1.069</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_restrained_s_all">
+      <scalar dataType="xsd:double">1.069</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_number_reflns">
+      <scalar dataType="xsd:double">2105.0</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_number_parameters">
+      <scalar dataType="xsd:double">159.0</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_number_restraints">
+      <scalar dataType="xsd:double">0.0</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_hydrogen_treatment">
+      <scalar dataType="xsd:string">constr</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_weighting_scheme">
+      <scalar dataType="xsd:string">calc</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_weighting_details">
+      <scalar dataType="xsd:string">w=1/[\s^2^(Fo^2^)+(0.0450P)^2^+1.2542P] where P=(Fo^2^+2Fc^2^)/3</scalar>
+    </property>
+    <property dictRef="iucr:atom_sites_solution_primary">
+      <scalar dataType="xsd:string">direct</scalar>
+    </property>
+    <property dictRef="iucr:atom_sites_solution_secondary">
+      <scalar dataType="xsd:string">difmap</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_shift_su_max">
+      <scalar dataType="xsd:double">0.0</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_shift_su_mean">
+      <scalar dataType="xsd:double">0.0</scalar>
+    </property>
+    <property dictRef="iucr:refine_diff_density_max">
+      <scalar units="nonSi:electrons_per_cubic_angstrom" dataType="xsd:double">0.293</scalar>
+    </property>
+    <property dictRef="iucr:refine_diff_density_min">
+      <scalar units="nonSi:electrons_per_cubic_angstrom" dataType="xsd:double">-0.271</scalar>
+    </property>
+    <property dictRef="iucr:refine_ls_extinction_method">
+      <scalar dataType="xsd:string">none</scalar>
+    </property>
+    <property dictRef="iucr:computing_data_collection">
+      <scalar dataType="xsd:string">APEX2 (Bruker, 2007)</scalar>
+    </property>
+    <property dictRef="iucr:computing_cell_refinement">
+      <scalar dataType="xsd:string">SAINT (Bruker, 2007)</scalar>
+    </property>
+    <property dictRef="iucr:computing_data_reduction">
+      <scalar dataType="xsd:string">SAINT (Bruker, 2007)</scalar>
+    </property>
+    <property dictRef="iucr:computing_structure_solution">
+      <scalar dataType="xsd:string">SHELXTL (Sheldrick, 2008)</scalar>
+    </property>
+    <property dictRef="iucr:computing_structure_refinement">
+      <scalar dataType="xsd:string">SHELXTL (Sheldrick, 2008)</scalar>
+    </property>
+    <property dictRef="iucr:computing_molecular_graphics">
+      <scalar dataType="xsd:string"> XP in SHELXTL (Sheldrick, 2008) and DIAMOND (Brandenburg, 1999) </scalar>
+    </property>
+    <property dictRef="iucr:computing_publication_material">
+      <scalar dataType="xsd:string">SHELXTL (Sheldrick, 2008)</scalar>
+    </property>
+    <property dictRef="iucr:geom_special_details">
+      <scalar dataType="xsd:string"> All e.s.d.'s (except the e.s.d. in the dihedral angle between two l.s. planes) are estimated using the full covariance matrix. The cell e.s.d.'s are taken into account individually in the estimation of e.s.d.'s in distances, angles and torsion angles; correlations between e.s.d.'s in cell parameters are only used when they are defined by crystal symmetry. An approximate (isotropic) treatment of cell e.s.d.'s is used for estimating e.s.d.'s involving l.s. planes. </scalar>
+    </property>
+    <table>
+      <arrayList>
+        <array dataType="xsd:string" dictRef="iucr:geom_hbond_atom_site_label_D" delimiter="|">|C10|C8|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_hbond_atom_site_label_H" delimiter="|">|H10|H8A|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_hbond_atom_site_label_A" delimiter="|">|N4|Cg2|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_hbond_site_symmetry_A" delimiter="|">|6_656|7_645|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom" dictRef="iucr:geom_hbond_distance_DH" delimiter="|" errorValueArray="0.0 0.0">|0.93|0.97|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom" dictRef="iucr:geom_hbond_distance_HA" delimiter="|" errorValueArray="0.0 0.0">|2.45|2.88|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom" dictRef="iucr:geom_hbond_distance_DA" delimiter="|" errorValueArray="0.002 0.002">|3.344|3.692|</array>
+        <array dataType="xsd:double" units="nonSi:degree" dictRef="iucr:geom_hbond_angle_DHA" delimiter="|" errorValueArray="0.0 0.0">|163.0|142.0|</array>
+      </arrayList>
+    </table>
+    <property dictRef="iucr:chemical_name_systematic">
+      <scalar dataType="xsd:string"> Poly[bis(\m~2~-5-{4-[(1&lt;i&gt;H&lt;/i&gt;-imidazol-1-yl)methyl]phenyl}tetrazolato)zinc] </scalar>
+    </property>
+    <formula concise="C 22 H 18 N 12 Zn 1" dictRef="iucr:chemical_formula_moiety" inline="C22 H18 N12 Zn"/>
+    <formula concise="C 22 H 18 N 12 Zn 1" dictRef="iucr:chemical_formula_sum" inline="C22 H18 N12 Zn"/>
+    <formula inline="[Zn (C11 H9 N6)2]" dictRef="iucr:chemical_formula_iupac"/>
+    <property dictRef="iucr:chemical_formula_weight">
+      <scalar errorValue="0.0" units="nonSi:dalton" dataType="xsd:double">515.85</scalar>
+    </property>
+    <property dictRef="iucr:atom_sites_solution_hydrogens">
+      <scalar dataType="xsd:string">geom</scalar>
+    </property>
+    <table dictRef="iucr:atom_type">
+      <arrayList>
+        <array dataType="xsd:string" dictRef="iucr:atom_type_symbol" delimiter="|">|C|H|N|Zn|</array>
+        <array dataType="xsd:string" dictRef="iucr:atom_type_description" delimiter="|">|C|H|N|Zn|</array>
+        <array dataType="xsd:double" dictRef="iucr:atom_type_scat_dispersion_real" delimiter="|" errorValueArray="0.0 0.0 0.0 0.0">|0.0033|0.0|0.0061|0.2839|</array>
+        <array dataType="xsd:double" dictRef="iucr:atom_type_scat_dispersion_imag" delimiter="|" errorValueArray="0.0 0.0 0.0 0.0">|0.0016|0.0|0.0033|1.4301|</array>
+        <array dataType="xsd:string" dictRef="iucr:atom_type_scat_source" delimiter="|">|International Tables Vol C Tables 4.2.6.8 and 6.1.1.4|International Tables Vol C Tables 4.2.6.8 and 6.1.1.4|International Tables Vol C Tables 4.2.6.8 and 6.1.1.4|International Tables Vol C Tables 4.2.6.8 and 6.1.1.4|</array>
+      </arrayList>
+    </table>
+    <table dictRef="iucr:atom_site">
+      <arrayList>
+        <array dataType="xsd:string" dictRef="iucr:atom_site_aniso_label" delimiter="|">|Zn1|N1|N2|N3|N4|N5|N6|C1|C2|C3|C4|C5|C6|C7|C8|C9|C10|C11|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom2" dictRef="iucr:atom_site_aniso_U_11" delimiter="|" errorValueArray="1.9E-4 8.0E-4 8.0E-4 8.0E-4 8.0E-4 7.0E-4 8.0E-4 9.0E-4 0.001 0.001 9.0E-4 0.001 9.0E-4 9.0E-4 0.001 9.0E-4 0.0011 0.0011">|0.01744|0.0271|0.0234|0.0253|0.0259|0.0204|0.0203|0.0226|0.0286|0.028|0.0237|0.0269|0.025|0.022|0.0276|0.0236|0.0322|0.0318|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom2" dictRef="iucr:atom_site_aniso_U_22" delimiter="|" errorValueArray="1.8E-4 8.0E-4 8.0E-4 8.0E-4 9.0E-4 7.0E-4 8.0E-4 9.0E-4 0.001 0.0011 9.0E-4 9.0E-4 0.001 9.0E-4 9.0E-4 9.0E-4 0.0013 0.0013">|0.02404|0.0325|0.0271|0.0272|0.0277|0.0243|0.0265|0.0261|0.0357|0.0334|0.0246|0.0309|0.0299|0.025|0.0259|0.0237|0.0568|0.0515|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom2" dictRef="iucr:atom_site_aniso_U_33" delimiter="|" errorValueArray="1.9E-4 8.0E-4 8.0E-4 8.0E-4 8.0E-4 8.0E-4 8.0E-4 9.0E-4 0.001 0.001 9.0E-4 9.0E-4 9.0E-4 9.0E-4 0.001 9.0E-4 9.0E-4 0.001">|0.02131|0.0265|0.0245|0.0249|0.0218|0.0234|0.0239|0.0241|0.0241|0.0286|0.029|0.0254|0.0264|0.0231|0.0361|0.0228|0.0221|0.0246|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom2" dictRef="iucr:atom_site_aniso_U_12" delimiter="|" errorValueArray="0.0 7.0E-4 6.0E-4 6.0E-4 7.0E-4 6.0E-4 6.0E-4 7.0E-4 8.0E-4 8.0E-4 7.0E-4 8.0E-4 8.0E-4 7.0E-4 7.0E-4 7.0E-4 0.001 9.0E-4">|0.0|0.0039|4.0E-4|-0.0019|-3.0E-4|-0.0017|-2.0E-4|-0.0036|0.0017|0.0037|-0.0034|-0.0039|-9.0E-4|-0.0031|-0.003|-0.0015|-0.0122|-0.0116|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom2" dictRef="iucr:atom_site_aniso_U_13" delimiter="|" errorValueArray="1.0E-4 6.0E-4 6.0E-4 6.0E-4 6.0E-4 6.0E-4 6.0E-4 7.0E-4 8.0E-4 8.0E-4 7.0E-4 8.0E-4 8.0E-4 7.0E-4 8.0E-4 7.0E-4 8.0E-4 8.0E-4">|-0.0021|-0.0012|-0.0012|7.0E-4|0.001|0.0044|0.0025|0.0054|0.0021|0.0039|0.0096|0.0037|0.0013|0.0026|0.0135|0.0025|0.0048|0.0022|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom2" dictRef="iucr:atom_site_aniso_U_23" delimiter="|" errorValueArray="0.0 7.0E-4 7.0E-4 6.0E-4 6.0E-4 6.0E-4 6.0E-4 7.0E-4 8.0E-4 8.0E-4 7.0E-4 8.0E-4 8.0E-4 7.0E-4 8.0E-4 7.0E-4 9.0E-4 9.0E-4">|0.0|-0.0046|-0.0019|-0.0013|-0.0013|-8.0E-4|-0.0012|4.0E-4|-8.0E-4|0.004|0.0022|-0.003|6.0E-4|8.0E-4|7.0E-4|-9.0E-4|-0.0085|-0.0101|</array>
+      </arrayList>
+    </table>
+    <table dictRef="iucr:geom_bond">
+      <arrayList>
+        <array dataType="xsd:string" dictRef="iucr:geom_bond_atom_site_label_1" delimiter="|">|Zn1|Zn1|Zn1|Zn1|N1|N1|N2|N3|N4|N5|N5|N5|N6|N6|N6|C1|C1|C1|C2|C2|C3|C3|C4|C4|C5|C5|C6|C8|C8|C9|C10|C10|C11|Cg1|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_bond_atom_site_label_2" delimiter="|">|N2|N2|N6|N6|C7|N2|N3|N4|C7|C9|C11|C8|C9|C10|Zn1|C2|C6|C7|C3|H2|C4|H3|C5|C8|C6|H5|H6|H8A|H8B|H9|C11|H10|H11|Cg2|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_bond_site_symmetry_2" delimiter="|">||3_656|2_645|4_446|||||||||||2_644|||||||||||||||||||5_646|</array>
+        <array dataType="xsd:double" units="nonSi:angstrom" dictRef="iucr:geom_bond_distance" delimiter="|" errorValueArray="0.0016 0.0016 0.0016 0.0016 0.002 0.002 0.002 0.002 0.002 0.002 0.002 0.002 0.002 0.002 0.0016 0.003 0.002 0.003 0.003 0.0 0.003 0.0 0.003 0.002 0.003 0.0 0.0 0.0 0.0 0.0 0.003 0.0 0.0 0.0011">|1.988|1.988|1.9889|1.9889|1.339|1.346|1.323|1.331|1.339|1.338|1.367|1.475|1.317|1.377|1.9889|1.388|1.397|1.474|1.386|0.93|1.39|0.93|1.39|1.506|1.384|0.93|0.93|0.97|0.97|0.93|1.353|0.93|0.93|3.7523|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_bond_publ_flag" delimiter="|">|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?|?||</array>
+      </arrayList>
+    </table>
+    <table dictRef="iucr:geom_angle">
+      <arrayList>
+        <array dataType="xsd:string" dictRef="iucr:geom_angle_atom_site_label_1" delimiter="|">|N2|N2|N2|N2|N2|N6|C7|N3|N3|N1|N2|N3|C9|C9|C11|C9|C9|C10|C2|C2|C6|C3|C3|C1|C2|C2|C4|C3|C3|C5|C6|C6|C4|C5|C5|C1|N1|N1|N4|N5|N5|C4|N5|C4|H8A|N6|N6|N5|C11|C11|N6|C10|C10|N5|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_angle_atom_site_label_2" delimiter="|">|Zn1|Zn1|Zn1|Zn1|Zn1|Zn1|N1|N2|N2|N2|N3|N4|N5|N5|N5|N6|N6|N6|C1|C1|C1|C2|C2|C2|C3|C3|C3|C4|C4|C4|C5|C5|C5|C6|C6|C6|C7|C7|C7|C8|C8|C8|C8|C8|C8|C9|C9|C9|C10|C10|C10|C11|C11|C11|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_angle_atom_site_label_3" delimiter="|">|N2|N6|N6|N6|N6|N6|N2|N1|Zn1|Zn1|N4|C7|C11|C8|C8|C10|Zn1|Zn1|C6|C7|C7|C1|H2|H2|C4|H3|H3|C5|C8|C8|C4|H5|H5|C1|H6|H6|N4|C1|C1|C4|H8A|H8A|H8B|H8B|H8B|N5|H9|H9|N6|H10|H10|N5|H11|H11|</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_angle_site_symmetry_1" delimiter="|">|||3_656||3_656|2_645|||||||||||||||||||||||||||||||||||||||||||||||||</array>
+        <array dataType="xsd:string" dictRef="iucr:geom_angle_site_symmetry_3" delimiter="|">|3_656|2_645|2_645|4_446|4_446|4_446|||||||||||2_644|2_644|||||||||||||||||||||||||||||||||||||</array>
+        <array dataType="xsd:double" units="nonSi:degree" dictRef="iucr:geom_angle" delimiter="|" errorValueArray="0.09 0.06 0.06 0.06 0.06 0.09 0.15 0.14 0.12 0.12 0.14 0.14 0.14 0.15 0.15 0.15 0.12 0.12 0.17 0.16 0.17 0.18 0.0 0.0 0.18 0.0 0.0 0.17 0.17 0.17 0.17 0.0 0.0 0.18 0.0 0.0 0.16 0.17 0.16 0.14 0.0 0.0 0.0 0.0 0.0 0.15 0.0 0.0 0.16 0.0 0.0 0.16 0.0 0.0">|112.61|106.36|109.48|109.48|106.36|112.67|102.9|111.33|124.49|124.13|107.92|105.65|107.49|126.75|125.75|106.1|127.13|126.68|119.07|121.01|119.88|120.42|119.8|119.8|120.66|119.7|119.7|118.89|120.48|120.61|120.74|119.6|119.6|120.2|119.9|119.9|112.2|124.16|123.56|111.54|109.3|109.3|109.3|109.3|108.0|110.99|124.5|124.5|108.92|125.5|125.5|106.49|126.8|126.8|</array>
+      </arrayList>
+    </table>
+    <property dictRef="iucr:compoundClass">
+      <scalar dataType="xsd:string">organometallic</scalar>
+    </property>
+    <module convention="convention:crystalStructure">
+      <crystal z="4">
+        <scalar dictRef="iucr:cell_length_a" dataType="xsd:double" errorValue="0.0012">16.1206</scalar>
+        <scalar dictRef="iucr:cell_length_b" dataType="xsd:double" errorValue="7.0E-4">9.372</scalar>
+        <scalar dictRef="iucr:cell_length_c" dataType="xsd:double" errorValue="0.0011">14.6367</scalar>
+        <scalar dictRef="iucr:cell_angle_alpha" dataType="xsd:double" errorValue="0.0">90.0</scalar>
+        <scalar dictRef="iucr:cell_angle_beta" dataType="xsd:double" errorValue="0.0">90.0</scalar>
+        <scalar dictRef="iucr:cell_angle_gamma" dataType="xsd:double" errorValue="0.0">90.0</scalar>
+        <symmetry spaceGroup="P b c n">
+          <transform3>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</transform3>
+          <transform3>-1.0 0.0 0.0 0.5 0.0 -1.0 0.0 0.5 0.0 0.0 1.0 0.5 0.0 0.0 0.0 1.0</transform3>
+          <transform3>-1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 -1.0 0.5 0.0 0.0 0.0 1.0</transform3>
+          <transform3>1.0 0.0 0.0 0.5 0.0 -1.0 0.0 0.5 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 1.0</transform3>
+          <transform3>-1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 1.0</transform3>
+          <transform3>1.0 0.0 0.0 0.5 0.0 1.0 0.0 0.5 0.0 0.0 -1.0 0.5 0.0 0.0 0.0 1.0</transform3>
+          <transform3>1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 1.0 0.5 0.0 0.0 0.0 1.0</transform3>
+          <transform3>-1.0 0.0 0.0 0.5 0.0 1.0 0.0 0.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</transform3>
+        </symmetry>
+      </crystal>
+      <molecule id="I" convention="convention:molecular">
+        <atomArray>
+          <atom id="a1" elementType="Zn" spaceGroupMultiplicity="2" xFract="0.5" yFract="0.99126" zFract="0.75" x3="8.0603" y3="9.29008872" z3="10.977525000000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.02093</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="Zn1"/>
+            <property dictRef="iucr:atom_site_refinement_flags">
+              <scalar dataType="xsd:string">S</scalar>
+            </property>
+            <scalar dataType="xsd:integer" dictRef="cml:mult">2</scalar>
+          </atom>
+          <atom id="a2" elementType="N" xFract="0.56706" yFract="0.7751399999999999" zFract="0.62224" x3="9.141347436" y3="7.26461208" z3="9.107540208000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom id="a3" elementType="N" xFract="0.50779" yFract="0.87357" zFract="0.63732" x3="8.185879474" y3="8.187098039999999" z3="9.328261644000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom id="a4" elementType="N" xFract="0.4576" yFract="0.88569" zFract="0.5662" x3="7.37678656" y3="8.30068668" z3="8.287299540000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom id="a5" elementType="N" xFract="0.48338" yFract="0.79498" zFract="0.50222" x3="7.792375627999999" y3="7.450552560000001" z3="7.350843474">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom id="a6" elementType="N" xFract="0.78108" yFract="0.29545" zFract="0.30116" x3="12.591478248" y3="2.7689574000000006" z3="4.407988572000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom id="a7" elementType="N" xFract="0.89739" yFract="0.3911" zFract="0.25437" x3="14.466465234" y3="3.665389200000001" z3="3.723137379000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom id="a8" elementType="C" xFract="0.59424" yFract="0.6123000000000001" zFract="0.49151" x3="9.579505344" y3="5.738475600000001" z3="7.194084417000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom id="a9" elementType="C" xFract="0.65678" yFract="0.5375" zFract="0.53566" x3="10.587687668000001" y3="5.037450000000001" z3="7.840294722000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom id="a10" elementType="H" xFract="0.6729" yFract="0.5641" zFract="0.5942" x3="10.84755174" y3="5.286745200000001" z3="8.697127140000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom id="a11" elementType="C" xFract="0.69536" yFract="0.4233" zFract="0.493" x3="11.209620416" y3="3.967167600000001" z3="7.215893100000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom id="a12" elementType="H" xFract="0.7372" yFract="0.374" zFract="0.5232" x3="11.884106319999999" y3="3.505128000000001" z3="7.657921440000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom id="a13" elementType="C" xFract="0.67212" yFract="0.38188" zFract="0.40553" x3="10.834977672" y3="3.5789793600000004" z3="5.935620951000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom id="a14" elementType="C" xFract="0.61043" yFract="0.45830000000000004" zFract="0.36076" x3="9.840497858" y3="4.295187600000001" z3="5.280335892000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom id="a15" elementType="H" xFract="0.5949" yFract="0.4323" zFract="0.3019" x3="9.59014494" y3="4.051515600000001" z3="4.418819730000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom id="a16" elementType="C" xFract="0.5719" yFract="0.5728" zFract="0.40282" x3="9.21937114" y3="5.3682816" z3="5.895955494000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom id="a17" elementType="H" xFract="0.531" yFract="0.6235999999999999" zFract="0.3719" x3="8.5600386" y3="5.8443792000000006" z3="5.443388730000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom id="a18" elementType="C" xFract="0.54942" yFract="0.72865" zFract="0.53796" x3="8.856980052" y3="6.828907800000001" z3="7.873959132">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom id="a19" elementType="C" xFract="0.71159" yFract="0.25383999999999995" zFract="0.36103" x3="11.471257753999998" y3="2.3789884800000003" z3="5.2842878010000005">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom id="a20" elementType="H" xFract="0.7317" yFract="0.1895" zFract="0.4079" x3="11.79544302" y3="1.7759940000000007" z3="5.97030993">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom id="a21" elementType="H" xFract="0.6702" yFract="0.20340000000000003" zFract="0.3253" x3="10.80402612" y3="1.9062648000000009" z3="4.761318510000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom id="a22" elementType="C" xFract="0.84655" yFract="0.37556999999999996" zFract="0.32411" x3="13.64689393" y3="3.5198420400000003" z3="4.743900837000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom id="a23" elementType="H" xFract="0.855" yFract="0.41500000000000004" zFract="0.3817" x3="13.783113" y3="3.8893800000000014" z3="5.58682839">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom id="a24" elementType="C" xFract="0.8628" yFract="0.3155" zFract="0.18321" x3="13.90885368" y3="2.9568660000000007" z3="2.681589807000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom id="a25" elementType="H" xFract="0.8853" yFract="0.3066" zFract="0.125" x3="14.27156718" y3="2.873455200000001" z3="1.829587500000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom id="a26" elementType="C" xFract="0.79073" yFract="0.25639999999999996" zFract="0.21178" x3="12.747042038" y3="2.4029808000000004" z3="3.0997603260000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom id="a27" elementType="H" xFract="0.7548" yFract="0.20030000000000003" zFract="0.1774" x3="12.16782888" y3="1.877211600000001" z3="2.5965505800000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="H" xFract="0.5949" yFract="0.5677" zFract="0.8019000000000001" id="a15_1" x3="9.59014494" y3="5.320484400000001" z3="11.737169730000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="C" xFract="0.0942400000000001" yFract="0.11230000000000007" zFract="0.008489999999999998" id="a8_2" x3="1.5192053440000015" y3="1.0524756000000006" z3="0.12426558300000011">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="N" xFract="0.93294" yFract="0.27513999999999994" zFract="0.62224" id="a2_3" x3="15.039552564" y3="2.57861208" z3="9.107540208000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="N" xFract="0.9833799999999999" yFract="0.29498" zFract="0.99778" id="a5_4" x3="15.852675627999998" y3="2.764552560000001" z3="14.604206526">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="H" xFract="0.2683" yFract="0.8105" zFract="0.5921000000000001" id="a20_5" x3="4.32515698" y3="7.596006" z3="8.66639007">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="C" xFract="0.45058" yFract="0.27135" zFract="0.46204" id="a18_6" x3="7.263619948" y3="2.5430922000000002" z3="6.762740868000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="C" xFract="0.15677999999999992" yFract="0.9625" zFract="0.46434" id="a9_7" x3="2.5273876679999985" y3="9.02055" z3="6.796405278">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="N" xFract="0.21892" yFract="0.29545" zFract="0.19884000000000002" id="a6_8" x3="3.529121752" y3="2.7689573999999997" z3="2.9103614280000007">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="N" xFract="0.99221" yFract="0.37356999999999996" zFract="0.63732" id="a3_9" x3="15.995020526" y3="3.5010980400000005" z3="9.328261644000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="C" xFract="0.59424" yFract="0.38769999999999993" zFract="0.99151" id="a8_10" x3="9.579505344" y3="3.6335243999999998" z3="14.512434417">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="N" xFract="0.007789999999999964" yFract="0.62643" zFract="0.36268" id="a3_11" x3="0.1255794739999994" y3="5.87090196" z3="5.308438356">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="H" xFract="0.17290000000000005" yFract="0.9359" zFract="0.40580000000000005" id="a10_12" x3="2.7872517400000008" y3="8.7712548" z3="5.939572860000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="H" xFract="0.7317" yFract="0.8105" zFract="0.9078999999999999" id="a20_13" x3="11.79544302" y3="7.596006000000001" z3="13.28865993">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="H" xFract="0.3298" yFract="0.7966" zFract="0.6747000000000001" id="a21_14" x3="5.31657388" y3="7.465735199999999" z3="9.87538149">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="H" xFract="0.7548" yFract="0.7997" zFract="0.6774" id="a27_15" x3="12.16782888" y3="7.494788400000001" z3="9.914900580000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="H" xFract="0.969" yFract="0.8764000000000001" zFract="0.8719" id="a17_16" x3="15.620861399999999" y3="8.213620800000003" z3="12.761738730000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="N" xFract="0.5424" yFract="0.88569" zFract="0.9338" id="a4_17" x3="8.74381344" y3="8.30068668" z3="13.66775046">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="C" xFract="0.69536" yFract="0.5767" zFract="0.993" id="a11_18" x3="11.209620416" y3="5.404832400000001" z3="14.534243100000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="C" xFract="0.80464" yFract="0.9233" zFract="0.493" id="a11_19" x3="12.971279584" y3="8.6531676" z3="7.215893100000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="N" xFract="0.43294" yFract="0.7751399999999999" zFract="0.87776" id="a2_20" x3="6.979252563999999" y3="7.264612079999999" z3="12.847509791999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="C" xFract="0.21158999999999994" yFract="0.75384" zFract="0.13896999999999998" id="a19_21" x3="3.410957753999999" y3="7.064988479999999" z3="2.034062199">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="H" xFract="0.8271" yFract="0.9359" zFract="0.09419999999999984" id="a10_22" x3="13.33334826" y3="8.7712548" z3="1.3787771399999988">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="H" xFract="0.9051" yFract="0.9323" zFract="0.3019" id="a15_23" x3="14.59075506" y3="8.737515600000002" z3="4.418819730000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="H" xFract="0.645" yFract="0.08499999999999996" zFract="0.8816999999999999" id="a23_24" x3="10.397787" y3="0.7966200000000003" z3="12.905178389999998">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="C" xFract="0.34655000000000014" yFract="0.87557" zFract="0.17589" id="a22_25" x3="5.586593930000002" y3="8.20584204" z3="2.5744491630000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="H" xFract="0.3298" yFract="0.20340000000000003" zFract="0.17470000000000002" id="a21_26" x3="5.31657388" y3="1.9062648000000004" z3="2.557031490000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="H" xFract="0.17290000000000005" yFract="0.06410000000000005" zFract="0.9058" id="a10_27" x3="2.7872517400000008" y3="0.6007452000000006" z3="13.25792286">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="C" xFract="0.79073" yFract="0.7436" zFract="0.71178" id="a26_28" x3="12.747042038" y3="6.969019200000001" z3="10.418110326">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="C" xFract="0.6372" yFract="0.8155" zFract="0.18321" id="a24_29" x3="10.27204632" y3="7.642866000000001" z3="2.681589807000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="H" xFract="0.2547999999999999" yFract="0.7003" zFract="0.3226" id="a27_30" x3="4.1075288799999985" y3="6.5632116" z3="4.721799420000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="N" xFract="0.5166200000000001" yFract="0.20501999999999998" zFract="0.49778" id="a5_31" x3="8.328224372000001" y3="1.9214474400000003" z3="7.285856526000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="N" xFract="0.10260999999999998" yFract="0.6089" zFract="0.74563" id="a7_32" x3="1.6541347659999996" y3="5.7066108" z3="10.913562621">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="C" xFract="0.70927" yFract="0.24360000000000004" zFract="0.71178" id="a26_33" x3="11.433857962" y3="2.2830192000000014" z3="10.418110325999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="H" xFract="0.14500000000000002" yFract="0.585" zFract="0.6183000000000001" id="a23_34" x3="2.3374870000000003" y3="5.48262" z3="9.04987161">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="N" xFract="0.71892" yFract="0.20455" zFract="0.80116" id="a6_35" x3="11.589421752" y3="1.9170426000000007" z3="11.726338572">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="N" xFract="0.9576" yFract="0.61431" zFract="0.43379999999999996" id="a4_36" x3="15.43708656" y3="5.757313320000001" z3="6.34940046">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="C" xFract="0.42810000000000004" yFract="0.4272" zFract="0.59718" id="a16_37" x3="6.901228860000001" y3="4.0037184" z3="8.740744506">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="H" xFract="0.26280000000000003" yFract="0.374" zFract="0.9768" id="a12_38" x3="4.236493680000001" y3="3.5051280000000005" z3="14.297128559999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="C" xFract="0.20926999999999996" yFract="0.7436" zFract="0.78822" id="a26_39" x3="3.373557961999999" y3="6.9690192" z3="11.536939674">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="N" xFract="0.99221" yFract="0.62643" zFract="0.1373199999999999" id="a3_40" x3="15.995020526" y3="5.870901960000001" z3="2.0099116439999998">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="C" xFract="0.9281" yFract="0.9272" zFract="0.90282" id="a16_41" x3="14.96152886" y3="8.689718400000002" z3="13.214305494000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="N" xFract="0.93294" yFract="0.7248600000000001" zFract="0.12224000000000013" id="a2_42" x3="15.039552564" y3="6.793387920000002" z3="1.789190208000003">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="H" xFract="0.2683" yFract="0.1895" zFract="0.09210000000000002" id="a20_43" x3="4.32515698" y3="1.7759940000000003" z3="1.3480400700000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="C" xFract="0.40576" yFract="0.6123000000000001" zFract="0.008489999999999998" id="a8_44" x3="6.541094656" y3="5.7384756" z3="0.1242655830000007">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="H" xFract="0.2547999999999999" yFract="0.29969999999999997" zFract="0.8226" id="a27_45" x3="4.1075288799999985" y3="2.8087884" z3="12.040149419999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="C" xFract="0.67212" yFract="0.61812" zFract="0.90553" id="a13_46" x3="10.834977672" y3="5.793020640000001" z3="13.253970951000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="C" xFract="0.28841000000000006" yFract="0.74616" zFract="0.63897" id="a19_47" x3="4.649342246000001" y3="6.9930115200000005" z3="9.352412199">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="C" xFract="0.90576" yFract="0.8876999999999999" zFract="0.99151" id="a8_48" x3="14.601394656" y3="8.3195244" z3="14.512434417000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="H" xFract="0.645" yFract="0.915" zFract="0.3817" id="a23_49" x3="10.397787" y3="8.575380000000001" z3="5.58682839">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="C" xFract="0.65345" yFract="0.87557" zFract="0.32411" id="a22_50" x3="10.53400607" y3="8.20584204" z3="4.743900837000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="H" xFract="0.9051" yFract="0.06769999999999998" zFract="0.8019000000000001" id="a15_51" x3="14.59075506" y3="0.6344844000000007" z3="11.737169730000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="N" xFract="0.56706" yFract="0.22486000000000006" zFract="0.12224000000000013" id="a2_52" x3="9.141347436" y3="2.107387920000001" z3="1.7891902080000024">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="N" xFract="0.50779" yFract="0.12643000000000004" zFract="0.1373199999999999" id="a3_53" x3="8.185879474" y3="1.1849019600000008" z3="2.009911643999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="C" xFract="0.1372" yFract="0.3155" zFract="0.31679" id="a24_54" x3="2.2117463199999996" y3="2.9568659999999998" z3="4.636760193">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="H" xFract="0.26280000000000003" yFract="0.626" zFract="0.4768" id="a12_55" x3="4.236493680000001" y3="5.866872" z3="6.97877856">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="C" xFract="0.30464" yFract="0.4233" zFract="0.007000000000000006" id="a11_56" x3="4.910979584000001" y3="3.9671676000000007" z3="0.10245690000000063">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="C" xFract="0.95058" yFract="0.22865000000000002" zFract="0.53796" id="a18_57" x3="15.323919947999999" y3="2.142907800000001" z3="7.873959132">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="N" xFract="0.39739000000000013" yFract="0.8911" zFract="0.24563000000000001" id="a7_58" x3="6.406165234000002" y3="8.3513892" z3="3.595212621000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="H" xFract="0.23720000000000008" yFract="0.874" zFract="0.9768" id="a12_59" x3="3.823806320000001" y3="8.191127999999999" z3="14.297128559999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="Zn" spaceGroupMultiplicity="2" xFract="0.0" yFract="0.49126000000000003" zFract="0.75" id="a1_60" x3="0.0" y3="4.60408872" z3="10.977525">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.02093</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="Zn1"/>
+            <property dictRef="iucr:atom_site_refinement_flags">
+              <scalar dataType="xsd:string">S</scalar>
+            </property>
+            <scalar dataType="xsd:integer" dictRef="cml:mult">2</scalar>
+          </atom>
+          <atom elementType="Zn" spaceGroupMultiplicity="2" xFract="0.0" yFract="0.50874" zFract="0.25" id="a1_61" x3="0.0" y3="4.76791128" z3="3.6591750000000003">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.02093</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="Zn1"/>
+            <property dictRef="iucr:atom_site_refinement_flags">
+              <scalar dataType="xsd:string">S</scalar>
+            </property>
+            <scalar dataType="xsd:integer" dictRef="cml:mult">2</scalar>
+          </atom>
+          <atom elementType="Zn" spaceGroupMultiplicity="2" xFract="0.5" yFract="0.00873999999999997" zFract="0.25" id="a1_62" x3="8.0603" y3="0.08191128000000021" z3="3.6591750000000003">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.02093</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="Zn1"/>
+            <property dictRef="iucr:atom_site_refinement_flags">
+              <scalar dataType="xsd:string">S</scalar>
+            </property>
+            <scalar dataType="xsd:integer" dictRef="cml:mult">2</scalar>
+          </atom>
+          <atom elementType="N" xFract="0.9576" yFract="0.38568999999999987" zFract="0.9338" id="a4_63" x3="15.43708656" y3="3.6146866799999997" z3="13.66775046">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="N" xFract="0.5166200000000001" yFract="0.79498" zFract="0.99778" id="a5_64" x3="8.328224372000001" y3="7.450552560000001" z3="14.604206526">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="N" xFract="0.10260999999999998" yFract="0.3911" zFract="0.24563000000000001" id="a7_65" x3="1.6541347659999996" y3="3.6653892" z3="3.5952126210000004">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="C" xFract="0.84655" yFract="0.62443" zFract="0.82411" id="a22_66" x3="13.64689393" y3="5.852157960000001" z3="12.062250837">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="N" xFract="0.28108" yFract="0.20455" zFract="0.69884" id="a6_67" x3="4.531178248" y3="1.9170426000000003" z3="10.228711428">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="C" xFract="0.15344999999999998" yFract="0.37556999999999996" zFract="0.17589" id="a22_68" x3="2.4737060699999995" y3="3.5198420399999995" z3="2.574449163">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="H" xFract="0.4051" yFract="0.4323" zFract="0.1981" id="a15_69" x3="6.53045506" y3="4.0515156" z3="2.89953027">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="C" xFract="0.65678" yFract="0.4625" zFract="0.035660000000000025" id="a9_70" x3="10.587687668000001" y3="4.334550000000001" z3="0.5219447220000012">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="N" xFract="0.06706000000000012" yFract="0.7248600000000001" zFract="0.37776" id="a2_71" x3="1.081047436000002" y3="6.793387920000001" z3="5.529159792000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="C" xFract="0.38956999999999997" yFract="0.45830000000000004" zFract="0.13923999999999997" id="a14_72" x3="6.280102142" y3="4.2951876" z3="2.038014108">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="H" xFract="0.23170000000000002" yFract="0.3105" zFract="0.5921000000000001" id="a20_73" x3="3.73514302" y3="2.9100060000000005" z3="8.66639007">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="C" xFract="0.30464" yFract="0.5767" zFract="0.507" id="a11_74" x3="4.910979584000001" y3="5.4048324" z3="7.4208069000000005">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="C" xFract="0.38956999999999997" yFract="0.5417" zFract="0.63924" id="a14_75" x3="6.280102142" y3="5.0768124" z3="9.356364108">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="C" xFract="0.82788" yFract="0.88188" zFract="0.40553" id="a13_76" x3="13.345922327999999" y3="8.26497936" z3="5.935620951000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="H" xFract="0.8853" yFract="0.6934" zFract="0.625" id="a25_77" x3="14.27156718" y3="6.498544800000001" z3="9.147937500000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="C" xFract="0.71159" yFract="0.74616" zFract="0.86103" id="a19_78" x3="11.471257753999998" y3="6.993011520000001" z3="12.602637801">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="C" xFract="0.61043" yFract="0.5417" zFract="0.86076" id="a14_79" x3="9.840497858" y3="5.076812400000001" z3="12.598685892">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="H" xFract="0.469" yFract="0.6235999999999999" zFract="0.1281" id="a17_80" x3="7.560561399999999" y3="5.8443792000000006" z3="1.8749612700000007">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="C" xFract="0.9281" yFract="0.07279999999999998" zFract="0.40282" id="a16_81" x3="14.96152886" y3="0.6822816000000006" z3="5.895955494000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="C" xFract="0.15677999999999992" yFract="0.03750000000000009" zFract="0.96434" id="a9_82" x3="2.5273876679999985" y3="0.351450000000001" z3="14.114755277999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="C" xFract="0.07189999999999985" yFract="0.9272" zFract="0.59718" id="a16_83" x3="1.1590711399999976" y3="8.6897184" z3="8.740744506">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="H" xFract="0.469" yFract="0.37640000000000007" zFract="0.6281" id="a17_84" x3="7.560561399999999" y3="3.527620800000001" z3="9.193311269999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="C" xFract="0.88957" yFract="0.9583" zFract="0.36076" id="a14_85" x3="14.340402141999999" y3="8.9811876" z3="5.280335892000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="C" xFract="0.34655000000000014" yFract="0.12443000000000004" zFract="0.67589" id="a22_86" x3="5.586593930000002" y3="1.1661579600000007" z3="9.892799163">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="H" xFract="0.855" yFract="0.585" zFract="0.8816999999999999" id="a23_87" x3="13.783113" y3="5.482620000000001" z3="12.90517839">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="H" xFract="0.4051" yFract="0.5677" zFract="0.6980999999999999" id="a15_88" x3="6.53045506" y3="5.3204844" z3="10.217880269999998">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="N" xFract="0.48338" yFract="0.20501999999999998" zFract="0.0022199999999998887" id="a5_89" x3="7.792375627999999" y3="1.9214474400000003" z3="0.03249347399999897">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="C" xFract="0.84322" yFract="0.9625" zFract="0.035660000000000025" id="a9_90" x3="13.593212331999998" y3="9.02055" z3="0.5219447220000016">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="H" xFract="0.6729" yFract="0.43589999999999995" zFract="0.09419999999999984" id="a10_91" x3="10.84755174" y3="4.0852548" z3="1.3787771399999984">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="H" xFract="0.8298" yFract="0.7034" zFract="0.3253" id="a21_92" x3="13.37687388" y3="6.5922648000000015" z3="4.761318510000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="C" xFract="0.34321999999999997" yFract="0.5375" zFract="0.96434" id="a9_93" x3="5.5329123319999995" y3="5.03745" z3="14.114755277999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="C" xFract="0.17212000000000005" yFract="0.11812" zFract="0.59447" id="a13_94" x3="2.7746776720000006" y3="1.1070206400000002" z3="8.701079049">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="C" xFract="0.0942400000000001" yFract="0.8876999999999999" zFract="0.50849" id="a8_95" x3="1.5192053440000015" y3="8.319524399999999" z3="7.442615583">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="H" xFract="0.6702" yFract="0.7966" zFract="0.8252999999999999" id="a21_96" x3="10.80402612" y3="7.4657352" z3="12.07966851">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="C" xFract="0.3628" yFract="0.8155" zFract="0.31679" id="a24_97" x3="5.84855368" y3="7.642866" z3="4.636760193000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="C" xFract="0.20926999999999996" yFract="0.25639999999999996" zFract="0.28822000000000003" id="a26_98" x3="3.373557961999999" y3="2.4029807999999995" z3="4.218589674">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="H" xFract="0.23720000000000008" yFract="0.126" zFract="0.4768" id="a12_99" x3="3.823806320000001" y3="1.1808720000000001" z3="6.978778559999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="N" xFract="0.71892" yFract="0.79545" zFract="0.30116" id="a6_100" x3="11.589421752" y3="7.4549574000000005" z3="4.407988572000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="C" xFract="0.29072999999999993" yFract="0.7564" zFract="0.28822000000000003" id="a26_101" x3="4.6867420379999984" y3="7.0889808" z3="4.218589674000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="H" xFract="0.03100000000000014" yFract="0.8764000000000001" zFract="0.6281" id="a17_102" x3="0.4997386000000022" y3="8.213620800000001" z3="9.193311269999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="N" xFract="0.39739000000000013" yFract="0.1089" zFract="0.74563" id="a7_103" x3="6.406165234000002" y3="1.0206108000000005" z3="10.913562621">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="H" xFract="0.32709999999999995" yFract="0.43589999999999995" zFract="0.40580000000000005" id="a10_104" x3="5.273048259999999" y3="4.0852547999999995" z3="5.939572860000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="N" xFract="0.49221000000000004" yFract="0.12643000000000004" zFract="0.36268" id="a3_105" x3="7.934720526" y3="1.1849019600000008" z3="5.308438356000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="H" xFract="0.8271" yFract="0.06410000000000005" zFract="0.5942" id="a10_106" x3="13.33334826" y3="0.6007452000000012" z3="8.69712714">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="N" xFract="0.28108" yFract="0.79545" zFract="0.19884000000000002" id="a6_107" x3="4.531178248" y3="7.4549574" z3="2.910361428000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="H" xFract="0.969" yFract="0.12359999999999993" zFract="0.3719" id="a17_108" x3="15.620861399999999" y3="1.1583792000000002" z3="5.443388730000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="N" xFract="0.9833799999999999" yFract="0.70502" zFract="0.49778" id="a5_109" x3="15.852675627999998" y3="6.6074474400000005" z3="7.285856526000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="N" xFract="0.78108" yFract="0.70455" zFract="0.80116" id="a6_110" x3="12.591478248" y3="6.603042600000001" z3="11.726338572000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="H" xFract="0.8298" yFract="0.2966" zFract="0.8252999999999999" id="a21_111" x3="13.37687388" y3="2.7797352000000006" z3="12.07966851">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="C" xFract="0.04942000000000002" yFract="0.77135" zFract="0.46204" id="a18_112" x3="0.7966800520000002" y3="7.229092199999999" z3="6.762740868000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="N" xFract="0.007789999999999964" yFract="0.37356999999999996" zFract="0.86268" id="a3_113" x3="0.1255794739999994" y3="3.5010980399999996" z3="12.626788355999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="C" xFract="0.11043000000000003" yFract="0.9583" zFract="0.13923999999999997" id="a14_114" x3="1.7801978580000004" y3="8.9811876" z3="2.038014108">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="C" xFract="0.11043000000000003" yFract="0.04169999999999996" zFract="0.63924" id="a14_115" x3="1.7801978580000004" y3="0.3908123999999997" z3="9.356364108">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="H" xFract="0.09489999999999998" yFract="0.06769999999999998" zFract="0.6980999999999999" id="a15_116" x3="1.5298449399999998" y3="0.6344844" z3="10.217880269999998">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="N" xFract="0.04239999999999999" yFract="0.61431" zFract="0.06620000000000004" id="a4_117" x3="0.6835134399999999" y3="5.75731332" z3="0.9689495400000009">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="C" xFract="0.84322" yFract="0.03750000000000009" zFract="0.53566" id="a9_118" x3="13.593212331999998" y3="0.35145000000000165" z3="7.840294722000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="H" xFract="0.3853" yFract="0.19340000000000002" zFract="0.875" id="a25_119" x3="6.211267179999999" y3="1.8125448000000006" z3="12.807112499999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="H" xFract="0.7683" yFract="0.3105" zFract="0.9078999999999999" id="a20_120" x3="12.385456979999999" y3="2.910006000000001" z3="13.28865993">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="H" xFract="0.7372" yFract="0.626" zFract="0.02320000000000011" id="a12_121" x3="11.884106319999999" y3="5.866872000000001" z3="0.3395714400000027">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="C" xFract="0.32787999999999995" yFract="0.38188" zFract="0.09447" id="a13_122" x3="5.285622327999999" y3="3.5789793600000004" z3="1.3827290490000004">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="H" xFract="0.09489999999999998" yFract="0.9323" zFract="0.1981" id="a15_123" x3="1.5298449399999998" y3="8.7375156" z3="2.89953027">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H5"/>
+          </atom>
+          <atom elementType="C" xFract="0.15344999999999998" yFract="0.62443" zFract="0.67589" id="a22_124" x3="2.4737060699999995" y3="5.85215796" z3="9.892799163">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="C" xFract="0.07189999999999985" yFract="0.07279999999999998" zFract="0.09717999999999999" id="a16_125" x3="1.1590711399999976" y3="0.6822815999999998" z3="1.422394506">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="H" xFract="0.7683" yFract="0.6895" zFract="0.4079" id="a20_126" x3="12.385456979999999" y3="6.461994000000001" z3="5.97030993">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="H" xFract="0.1701999999999999" yFract="0.7034" zFract="0.17470000000000002" id="a21_127" x3="2.7437261199999985" y3="6.592264800000001" z3="2.557031490000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="H" xFract="0.7452" yFract="0.29969999999999997" zFract="0.6774" id="a27_128" x3="12.01307112" y3="2.8087884000000005" z3="9.914900580000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="C" xFract="0.04942000000000002" yFract="0.22865000000000002" zFract="0.96204" id="a18_129" x3="0.7966800520000002" y3="2.1429078" z3="14.081090867999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="C" xFract="0.21158999999999994" yFract="0.24616000000000005" zFract="0.63897" id="a19_130" x3="3.410957753999999" y3="2.3070115200000005" z3="9.352412199">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="H" xFract="0.11470000000000002" yFract="0.6934" zFract="0.875" id="a25_131" x3="1.8490328200000004" y3="6.4985448" z3="12.807112499999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="N" xFract="0.21892" yFract="0.70455" zFract="0.69884" id="a6_132" x3="3.529121752" y3="6.6030426" z3="10.228711428">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0227</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N5"/>
+          </atom>
+          <atom elementType="N" xFract="0.016620000000000024" yFract="0.29498" zFract="0.50222" id="a5_133" x3="0.26792437200000035" y3="2.7645525600000003" z3="7.3508434739999995">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="N" xFract="0.06706000000000012" yFract="0.27513999999999994" zFract="0.87776" id="a2_134" x3="1.081047436000002" y3="2.578612079999999" z3="12.847509791999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="H" xFract="0.23170000000000002" yFract="0.6895" zFract="0.09210000000000002" id="a20_135" x3="3.73514302" y3="6.461994" z3="1.3480400700000008">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8A"/>
+          </atom>
+          <atom elementType="N" xFract="0.60261" yFract="0.1089" zFract="0.75437" id="a7_136" x3="9.714434766" y3="1.0206108000000007" z3="11.041487379">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="C" xFract="0.8628" yFract="0.6845" zFract="0.68321" id="a24_137" x3="13.90885368" y3="6.415134000000001" z3="9.999939807">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="H" xFract="0.6147" yFract="0.19340000000000002" zFract="0.625" id="a25_138" x3="9.90933282" y3="1.8125448000000008" z3="9.1479375">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="C" xFract="0.95058" yFract="0.77135" zFract="0.037959999999999994" id="a18_139" x3="15.323919947999999" y3="7.2290922" z3="0.5556091320000012">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="H" xFract="0.355" yFract="0.08499999999999996" zFract="0.6183000000000001" id="a23_140" x3="5.7228129999999995" y3="0.79662" z3="9.04987161">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="C" xFract="0.45058" yFract="0.72865" zFract="0.96204" id="a18_141" x3="7.263619948" y3="6.828907800000001" z3="14.081090867999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="C" xFract="0.34321999999999997" yFract="0.4625" zFract="0.46434" id="a9_142" x3="5.5329123319999995" y3="4.33455" z3="6.796405278">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0294</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C2"/>
+          </atom>
+          <atom elementType="H" xFract="0.6147" yFract="0.8066" zFract="0.125" id="a25_143" x3="9.90933282" y3="7.5594552" z3="1.829587500000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="H" xFract="0.355" yFract="0.915" zFract="0.11830000000000002" id="a23_144" x3="5.7228129999999995" y3="8.575380000000001" z3="1.731521610000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="C" xFract="0.1372" yFract="0.6845" zFract="0.81679" id="a24_145" x3="2.2117463199999996" y3="6.415134" z3="11.955110193">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="C" xFract="0.42810000000000004" yFract="0.5728" zFract="0.09717999999999999" id="a16_146" x3="6.901228860000001" y3="5.3682815999999995" z3="1.4223945060000005">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="C" xFract="0.29072999999999993" yFract="0.24360000000000004" zFract="0.78822" id="a26_147" x3="4.6867420379999984" y3="2.283019200000001" z3="11.536939674">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="C" xFract="0.78841" yFract="0.24616000000000005" zFract="0.86103" id="a19_148" x3="12.709642246000001" y3="2.3070115200000014" z3="12.602637801">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="C" xFract="0.19535999999999998" yFract="0.9233" zFract="0.007000000000000006" id="a11_149" x3="3.1493204159999997" y3="8.6531676" z3="0.10245690000000081">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="C" xFract="0.17212000000000005" yFract="0.88188" zFract="0.09447" id="a13_150" x3="2.7746776720000006" y3="8.26497936" z3="1.3827290490000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="C" xFract="0.78841" yFract="0.75384" zFract="0.36103" id="a19_151" x3="12.709642246000001" y3="7.06498848" z3="5.2842878010000005">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="H" xFract="0.7628" yFract="0.874" zFract="0.5232" id="a12_152" x3="12.29679368" y3="8.191127999999999" z3="7.657921440000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="N" xFract="0.5424" yFract="0.11431000000000002" zFract="0.43379999999999996" id="a4_153" x3="8.74381344" y3="1.0713133200000007" z3="6.34940046">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="N" xFract="0.4576" yFract="0.11431000000000002" zFract="0.06620000000000004" id="a4_154" x3="7.37678656" y3="1.0713133200000007" z3="0.968949540000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="H" xFract="0.32709999999999995" yFract="0.5641" zFract="0.9058" id="a10_155" x3="5.273048259999999" y3="5.2867452" z3="13.25792286">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H2"/>
+          </atom>
+          <atom elementType="H" xFract="0.3853" yFract="0.8066" zFract="0.375" id="a25_156" x3="6.211267179999999" y3="7.5594551999999995" z3="5.488762500000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="H" xFract="0.7628" yFract="0.126" zFract="0.02320000000000011" id="a12_157" x3="12.29679368" y3="1.1808720000000006" z3="0.33957144000000244">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H3"/>
+          </atom>
+          <atom elementType="N" xFract="0.04239999999999999" yFract="0.38568999999999987" zFract="0.5662" id="a4_158" x3="0.6835134399999999" y3="3.614686679999999" z3="8.28729954">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N3"/>
+          </atom>
+          <atom elementType="N" xFract="0.49221000000000004" yFract="0.87357" zFract="0.86268" id="a3_159" x3="7.934720526" y3="8.187098039999999" z3="12.626788356">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.025</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N2"/>
+          </atom>
+          <atom elementType="C" xFract="0.54942" yFract="0.27135" zFract="0.037959999999999994" id="a18_160" x3="8.856980052" y3="2.5430922000000002" z3="0.5556091320000005">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0234</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C7"/>
+          </atom>
+          <atom elementType="C" xFract="0.88957" yFract="0.04169999999999996" zFract="0.86076" id="a14_161" x3="14.340402141999999" y3="0.3908124000000005" z3="12.598685892">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0277</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C5"/>
+          </atom>
+          <atom elementType="C" xFract="0.40576" yFract="0.38769999999999993" zFract="0.50849" id="a8_162" x3="6.541094656" y3="3.6335243999999998" z3="7.442615583">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="N" xFract="0.60261" yFract="0.8911" zFract="0.25437" id="a7_163" x3="9.714434766" y3="8.3513892" z3="3.7231373790000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="C" xFract="0.5719" yFract="0.4272" zFract="0.90282" id="a16_164" x3="9.21937114" y3="4.003718400000001" z3="13.214305494">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0271</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C6"/>
+          </atom>
+          <atom elementType="H" xFract="0.14500000000000002" yFract="0.41500000000000004" zFract="0.11830000000000002" id="a23_165" x3="2.3374870000000003" y3="3.8893800000000005" z3="1.7315216100000006">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H9"/>
+          </atom>
+          <atom elementType="C" xFract="0.28841000000000006" yFract="0.25383999999999995" zFract="0.13896999999999998" id="a19_166" x3="4.649342246000001" y3="2.37898848" z3="2.034062199">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0299</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C8"/>
+          </atom>
+          <atom elementType="H" xFract="0.1701999999999999" yFract="0.2966" zFract="0.6747000000000001" id="a21_167" x3="2.7437261199999985" y3="2.7797351999999997" z3="9.87538149">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H8B"/>
+          </atom>
+          <atom elementType="H" xFract="0.24519999999999997" yFract="0.20030000000000003" zFract="0.3226" id="a27_168" x3="3.9527711199999995" y3="1.8772116000000005" z3="4.72179942">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="C" xFract="0.80464" yFract="0.07669999999999999" zFract="0.993" id="a11_169" x3="12.971279584" y3="0.7188324000000007" z3="14.5342431">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="C" xFract="0.65345" yFract="0.12443000000000004" zFract="0.82411" id="a22_170" x3="10.53400607" y3="1.166157960000001" z3="12.062250836999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0233</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C9"/>
+          </atom>
+          <atom elementType="C" xFract="0.19535999999999998" yFract="0.07669999999999999" zFract="0.507" id="a11_171" x3="3.1493204159999997" y3="0.7188324000000001" z3="7.4208069">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.03</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C3"/>
+          </atom>
+          <atom elementType="H" xFract="0.03100000000000014" yFract="0.12359999999999993" zFract="0.1281" id="a17_172" x3="0.4997386000000022" y3="1.1583791999999993" z3="1.8749612699999998">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="C" xFract="0.70927" yFract="0.7564" zFract="0.21178" id="a26_173" x3="11.433857962" y3="7.088980800000001" z3="3.099760326000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.036</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C11"/>
+          </atom>
+          <atom elementType="H" xFract="0.531" yFract="0.37640000000000007" zFract="0.8719" id="a17_174" x3="8.5600386" y3="3.527620800000001" z3="12.76173873">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H6"/>
+          </atom>
+          <atom elementType="C" xFract="0.82788" yFract="0.11812" zFract="0.90553" id="a13_175" x3="13.345922327999999" y3="1.1070206400000009" z3="13.253970951">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="C" xFract="0.6372" yFract="0.1845" zFract="0.68321" id="a24_176" x3="10.27204632" y3="1.7291340000000006" z3="9.999939806999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="H" xFract="0.24519999999999997" yFract="0.7997" zFract="0.8226" id="a27_177" x3="3.9527711199999995" y3="7.4947884" z3="12.040149419999999">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="H" xFract="0.7452" yFract="0.7003" zFract="0.1774" id="a27_178" x3="12.01307112" y3="6.563211600000001" z3="2.596550580000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H11"/>
+          </atom>
+          <atom elementType="C" xFract="0.90576" yFract="0.11230000000000007" zFract="0.49151" id="a8_179" x3="14.601394656" y3="1.0524756000000015" z3="7.194084417000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0243</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C1"/>
+          </atom>
+          <atom elementType="C" xFract="0.3628" yFract="0.1845" zFract="0.81679" id="a24_180" x3="5.84855368" y3="1.7291340000000004" z3="11.955110193">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.037</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C10"/>
+          </atom>
+          <atom elementType="N" xFract="0.016620000000000024" yFract="0.70502" zFract="0.0022199999999998887" id="a5_181" x3="0.26792437200000035" y3="6.60744744" z3="0.032493473999998794">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0251</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N4"/>
+          </atom>
+          <atom elementType="H" xFract="0.11470000000000002" yFract="0.3066" zFract="0.375" id="a25_182" x3="1.8490328200000004" y3="2.8734552" z3="5.4887625">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.08</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uiso</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_calc_flag">
+              <scalar dataType="xsd:string">calc</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="H10"/>
+          </atom>
+          <atom elementType="C" xFract="0.32787999999999995" yFract="0.61812" zFract="0.59447" id="a13_183" x3="5.285622327999999" y3="5.79302064" z3="8.701079049">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0258</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="C4"/>
+          </atom>
+          <atom elementType="N" xFract="0.89739" yFract="0.6089" zFract="0.75437" id="a7_184" x3="14.466465234" y3="5.706610800000001" z3="11.041487379000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0236</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N6"/>
+          </atom>
+          <atom elementType="N" xFract="0.43294" yFract="0.22486000000000006" zFract="0.37776" id="a2_185" x3="6.979252563999999" y3="2.107387920000001" z3="5.529159792000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.0287</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="N1"/>
+          </atom>
+          <atom elementType="Zn" spaceGroupMultiplicity="2" xFract="1.0" yFract="0.49126000000000003" zFract="0.75" id="a1_60_1_1" x3="16.1206" y3="4.604088720000001" z3="10.977525000000002">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.02093</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="Zn1"/>
+            <property dictRef="iucr:atom_site_refinement_flags">
+              <scalar dataType="xsd:string">S</scalar>
+            </property>
+            <scalar dataType="xsd:integer" dictRef="cml:mult">2</scalar>
+          </atom>
+          <atom elementType="Zn" spaceGroupMultiplicity="2" xFract="1.0" yFract="0.50874" zFract="0.25" id="a1_61_1_1" x3="16.1206" y3="4.767911280000001" z3="3.659175000000001">
+            <property dictRef="iucr:atom_site_u_iso_or_equiv">
+              <scalar units="nonSi:angstrom2" dataType="xsd:double">0.02093</scalar>
+            </property>
+            <property dictRef="iucr:atom_site_adp_type">
+              <scalar dataType="xsd:string">Uani</scalar>
+            </property>
+            <label dictRef="iucr:atom_site_label" value="Zn1"/>
+            <property dictRef="iucr:atom_site_refinement_flags">
+              <scalar dataType="xsd:string">S</scalar>
+            </property>
+            <scalar dataType="xsd:integer" dictRef="cml:mult">2</scalar>
+          </atom>
+        </atomArray>
+        <bondArray>
+          <bond atomRefs2="a1 a3" id="a1_a3" order="S"/>
+          <bond atomRefs2="a1 a3_159" id="a1_a3_159" order="S"/>
+          <bond atomRefs2="a2 a3" id="a2_a3" order="S"/>
+          <bond atomRefs2="a2 a18" id="a2_a18" order="S"/>
+          <bond atomRefs2="a3 a4" id="a3_a4" order="S"/>
+          <bond atomRefs2="a4 a5" id="a4_a5" order="S"/>
+          <bond atomRefs2="a5 a18" id="a5_a18" order="S"/>
+          <bond atomRefs2="a6 a19" id="a6_a19" order="S"/>
+          <bond atomRefs2="a6 a22" id="a6_a22" order="S"/>
+          <bond atomRefs2="a6 a26" id="a6_a26" order="S"/>
+          <bond atomRefs2="a7 a22" id="a7_a22" order="S"/>
+          <bond atomRefs2="a7 a24" id="a7_a24" order="S"/>
+          <bond atomRefs2="a7 a1_61_1_1" id="a7_a1_61_1_1" order="S"/>
+          <bond atomRefs2="a8 a9" id="a8_a9" order="S"/>
+          <bond atomRefs2="a8 a16" id="a8_a16" order="S"/>
+          <bond atomRefs2="a8 a18" id="a8_a18" order="S"/>
+          <bond atomRefs2="a9 a10" id="a9_a10" order="S"/>
+          <bond atomRefs2="a9 a11" id="a9_a11" order="S"/>
+          <bond atomRefs2="a11 a12" id="a11_a12" order="S"/>
+          <bond atomRefs2="a11 a13" id="a11_a13" order="S"/>
+          <bond atomRefs2="a13 a14" id="a13_a14" order="S"/>
+          <bond atomRefs2="a13 a19" id="a13_a19" order="S"/>
+          <bond atomRefs2="a14 a15" id="a14_a15" order="S"/>
+          <bond atomRefs2="a14 a16" id="a14_a16" order="S"/>
+          <bond atomRefs2="a16 a17" id="a16_a17" order="S"/>
+          <bond atomRefs2="a19 a20" id="a19_a20" order="S"/>
+          <bond atomRefs2="a19 a21" id="a19_a21" order="S"/>
+          <bond atomRefs2="a22 a23" id="a22_a23" order="S"/>
+          <bond atomRefs2="a24 a25" id="a24_a25" order="S"/>
+          <bond atomRefs2="a24 a26" id="a24_a26" order="S"/>
+          <bond atomRefs2="a26 a27" id="a26_a27" order="S"/>
+          <bond atomRefs2="a15_1 a14_79" id="a15_1_a14_79" order="S"/>
+          <bond atomRefs2="a8_2 a16_125" id="a8_2_a16_125" order="S"/>
+          <bond atomRefs2="a2_3 a3_9" id="a2_3_a3_9" order="S"/>
+          <bond atomRefs2="a2_3 a18_57" id="a2_3_a18_57" order="S"/>
+          <bond atomRefs2="a5_4 a4_63" id="a5_4_a4_63" order="S"/>
+          <bond atomRefs2="a20_5 a19_47" id="a20_5_a19_47" order="S"/>
+          <bond atomRefs2="a18_6 a5_31" id="a18_6_a5_31" order="S"/>
+          <bond atomRefs2="a18_6 a8_162" id="a18_6_a8_162" order="S"/>
+          <bond atomRefs2="a18_6 a2_185" id="a18_6_a2_185" order="S"/>
+          <bond atomRefs2="a9_7 a10_12" id="a9_7_a10_12" order="S"/>
+          <bond atomRefs2="a9_7 a8_95" id="a9_7_a8_95" order="S"/>
+          <bond atomRefs2="a6_8 a22_68" id="a6_8_a22_68" order="S"/>
+          <bond atomRefs2="a6_8 a26_98" id="a6_8_a26_98" order="S"/>
+          <bond atomRefs2="a6_8 a19_166" id="a6_8_a19_166" order="S"/>
+          <bond atomRefs2="a3_9 a1_60_1_1" id="a3_9_a1_60_1_1" order="S"/>
+          <bond atomRefs2="a8_10 a16_164" id="a8_10_a16_164" order="S"/>
+          <bond atomRefs2="a3_11 a1_61" id="a3_11_a1_61" order="S"/>
+          <bond atomRefs2="a3_11 a2_71" id="a3_11_a2_71" order="S"/>
+          <bond atomRefs2="a20_13 a19_78" id="a20_13_a19_78" order="S"/>
+          <bond atomRefs2="a21_14 a19_47" id="a21_14_a19_47" order="S"/>
+          <bond atomRefs2="a27_15 a26_28" id="a27_15_a26_28" order="S"/>
+          <bond atomRefs2="a17_16 a16_41" id="a17_16_a16_41" order="S"/>
+          <bond atomRefs2="a4_17 a5_64" id="a4_17_a5_64" order="S"/>
+          <bond atomRefs2="a4_17 a3_159" id="a4_17_a3_159" order="S"/>
+          <bond atomRefs2="a11_18 a13_46" id="a11_18_a13_46" order="S"/>
+          <bond atomRefs2="a11_19 a13_76" id="a11_19_a13_76" order="S"/>
+          <bond atomRefs2="a11_19 a12_152" id="a11_19_a12_152" order="S"/>
+          <bond atomRefs2="a2_20 a18_141" id="a2_20_a18_141" order="S"/>
+          <bond atomRefs2="a2_20 a3_159" id="a2_20_a3_159" order="S"/>
+          <bond atomRefs2="a19_21 a6_107" id="a19_21_a6_107" order="S"/>
+          <bond atomRefs2="a19_21 a21_127" id="a19_21_a21_127" order="S"/>
+          <bond atomRefs2="a19_21 a20_135" id="a19_21_a20_135" order="S"/>
+          <bond atomRefs2="a19_21 a13_150" id="a19_21_a13_150" order="S"/>
+          <bond atomRefs2="a10_22 a9_90" id="a10_22_a9_90" order="S"/>
+          <bond atomRefs2="a15_23 a14_85" id="a15_23_a14_85" order="S"/>
+          <bond atomRefs2="a23_24 a22_170" id="a23_24_a22_170" order="S"/>
+          <bond atomRefs2="a22_25 a7_58" id="a22_25_a7_58" order="S"/>
+          <bond atomRefs2="a22_25 a6_107" id="a22_25_a6_107" order="S"/>
+          <bond atomRefs2="a22_25 a23_144" id="a22_25_a23_144" order="S"/>
+          <bond atomRefs2="a21_26 a19_166" id="a21_26_a19_166" order="S"/>
+          <bond atomRefs2="a10_27 a9_82" id="a10_27_a9_82" order="S"/>
+          <bond atomRefs2="a26_28 a6_110" id="a26_28_a6_110" order="S"/>
+          <bond atomRefs2="a26_28 a24_137" id="a26_28_a24_137" order="S"/>
+          <bond atomRefs2="a24_29 a25_143" id="a24_29_a25_143" order="S"/>
+          <bond atomRefs2="a24_29 a7_163" id="a24_29_a7_163" order="S"/>
+          <bond atomRefs2="a24_29 a26_173" id="a24_29_a26_173" order="S"/>
+          <bond atomRefs2="a27_30 a26_101" id="a27_30_a26_101" order="S"/>
+          <bond atomRefs2="a5_31 a4_153" id="a5_31_a4_153" order="S"/>
+          <bond atomRefs2="a7_32 a1_60" id="a7_32_a1_60" order="S"/>
+          <bond atomRefs2="a7_32 a22_124" id="a7_32_a22_124" order="S"/>
+          <bond atomRefs2="a7_32 a24_145" id="a7_32_a24_145" order="S"/>
+          <bond atomRefs2="a26_33 a6_35" id="a26_33_a6_35" order="S"/>
+          <bond atomRefs2="a26_33 a27_128" id="a26_33_a27_128" order="S"/>
+          <bond atomRefs2="a26_33 a24_176" id="a26_33_a24_176" order="S"/>
+          <bond atomRefs2="a23_34 a22_124" id="a23_34_a22_124" order="S"/>
+          <bond atomRefs2="a6_35 a19_148" id="a6_35_a19_148" order="S"/>
+          <bond atomRefs2="a6_35 a22_170" id="a6_35_a22_170" order="S"/>
+          <bond atomRefs2="a4_36 a5_109" id="a4_36_a5_109" order="S"/>
+          <bond atomRefs2="a16_37 a14_75" id="a16_37_a14_75" order="S"/>
+          <bond atomRefs2="a16_37 a17_84" id="a16_37_a17_84" order="S"/>
+          <bond atomRefs2="a16_37 a8_162" id="a16_37_a8_162" order="S"/>
+          <bond atomRefs2="a26_39 a6_132" id="a26_39_a6_132" order="S"/>
+          <bond atomRefs2="a26_39 a24_145" id="a26_39_a24_145" order="S"/>
+          <bond atomRefs2="a26_39 a27_177" id="a26_39_a27_177" order="S"/>
+          <bond atomRefs2="a3_40 a2_42" id="a3_40_a2_42" order="S"/>
+          <bond atomRefs2="a3_40 a1_61_1_1" id="a3_40_a1_61_1_1" order="S"/>
+          <bond atomRefs2="a16_41 a8_48" id="a16_41_a8_48" order="S"/>
+          <bond atomRefs2="a2_42 a18_139" id="a2_42_a18_139" order="S"/>
+          <bond atomRefs2="a20_43 a19_166" id="a20_43_a19_166" order="S"/>
+          <bond atomRefs2="a8_44 a16_146" id="a8_44_a16_146" order="S"/>
+          <bond atomRefs2="a27_45 a26_147" id="a27_45_a26_147" order="S"/>
+          <bond atomRefs2="a13_46 a19_78" id="a13_46_a19_78" order="S"/>
+          <bond atomRefs2="a13_46 a14_79" id="a13_46_a14_79" order="S"/>
+          <bond atomRefs2="a19_47 a6_132" id="a19_47_a6_132" order="S"/>
+          <bond atomRefs2="a19_47 a13_183" id="a19_47_a13_183" order="S"/>
+          <bond atomRefs2="a23_49 a22_50" id="a23_49_a22_50" order="S"/>
+          <bond atomRefs2="a22_50 a6_100" id="a22_50_a6_100" order="S"/>
+          <bond atomRefs2="a22_50 a7_163" id="a22_50_a7_163" order="S"/>
+          <bond atomRefs2="a15_51 a14_161" id="a15_51_a14_161" order="S"/>
+          <bond atomRefs2="a2_52 a3_53" id="a2_52_a3_53" order="S"/>
+          <bond atomRefs2="a2_52 a18_160" id="a2_52_a18_160" order="S"/>
+          <bond atomRefs2="a3_53 a1_62" id="a3_53_a1_62" order="S"/>
+          <bond atomRefs2="a3_53 a4_154" id="a3_53_a4_154" order="S"/>
+          <bond atomRefs2="a24_54 a7_65" id="a24_54_a7_65" order="S"/>
+          <bond atomRefs2="a24_54 a26_98" id="a24_54_a26_98" order="S"/>
+          <bond atomRefs2="a24_54 a25_182" id="a24_54_a25_182" order="S"/>
+          <bond atomRefs2="a12_55 a11_74" id="a12_55_a11_74" order="S"/>
+          <bond atomRefs2="a11_56 a13_122" id="a11_56_a13_122" order="S"/>
+          <bond atomRefs2="a18_57 a8_179" id="a18_57_a8_179" order="S"/>
+          <bond atomRefs2="a7_58 a24_97" id="a7_58_a24_97" order="S"/>
+          <bond atomRefs2="a1_60 a3_113" id="a1_60_a3_113" order="S"/>
+          <bond atomRefs2="a1_61 a7_65" id="a1_61_a7_65" order="S"/>
+          <bond atomRefs2="a1_62 a3_105" id="a1_62_a3_105" order="S"/>
+          <bond atomRefs2="a5_64 a18_141" id="a5_64_a18_141" order="S"/>
+          <bond atomRefs2="a7_65 a22_68" id="a7_65_a22_68" order="S"/>
+          <bond atomRefs2="a22_66 a23_87" id="a22_66_a23_87" order="S"/>
+          <bond atomRefs2="a22_66 a6_110" id="a22_66_a6_110" order="S"/>
+          <bond atomRefs2="a22_66 a7_184" id="a22_66_a7_184" order="S"/>
+          <bond atomRefs2="a6_67 a22_86" id="a6_67_a22_86" order="S"/>
+          <bond atomRefs2="a6_67 a19_130" id="a6_67_a19_130" order="S"/>
+          <bond atomRefs2="a6_67 a26_147" id="a6_67_a26_147" order="S"/>
+          <bond atomRefs2="a22_68 a23_165" id="a22_68_a23_165" order="S"/>
+          <bond atomRefs2="a15_69 a14_72" id="a15_69_a14_72" order="S"/>
+          <bond atomRefs2="a9_70 a10_91" id="a9_70_a10_91" order="S"/>
+          <bond atomRefs2="a2_71 a18_112" id="a2_71_a18_112" order="S"/>
+          <bond atomRefs2="a14_72 a13_122" id="a14_72_a13_122" order="S"/>
+          <bond atomRefs2="a14_72 a16_146" id="a14_72_a16_146" order="S"/>
+          <bond atomRefs2="a20_73 a19_130" id="a20_73_a19_130" order="S"/>
+          <bond atomRefs2="a11_74 a9_142" id="a11_74_a9_142" order="S"/>
+          <bond atomRefs2="a11_74 a13_183" id="a11_74_a13_183" order="S"/>
+          <bond atomRefs2="a14_75 a15_88" id="a14_75_a15_88" order="S"/>
+          <bond atomRefs2="a14_75 a13_183" id="a14_75_a13_183" order="S"/>
+          <bond atomRefs2="a13_76 a14_85" id="a13_76_a14_85" order="S"/>
+          <bond atomRefs2="a13_76 a19_151" id="a13_76_a19_151" order="S"/>
+          <bond atomRefs2="a25_77 a24_137" id="a25_77_a24_137" order="S"/>
+          <bond atomRefs2="a19_78 a21_96" id="a19_78_a21_96" order="S"/>
+          <bond atomRefs2="a19_78 a6_110" id="a19_78_a6_110" order="S"/>
+          <bond atomRefs2="a14_79 a16_164" id="a14_79_a16_164" order="S"/>
+          <bond atomRefs2="a17_80 a16_146" id="a17_80_a16_146" order="S"/>
+          <bond atomRefs2="a16_81 a17_108" id="a16_81_a17_108" order="S"/>
+          <bond atomRefs2="a16_81 a8_179" id="a16_81_a8_179" order="S"/>
+          <bond atomRefs2="a16_83 a8_95" id="a16_83_a8_95" order="S"/>
+          <bond atomRefs2="a16_83 a17_102" id="a16_83_a17_102" order="S"/>
+          <bond atomRefs2="a22_86 a7_103" id="a22_86_a7_103" order="S"/>
+          <bond atomRefs2="a22_86 a23_140" id="a22_86_a23_140" order="S"/>
+          <bond atomRefs2="a5_89 a4_154" id="a5_89_a4_154" order="S"/>
+          <bond atomRefs2="a5_89 a18_160" id="a5_89_a18_160" order="S"/>
+          <bond atomRefs2="a21_92 a19_151" id="a21_92_a19_151" order="S"/>
+          <bond atomRefs2="a9_93 a10_155" id="a9_93_a10_155" order="S"/>
+          <bond atomRefs2="a13_94 a14_115" id="a13_94_a14_115" order="S"/>
+          <bond atomRefs2="a13_94 a19_130" id="a13_94_a19_130" order="S"/>
+          <bond atomRefs2="a13_94 a11_171" id="a13_94_a11_171" order="S"/>
+          <bond atomRefs2="a8_95 a18_112" id="a8_95_a18_112" order="S"/>
+          <bond atomRefs2="a24_97 a26_101" id="a24_97_a26_101" order="S"/>
+          <bond atomRefs2="a24_97 a25_156" id="a24_97_a25_156" order="S"/>
+          <bond atomRefs2="a26_98 a27_168" id="a26_98_a27_168" order="S"/>
+          <bond atomRefs2="a12_99 a11_171" id="a12_99_a11_171" order="S"/>
+          <bond atomRefs2="a6_100 a19_151" id="a6_100_a19_151" order="S"/>
+          <bond atomRefs2="a6_100 a26_173" id="a6_100_a26_173" order="S"/>
+          <bond atomRefs2="a26_101 a6_107" id="a26_101_a6_107" order="S"/>
+          <bond atomRefs2="a7_103 a24_180" id="a7_103_a24_180" order="S"/>
+          <bond atomRefs2="a10_104 a9_142" id="a10_104_a9_142" order="S"/>
+          <bond atomRefs2="a3_105 a4_153" id="a3_105_a4_153" order="S"/>
+          <bond atomRefs2="a3_105 a2_185" id="a3_105_a2_185" order="S"/>
+          <bond atomRefs2="a10_106 a9_118" id="a10_106_a9_118" order="S"/>
+          <bond atomRefs2="a21_111 a19_148" id="a21_111_a19_148" order="S"/>
+          <bond atomRefs2="a3_113 a2_134" id="a3_113_a2_134" order="S"/>
+          <bond atomRefs2="a14_114 a15_123" id="a14_114_a15_123" order="S"/>
+          <bond atomRefs2="a14_114 a13_150" id="a14_114_a13_150" order="S"/>
+          <bond atomRefs2="a14_115 a15_116" id="a14_115_a15_116" order="S"/>
+          <bond atomRefs2="a4_117 a5_181" id="a4_117_a5_181" order="S"/>
+          <bond atomRefs2="a9_118 a8_179" id="a9_118_a8_179" order="S"/>
+          <bond atomRefs2="a25_119 a24_180" id="a25_119_a24_180" order="S"/>
+          <bond atomRefs2="a20_120 a19_148" id="a20_120_a19_148" order="S"/>
+          <bond atomRefs2="a13_122 a19_166" id="a13_122_a19_166" order="S"/>
+          <bond atomRefs2="a22_124 a6_132" id="a22_124_a6_132" order="S"/>
+          <bond atomRefs2="a16_125 a17_172" id="a16_125_a17_172" order="S"/>
+          <bond atomRefs2="a20_126 a19_151" id="a20_126_a19_151" order="S"/>
+          <bond atomRefs2="a18_129 a2_134" id="a18_129_a2_134" order="S"/>
+          <bond atomRefs2="a19_130 a21_167" id="a19_130_a21_167" order="S"/>
+          <bond atomRefs2="a25_131 a24_145" id="a25_131_a24_145" order="S"/>
+          <bond atomRefs2="a5_133 a4_158" id="a5_133_a4_158" order="S"/>
+          <bond atomRefs2="a7_136 a22_170" id="a7_136_a22_170" order="S"/>
+          <bond atomRefs2="a7_136 a24_176" id="a7_136_a24_176" order="S"/>
+          <bond atomRefs2="a24_137 a7_184" id="a24_137_a7_184" order="S"/>
+          <bond atomRefs2="a25_138 a24_176" id="a25_138_a24_176" order="S"/>
+          <bond atomRefs2="a9_142 a8_162" id="a9_142_a8_162" order="S"/>
+          <bond atomRefs2="a26_147 a24_180" id="a26_147_a24_180" order="S"/>
+          <bond atomRefs2="a19_148 a13_175" id="a19_148_a13_175" order="S"/>
+          <bond atomRefs2="a11_149 a13_150" id="a11_149_a13_150" order="S"/>
+          <bond atomRefs2="a14_161 a13_175" id="a14_161_a13_175" order="S"/>
+          <bond atomRefs2="a16_164 a17_174" id="a16_164_a17_174" order="S"/>
+          <bond atomRefs2="a11_169 a13_175" id="a11_169_a13_175" order="S"/>
+          <bond atomRefs2="a26_173 a27_178" id="a26_173_a27_178" order="S"/>
+          <bond atomRefs2="a7_184 a1_60_1_1" id="a7_184_a1_60_1_1" order="S"/>
+        </bondArray>
+        <metadataList>
+          <metadata dictRef="ned24:isPolymeric"/>
+        </metadataList>
+      </molecule>
+    </module>
+  </module>
+</cml>

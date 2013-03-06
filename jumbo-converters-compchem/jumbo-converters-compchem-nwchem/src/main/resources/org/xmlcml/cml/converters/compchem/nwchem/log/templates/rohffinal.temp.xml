@@ -1,0 +1,161 @@
+<template repeat="*"  id="rohffinal" name="ROHF Final Molecular Orbital Analysis" 
+  pattern="\s*ROHF Final Molecular Orbital Analysis\s*$\s+\-+.*" newline="$" endPattern=".*$\s*\-+\s*">
+  <comment class="example.input" id="rohffinal">
+                       ROHF Final Molecular Orbital Analysis
+                       -------------------------------------
+ 
+ Vector    2  Occ=2.000000D+00  E=-3.036992D+00  Symmetry=b3u
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    24       .691291  1 Au px                18      -.358797  1 Au px         
+    21       .309698  1 Au px                27       .220256  1 Au px         
+ 
+ Vector    3  Occ=2.000000D+00  E=-3.036992D+00  Symmetry=b2u
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    25       .691291  1 Au py                19      -.358797  1 Au py         
+    22       .309698  1 Au py                28       .220256  1 Au py         
+    
+  </comment> 
+  <comment class="example.input" id="rohffinal1">
+                       ROHF Final Molecular Orbital Analysis
+                       -------------------------------------
+ 
+ Vector    2  Occ=2.000000D+00  E=-1.118262D+01
+              MO Center=  5.3D-02,  7.1D-01, -1.3D-17, r^2= 2.8D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16      0.543111  2 N  px                12      0.412271  2 N  px         
+    15      0.262843  2 N  s                 20      0.210201  3 H  s          
+    17     -0.204476  2 N  py         
+
+  </comment>
+  
+  <record repeat="3" id="rl1"/>
+  <templateList>
+  <!--  the endOffset is needed to make the parsing work for the last item -->
+    <template repeat="*" id="vectorx" pattern="\s*Vector.*" endPattern="\s*" endOffset="1">
+      <templateList>
+        <template id="vector2" newline="$" pattern="\s*Vector\s+.*$\s*MO Center.*" endPattern="\s*Bfn.*">
+          <record id="vectorprops">\s*Vector\s+{I,cc:serial}\s*Occ=\s*{E,n:occ}\s*E=\s*{E,n:eee}\s*</record>
+          <record id="mocenter">\s*MO Center\=\s*{E,x:x}\,\s*{E,x:y}\,\s*{E,x:z}\,\s*r\^2=\s*{E,n:rsup2}\s*</record>
+        </template>
+        <template id="vector1" pattern="\s*Vector.*Symmetry.*" endPattern=".*">
+          <record id="eee">\s*Vector\s+{I,cc:serial}\s*Occ=\s*{E,n:occ}\s*E=\s*{E,n:eee}\s*Symmetry=\s*{A,cc:irrep}\s*</record>
+        </template>
+      </templateList>
+      <!--  this may be a bug - should be able to eat records here -->
+      <templateList>
+        <template id="bfn" pattern="\s*Bfn.*" endPattern="\s*\-+\s*\-+\s*.*" endOffset="1">
+          <record repeat="2"/>
+         </template>
+      </templateList>
+      <templateList>
+        <template id="twocol" repeat="*" pattern="\s*\d+.*\s{10}\d+.*" endPattern=".*">
+<!-- 
+          <record repeat="*" id="bfn1">\s*{I,n:bfn}\s*{F,n:coeff}\s*{I,n:atom1}\s*{A,n:atom2}\s*{A,n:orb}\s*{I,n:bfn}\s*{F,n:coeff}\s*{I,n:atom1}\s*{A,n:atom2}\s*{A,n:orb}\s*</record>
+          -->
+          <record repeat="*" id="bfn1">{1_16A,x:bfn1}</record>
+        </template>
+        <template id="onecol" pattern=".*" endPattern=".*">
+          <record id="bfn0">{1_10A,x:bfn1}</record>
+<!-- 
+          <record id="bfn0">\s*{I,n:bfn}\s*{F,n:coeff}\s*{I,n:atom1}\s*{A,n:atom2}\s*{A,n:orb}\s*</record>
+          -->
+        </template>
+      </templateList>
+    </template>
+  </templateList>
+  
+  <comment class="example.output" id="rohffinal">
+    <module cmlx:templateRef="rohffinal" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <module cmlx:lineCount="6" cmlx:templateRef="vectorx">
+        <module cmlx:lineCount="1" cmlx:templateRef="vector1">
+          <list cmlx:templateRef="eee">
+            <list>
+              <scalar dataType="xsd:integer" dictRef="cc:serial">2</scalar>
+              <scalar dataType="xsd:double" dictRef="n:occ">2.0</scalar>
+              <scalar dataType="xsd:double" dictRef="n:eee">-3.036992</scalar>
+              <scalar dataType="xsd:string" dictRef="cc:irrep">b3u</scalar>
+            </list>
+          </list>
+        </module>
+        <module cmlx:lineCount="2" cmlx:templateRef="bfn"/>
+        <module cmlx:lineCount="1" cmlx:templateRef="twocol">
+          <list cmlx:templateRef="bfn1">
+            <array dataType="xsd:string" size="10" dictRef="x:bfn1">24 .691291 1 Au px 18 -.358797 1 Au px</array>
+          </list>
+        </module>
+        <module cmlx:lineCount="1" cmlx:templateRef="twocol">
+          <list cmlx:templateRef="bfn1">
+            <array dataType="xsd:string" size="10" dictRef="x:bfn1">21 .309698 1 Au px 27 .220256 1 Au px</array>
+          </list>
+        </module>
+      </module>
+      <module cmlx:lineCount="6" cmlx:templateRef="vectorx">
+        <module cmlx:lineCount="1" cmlx:templateRef="vector1">
+          <list cmlx:templateRef="eee">
+            <list>
+              <scalar dataType="xsd:integer" dictRef="cc:serial">3</scalar>
+              <scalar dataType="xsd:double" dictRef="n:occ">2.0</scalar>
+              <scalar dataType="xsd:double" dictRef="n:eee">-3.036992</scalar>
+              <scalar dataType="xsd:string" dictRef="cc:irrep">b2u</scalar>
+            </list>
+          </list>
+        </module>
+        <module cmlx:lineCount="2" cmlx:templateRef="bfn"/>
+        <module cmlx:lineCount="1" cmlx:templateRef="twocol">
+          <list cmlx:templateRef="bfn1">
+            <array dataType="xsd:string" size="10" dictRef="x:bfn1">25 .691291 1 Au py 19 -.358797 1 Au py</array>
+          </list>
+        </module>
+        <module cmlx:lineCount="1" cmlx:templateRef="twocol">
+          <list cmlx:templateRef="bfn1">
+            <array dataType="xsd:string" size="10" dictRef="x:bfn1">22 .309698 1 Au py 28 .220256 1 Au py</array>
+          </list>
+        </module>
+      </module>
+    </module>
+  </comment>
+
+  <comment class="example.output" id="rohffinal1">
+    <module cmlx:templateRef="rohffinal" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+      <module cmlx:lineCount="8" cmlx:templateRef="vectorx">
+        <module cmlx:lineCount="2" cmlx:templateRef="vector2">
+          <list cmlx:templateRef="vectorprops">
+            <list>
+              <scalar dataType="xsd:integer" dictRef="cc:serial">2</scalar>
+              <scalar dataType="xsd:double" dictRef="n:occ">2.0</scalar>
+              <scalar dataType="xsd:double" dictRef="n:eee">-11.18262</scalar>
+            </list>
+          </list>
+          <list cmlx:templateRef="mocenter">
+            <list>
+              <scalar dataType="xsd:double" dictRef="x:x">0.053</scalar>
+              <scalar dataType="xsd:double" dictRef="x:y">0.71</scalar>
+              <scalar dataType="xsd:double" dictRef="x:z">-1.3E-17</scalar>
+              <scalar dataType="xsd:double" dictRef="n:rsup2">0.028</scalar>
+            </list>
+          </list>
+        </module>
+        <module cmlx:lineCount="2" cmlx:templateRef="bfn"/>
+        <module cmlx:lineCount="1" cmlx:templateRef="twocol">
+          <list cmlx:templateRef="bfn1">
+            <array dataType="xsd:string" size="10" dictRef="x:bfn1">16 0.543111 2 N px 12 0.412271 2 N px</array>
+          </list>
+        </module>
+        <module cmlx:lineCount="1" cmlx:templateRef="twocol">
+          <list cmlx:templateRef="bfn1">
+            <array dataType="xsd:string" size="10" dictRef="x:bfn1">15 0.262843 2 N s 20 0.210201 3 H s</array>
+          </list>
+        </module>
+        <module cmlx:lineCount="1" cmlx:templateRef="onecol">
+          <list cmlx:templateRef="bfn0">
+            <array dataType="xsd:string" size="5" dictRef="x:bfn1">17 -0.204476 2 N py</array>
+          </list>
+        </module>
+      </module>
+    </module>
+  </comment>
+
+</template>

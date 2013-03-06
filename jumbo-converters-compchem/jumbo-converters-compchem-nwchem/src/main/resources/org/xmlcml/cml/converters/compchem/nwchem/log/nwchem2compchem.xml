@@ -1,0 +1,34 @@
+<transformList xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="transform.namespaces.xml"/>    
+
+  <transform process="addChild" xpath="." elementName="cml:module" id="jobList1"  position="1"/>
+  <transform process="addDictRef" xpath="./cml:module[@id='jobList1']" value="cc:jobList" />
+  
+  <transform process="addChild" xpath="./cml:module[@id='jobList1']" elementName="cml:module" id="job1"/>
+  <transform process="addDictRef" xpath="./cml:module[@id='jobList1']/cml:module[@id='job1']" value="cc:job" />
+
+  <xi:include href="transform.environment.xml"/>    
+  <xi:include href="transform.initial.xml"/>    
+  <xi:include href="transform.calculation.xml"/>    
+  <xi:include href="transform.final.xml"/>    
+
+ <!-- ============================= clean up output =========================== -->
+ 
+    <transform process="delete" xpath="//cml:module[
+         @cmlx:templateRef='auth'
+      or @cmlx:templateRef='citation'
+      or @cmlx:templateRef='nwcheminpmod'
+      ]" />
+    
+    <transform process="delete" xpath="//cml:atom/cml:scalar[@dictRef='cc:atomtypeRef']" />
+    <transform process="delete" xpath="//cml:atom/cml:scalar[@dictRef='compchem:atomicNumber']" />
+    
+    <transform process="delete" xpath=".//@cmlx:templateRef" />
+    <transform process="delete" xpath=".//@cmlx:lineCount" />
+
+<!--     
+    <transform process="delete" xpath="/cml:module/cml:scalar" />
+-->    
+</transformList>    
+ 

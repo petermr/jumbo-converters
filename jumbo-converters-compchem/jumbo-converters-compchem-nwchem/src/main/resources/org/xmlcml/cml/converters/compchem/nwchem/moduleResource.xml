@@ -1,0 +1,30 @@
+<resourceList name="nwchem">
+  <prefix>nwchem</prefix>
+  <namespace>http://wwmm.ch.cam.ac.uk/dict/nwchem</namespace>
+  <typeList>
+    <type name"input" mime="chemical/x-nwchem-input" objectType="TEXT">
+      <suffix>inp</suffix>
+    </type>
+    <type name="log" mime="chemical/x-nwchem-log" objectType="TEXT">
+      <suffix>log</suffix>
+    </type>
+    <type name="logXml" mime="chemical/x-nwchem-log-xml" objectType="XML">
+      <suffix>log.xml</suffix>
+      <suffix>xml</suffix>
+    </type>
+  </typeList>
+  <dictionaryList>
+    <dictionary resource="org/xmlcml/cml/converters/compchem/nwchem/nwchemDictionary.xml"
+      url="http://no.where.yet"/>
+  </dictionaryList>
+  <converterList>
+    <converter name="org.xmlcml.cml.converters.compchem.nwchem.input.CML2NWChemInputConverter"
+      input="cml" output="input" description="converts cml to NWChem input"/>
+    <converter name="org.xmlcml.cml.converters.compchem.nwchem.log.NWChemLog2XMLConverter"
+      input="log" output="logXml" description="converts log file to xmlCml"
+      templateDir="org/xmlcml/cml/converters/compchem/nwchem/log/templates"
+      template="topTemplate.dir"/>
+    <converter name="org.xmlcml.cml.converters.compchem.nwchem.log.NWChemLog2CompchemConverter"
+      input="log" output="cml" description="converts log to comchem:CML"/>
+  </converterList>
+</resourceList>

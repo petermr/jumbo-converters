@@ -1,0 +1,37 @@
+<template repeat="*" id="ccsd" name="CCSD Energy" pattern="\s*CCSD Energy\s*$\s+\-+.*" 
+  endPattern="\s*$\s*">
+  
+  <comment class="example.input" id="ccsd">
+ CCSD Energy
+ -----------
+ Reference energy:            -134.684334043866102
+ CCSD corr. energy:              -.654354731113251
+ Total CCSD energy:           -135.338688774979346
+ memory 11036505
+
+
+</comment>
+<record repeat="2" id="rl1"/>
+<record id="r1" repeat="*">\s*{X,x:name}\s{8}\s*{F,x:energy}\s*</record>
+<record repeat="*"/>
+
+  <comment class="example.output" id="ccsd">
+<module cmlx:templateRef="ccsd" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx">
+  <list cmlx:templateRef="r1">
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">Reference energy:</scalar>
+      <scalar dataType="xsd:double" dictRef="x:energy">-134.6843340438661</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">CCSD corr. energy:</scalar>
+      <scalar dataType="xsd:double" dictRef="x:energy">-0.654354731113251</scalar>
+    </list>
+    <list>
+      <scalar dataType="xsd:string" dictRef="x:name">Total CCSD energy:</scalar>
+      <scalar dataType="xsd:double" dictRef="x:energy">-135.33868877497935</scalar>
+    </list>
+  </list>
+</module>
+  </comment>
+
+</template>
