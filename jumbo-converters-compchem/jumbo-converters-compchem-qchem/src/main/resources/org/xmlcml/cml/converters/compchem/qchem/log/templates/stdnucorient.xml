@@ -1,0 +1,244 @@
+<template repeat="*"  id="stdnucorient" name="Standard Nuclear Orientation"
+  pattern="\s*\-+\s*$\s*Standard Nuclear Orientation \(Angstroms\)\s*"
+  endPattern="\s*">
+  <comment class="example.input" id="stdnucorient">
+ ----------------------------------------------------
+       Standard Nuclear Orientation (Angstroms)
+    I     Atom         X            Y            Z
+ ----------------------------------------------------
+    1      N       1.161718    -2.055947     0.007521
+    2      H       1.152249    -3.025995     0.011013
+    3      C       2.315992    -1.266649     0.003344
+    4      C       3.707728    -1.427483     0.004262
+    5      C       4.416724    -0.305836     0.000110
+    6      S       3.351528     1.090227    -0.005336
+    7      C       1.929143     0.052931    -0.001391
+    8      C       0.463877     0.077489    -0.000566
+    9      C       0.037763    -1.254103    -0.001616
+   10      C      -1.323246    -1.563159    -0.001753
+   11      C      -2.056435    -2.885892    -0.002236
+   12      C      -3.524919    -2.529343    -0.001988
+   13      C      -3.624815    -1.208704    -0.001567
+   14      C      -2.295013    -0.577762    -0.000427
+   15      C      -1.893186     0.831740     0.000382
+   16      C      -2.845104     1.857211     0.002053
+   17      C      -2.434873     3.157743     0.002829
+   18      C      -1.080912     3.479774     0.002883
+   19      C      -0.129187     2.502301     0.002277
+   20      C      -0.518170     1.157855    -0.004254
+   21      H       4.173315    -2.401767     0.008625
+   22      H       5.495672    -0.257828    -0.000204
+   23      H      -1.806342    -3.454750    -0.897515
+   24      H      -1.806245    -3.456183     0.891674
+   25      H      -4.347416    -3.228402    -0.002882
+   26      H      -4.557923    -0.667165    -0.001309
+   27      H      -3.899324     1.620296     0.000458
+   28      H      -3.170885     3.949015     0.003294
+   29      H      -0.779721     4.516899     0.003709
+   30      H       0.917966     2.765193     0.001807
+ ----------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =  1408.5575609925 hartrees
+ There are       68 alpha and       68 beta electrons
+ Requested basis set is non-standard
+ There are 149 shells and 325 basis functions
+
+  </comment>
+  <record id="junk" repeat="4"/>
+  <record repeat="*" id="atom">\s*{I,compchem:ser}\s*{A,qchem:element}\s*{3F,qchem:xyz}\s*</record>
+  <record id="junk1"/>
+  <record id="pointgroup">\s*Molecular Point Group\s+{A,compchem:pointgroup}\s+NOp =\s+{I,qchem:pointgroup.nop}\s*</record>
+  <record id="abeliansubgroup">\s*Largest Abelian Subgroup\s+{A,compchem:abeliansubgroup}\s+NOp =\s+{I,qchem:abeliansubgroup.nop}\s*</record>
+  <record id="nucrepener">\s*Nuclear Repulsion Energy =\s+{F,qchem:nucrepener,units:hartrees}\s*hartrees\s*</record>
+  <record id="alphabeta">\s*There are\s*{I,qchem:alpha} alpha and\s*{I,qchem:beta} beta electrons\s*</record>
+  <record id="basisset">\s*Requested basis set is\s*{A,qchem:basisset}\s*</record>
+  <record id="nucrepener">\s*There are {I,qchem:shells} shells and {I,qchem:basisfunctions}\s*basis functions\s*</record>
+  <record id="ws"></record>
+  <comment class="example.output" id="stdnucorient">
+<module xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx" cmlx:templateRef="stdnucorient">
+<list cmlx:templateRef="atom">
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">1</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">N</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">1.161718 -2.055947 0.007521</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">2</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">1.152249 -3.025995 0.011013</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">3</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">2.315992 -1.266649 0.003344</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">4</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">3.707728 -1.427483 0.004262</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">5</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">4.416724 -0.305836 1.1E-4</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">6</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">S</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">3.351528 1.090227 -0.005336</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">7</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">1.929143 0.052931 -0.001391</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">8</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">0.463877 0.077489 -5.66E-4</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">9</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">0.037763 -1.254103 -0.001616</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">10</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-1.323246 -1.563159 -0.001753</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">11</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-2.056435 -2.885892 -0.002236</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">12</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-3.524919 -2.529343 -0.001988</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">13</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-3.624815 -1.208704 -0.001567</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">14</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-2.295013 -0.577762 -4.27E-4</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">15</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-1.893186 0.83174 3.82E-4</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">16</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-2.845104 1.857211 0.002053</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">17</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-2.434873 3.157743 0.002829</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">18</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-1.080912 3.479774 0.002883</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">19</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-0.129187 2.502301 0.002277</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">20</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">C</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-0.51817 1.157855 -0.004254</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">21</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">4.173315 -2.401767 0.008625</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">22</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">5.495672 -0.257828 -2.04E-4</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">23</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-1.806342 -3.45475 -0.897515</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">24</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-1.806245 -3.456183 0.891674</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">25</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-4.347416 -3.228402 -0.002882</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">26</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-4.557923 -0.667165 -0.001309</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">27</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-3.899324 1.620296 4.58E-4</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">28</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-3.170885 3.949015 0.003294</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">29</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">-0.779721 4.516899 0.003709</array>
+</list>
+<list>
+<scalar dataType="xsd:integer" dictRef="compchem:ser">30</scalar>
+<scalar dataType="xsd:string" dictRef="qchem:element">H</scalar>
+<array dataType="xsd:double" size="3" dictRef="qchem:xyz">0.917966 2.765193 0.001807</array>
+</list>
+</list>
+<list cmlx:templateRef="pointgroup">
+<list>
+<scalar dataType="xsd:string" dictRef="compchem:pointgroup">C1</scalar>
+<scalar dataType="xsd:integer" dictRef="qchem:pointgroup.nop">1</scalar>
+</list>
+</list>
+<list cmlx:templateRef="abeliansubgroup">
+<list>
+<scalar dataType="xsd:string" dictRef="compchem:abeliansubgroup">C1</scalar>
+<scalar dataType="xsd:integer" dictRef="qchem:abeliansubgroup.nop">1</scalar>
+</list>
+</list>
+<list cmlx:templateRef="nucrepener">
+<scalar dataType="xsd:double" dictRef="qchem:nucrepener">1408.5575609925</scalar>
+</list>
+<list cmlx:templateRef="alphabeta">
+<list>
+<scalar dataType="xsd:integer" dictRef="qchem:alpha">68</scalar>
+<scalar dataType="xsd:integer" dictRef="qchem:beta">68</scalar>
+</list>
+</list>
+<list cmlx:templateRef="basisset">
+<scalar dataType="xsd:string" dictRef="qchem:basisset">non-standard</scalar>
+</list>
+<list cmlx:templateRef="nucrepener">
+<list>
+<scalar dataType="xsd:integer" dictRef="qchem:shells">149</scalar>
+<scalar dataType="xsd:integer" dictRef="qchem:basisfunctions">325</scalar>
+</list>
+</list>
+</module>
+  </comment>
+</template>

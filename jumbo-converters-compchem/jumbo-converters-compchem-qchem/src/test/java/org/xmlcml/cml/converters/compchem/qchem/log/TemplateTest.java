@@ -12,10 +12,11 @@ public class TemplateTest {
 		templateTester.runCommentExamples();
 	}
 
-//	@Test	public void testIsotopeComment()       {templateTester.runTemplateCommentExamples("isotope");}
 	@Test	public void testMulliken()             {templateTester.runTemplateCommentExamples("mulliken");}
 
 	@Test	public void testQChemLogFile()         {templateTester.runTestOnFile("qchem");}
+
+	@Test	public void testStandardNuclear()             {templateTester.runTemplateCommentExamples("stdnucorient");}
 
 
 }
