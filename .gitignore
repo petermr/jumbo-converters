@@ -1,40 +1,27 @@
-glob:*/target
-glob:tmp/
-regexp:^src/
-regexp:^src\.bak/
-regexp:^.*/\.settings/
-glob:nbactions.xml
-glob:examples/
-glob:.svn/
-glob:.classpath
-glob:.project
-glob:target/*
+*/target
+tmp/
+/src/
+.settings/
+nbactions.xml
+examples/
+.svn/
+.classpath
+.project
+target/
 glob:*cli-old/*
-^\.settings/
-syntax: regexp
-^jumbo-converters-cif/src/test/resources/dict/peter\.xml$
-syntax: regexp
-^jumbo-converters-cif/src/test/resources/dict/sam\.xml$
-syntax: regexp
-^jumbo-converters-cif/src/test/resources/dict/cif\.xml$
-syntax: regexp
-^jumbo-converters-graphics/morgan\.png$
-syntax: regexp
-^jumbo-converters-graphics/out\.png$
-syntax: regexp
-^jumbo-converters-cif/src/test/resources/dict/sam\.xml$
-syntax: regexp
-^jumbo-converters-cif/units\.txt$
-syntax: glob
+/.settings/
+/jumbo-converters-cif/src/test/resources/dict/peter.xml
+/jumbo-converters-cif/src/test/resources/dict/sam.xml
+/jumbo-converters-cif/src/test/resources/dict/cif.xml
+/jumbo-converters-graphics/morgan.png
+/jumbo-converters-graphics/out.png
+/jumbo-converters-cif/src/test/resources/dict/sam.xml
+/jumbo-converters-cif/units.txt
 .DS_Store
-glob:*.orig
+*.orig
+/.idea/
+/.iml/
 
-syntax:regexp
-^\.idea/
-\.iml$
-
-/\.lf/
-^\.idea/
-\.iml$
-\.ipr$
-\.iws$
+/.lf/
+.ipr
+.iws
