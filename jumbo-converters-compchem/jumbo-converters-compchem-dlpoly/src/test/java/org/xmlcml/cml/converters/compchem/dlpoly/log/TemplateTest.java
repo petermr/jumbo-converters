@@ -1,5 +1,6 @@
 package org.xmlcml.cml.converters.compchem.dlpoly.log;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cml.converters.testutils.TemplateTester;
 
@@ -14,6 +15,7 @@ public class TemplateTest {
 	
 	@Test	public void testDiffusionComment()    {templateTester.runTemplateCommentExamples("diffusion");}
 	
+//	@Ignore // missing file
 	@Test	public void testWalkerFile()           {templateTester.runTestOnFile("walker");}
 	
 

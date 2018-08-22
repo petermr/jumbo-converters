@@ -1,5 +1,6 @@
 package org.xmlcml.cml.converters.testutils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -53,7 +54,12 @@ public class TemplateTester {
 		InputStream inputStream = new FileInputStream(inputName);
 		InputStream refStream = null;
 //		refStream = new FileInputStream(refName);
-		OutputStream outputStream = new FileOutputStream(outName);
+		File outfile = new File(outName);
+		File parent = outfile.getParentFile();
+		if (!parent.exists()) {
+			parent.mkdirs();
+		}
+		OutputStream outputStream = new FileOutputStream(outfile);
 		TemplateTestUtils.testDocument(inputStream, refStream, outputStream, 
 				inputTemplateS, baseUri, false);
 	}
