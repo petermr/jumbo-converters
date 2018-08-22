@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module cmlx:templateRef="supplemental.log" xmlns="http://www.xml-cml.org/schema" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:c="http://www.xml-cml.org/dictionary" xmlns:d="http://www.xml-cml.org/dictionary/supplemental">Electronic Supplementary Material (ESI) for Organic &amp; Biomolecular Chemistry. This journal is © The Royal Society of Chemistry 2018 Electronic Supplementary Information Studies on the Interactions of 5-R-3-(2-Pyridyl)-1,2,4-triazines with Arynes: Inverse Demand Aza-Diels-Alder Reaction Versus Aryne-Mediated Domino Process Dmitry S. Kopchuk, a,b Igor L. Nikonov, a Albert F. Khasanov, a Kousik Giri, c Sougata Santra,* a Igor S. Kovalev, a Emiliya V. Nosova, a,b Sravya Gundala, a Padmavathi Venkatapuram, d Grigory V. Zyryanov, a,b Adinath Majee, e Oleg N. Chupakhin a,b a Department of Organic and Biomolecular Chemistry, Chemical Engineering Institute, Ural Federal University, 19 Mira Str., Yekaterinburg, K-2, 620002, Russian Federation. b I. Ya. Postovskiy Institute of Organic Synthesis, Ural Division of the Russian Academy of Sciences, 22 S. Kovalevskoy Str., Yekaterinburg, 620219, Russian Federation c Centre for Computational Sciences, School of Basic and Applied Sciences, Central University of Punjab, City Campus, Mansa Road, Bathinda-151001, India d Department of Chemistry, Sri Venkateswara University, Tirupati-517502, Andhra Pradesh, India e Department of Chemistry, Visva-Bharati (A Central University), Santiniketan-731235, India 
+ <module cmlx:lineCount="12" cmlx:templateRef="toc">
+  <list cmlx:templateRef="line">
+   <scalar dataType="xsd:string" dictRef="g:line">Page No.</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Figure S1. The crystal packing for the pyrido[1,2-a]indole 2j ...... ...... S2</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Figure S2. The crystal packing for the pyrido[1,2-a]indole 2d ....... ...... S3</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Figure S3. The crystal packing for the pyrido[1,2-a]indole 2d ...... ...... S4</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Figure S4. The crystal packing for the isoquinoline 3c ...... ...... ...... S5</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Crystallographic Data ...... ...... ...... ...... ...... ...... ...... S6</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">DFT Calculations ...... ...... ...... ...... ...... ...... ...... S8</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Cartesian coordinates of computed structures ...... ...... ...... ...... S15</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">1H &amp; 13C NMR Spectra ...... ...... ...... ...... ...... ...... ...... S28</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line">Reference ...... ...... ...... ...... ...... ....... ...... ...... S117</scalar>
+   <scalar dataType="xsd:string" dictRef="g:line"/>
+  </list>
+ </module> S1 
+</module>
